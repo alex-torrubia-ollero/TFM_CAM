@@ -1,0 +1,5 @@
+Total DRC Err: 28
+Total Cells w/ DRC Err: 28
+Total PinDensity DRC Err: 28
+Total Cells w/ PinD DRC Err: 28
+Diff net spacing                                  : 28

@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Fri Jul 14 18:13:23 2023
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |    3759 |     4 |    2527  (11.44%) |       2
+H routing |    2667 |     3 |    1772  (16.05%) |     168
+V routing |    1092 |     4 |     755  ( 6.84%) |       2
+
+1

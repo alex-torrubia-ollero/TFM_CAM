@@ -1,0 +1,941 @@
+****************************************
+Report : timing
+        -path_type full_clock
+        -delay_type max
+        -max_paths 5
+        -report_by scenario
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Fri Jul 14 18:48:53 2023
+****************************************
+
+  Startpoint: read_data_i[15] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.30      0.30 r
+  read_data_i[15] (in)                             0.00      0.30 r
+  asic_model_gen.memory_core/word[22].word_bits[15].memory_cell/genblk1[0].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.05      0.35 r
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.03      0.38 f
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.05      0.43 r
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.07      0.51 f
+  asic_model_gen.memory_core/word[22].match_word[0].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.04      0.54 r
+  U2601/X (HDBSLT20_ND2_1)                         0.05      0.60 f
+  U3888/X (HDBSLT20_NR2_MM_1)                      0.02      0.61 r
+  U3892/X (HDBSLT20_NR4_0P75)                      0.01      0.63 f
+  U3893/X (HDBSLT20_ND3_MM_0P5)                    0.01      0.64 r
+  U3894/X (HDBSLT20_NR3_0P75)                      0.01      0.65 f
+  U3948/X (HDBSLT20_NR2_MM_1)                      0.01      0.66 r
+  U2481/X (HDBSLT20_NR2_MM_1)                      0.02      0.68 f
+  U4262/X (HDBSLT20_ND2_MM_1)                      0.01      0.69 r
+  U4280/X (HDBSLT20_ND4B_1)                        0.01      0.71 r
+  U4281/X (HDBSLT20_ND2B_V1_1)                     0.01      0.72 f
+  U4282/X (HDBSLT20_ND2_MM_1)                      0.01      0.72 r
+  U2717/X (HDBSLT20_ND2_MM_1)                      0.01      0.73 f
+  U2708/X (HDBSLT20_ND2_MM_1)                      0.01      0.74 r
+  U2705/X (HDBSLT20_ND2_MM_1)                      0.01      0.75 f
+  U2700/X (HDBSLT20_ND2_MM_1)                      0.01      0.76 r
+  U2699/X (HDBSLT20_ND2_MM_1)                      0.01      0.77 f
+  U2696/X (HDBSLT20_ND2_MM_1)                      0.01      0.77 r
+  U2690/X (HDBSLT20_ND2_MM_1)                      0.01      0.78 f
+  U2687/X (HDBSLT20_ND2_MM_1)                      0.01      0.79 r
+  U2682/X (HDBSLT20_ND2_MM_1)                      0.01      0.80 f
+  U2678/X (HDBSLT20_ND2_MM_1)                      0.01      0.81 r
+  U2672/X (HDBSLT20_ND2_MM_1)                      0.01      0.82 f
+  U2667/X (HDBSLT20_ND2_MM_1)                      0.01      0.82 r
+  U2661/X (HDBSLT20_ND2_MM_1)                      0.01      0.83 f
+  U2658/X (HDBSLT20_ND2_MM_1)                      0.01      0.84 r
+  U2657/X (HDBSLT20_ND2_MM_1)                      0.01      0.85 f
+  U2653/X (HDBSLT20_ND2_MM_1)                      0.01      0.86 r
+  U2649/X (HDBSLT20_ND2_MM_1)                      0.01      0.87 f
+  U2647/X (HDBSLT20_ND2_MM_1)                      0.01      0.88 r
+  U2645/X (HDBSLT20_ND2_MM_1)                      0.01      0.89 f
+  U2644/X (HDBSLT20_ND2_MM_1)                      0.01      0.89 r
+  U2642/X (HDBSLT20_ND2_MM_1)                      0.01      0.90 f
+  U2640/X (HDBSLT20_ND2_MM_1)                      0.01      0.91 r
+  U2636/X (HDBSLT20_ND2_MM_1)                      0.01      0.92 f
+  U2635/X (HDBSLT20_ND2_MM_1)                      0.01      0.93 r
+  U2634/X (HDBSLT20_ND2_MM_1)                      0.01      0.94 f
+  U2633/X (HDBSLT20_ND2_MM_1)                      0.01      0.95 r
+  U2632/X (HDBSLT20_ND2_1)                         0.03      0.98 f
+  U4283/X (HDBSLT20_ND2_1)                         0.03      1.01 r
+  U4297/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.04 r
+  intadd_0/U3/CO (HDBSLT20_ADDF_V1_1)              0.03      1.06 r
+  intadd_0/U2/CO (HDBSLT20_ADDF_V1_1)              0.03      1.09 r
+  U4308/X (HDBSLT20_EN2_V2_1)                      0.02      1.11 r
+  U2627/X (HDBSLT20_EN2_V2_1)                      0.01      1.12 f
+  U2439/X (HDBSLT20_NR2_1)                         0.01      1.13 r
+  mdata_reg[0][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.13 r
+  data arrival time                                          1.13
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  clock uncertainty                               -0.03      0.97
+  library setup time                              -0.01      0.96
+  data required time                                         0.96
+  ------------------------------------------------------------------------
+  data required time                                         0.96
+  data arrival time                                         -1.13
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.18
+
+
+
+  Startpoint: read_data_i[115] (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.30      0.30 r
+  read_data_i[115] (in)                            0.00      0.30 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/genblk1[2].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.05      0.35 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.03      0.38 f
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.05      0.43 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.08      0.50 f
+  asic_model_gen.memory_core/word[26].match_word[2].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.03      0.53 r
+  U2609/X (HDBSLT20_ND2_1)                         0.04      0.58 f
+  U3193/X (HDBSLT20_INV_0P75)                      0.01      0.59 r
+  U3050/X (HDBSLT20_ND2_MM_0P5)                    0.02      0.61 f
+  U2982/X (HDBSLT20_ND4_MM_1)                      0.01      0.62 r
+  U2940/X (HDBSLT20_OR2_0P75)                      0.02      0.64 r
+  U2868/X (HDBSLT20_NR4_0P75)                      0.02      0.66 f
+  U4195/X (HDBSLT20_OR2_0P75)                      0.02      0.68 f
+  U2476/X (HDBSLT20_MUX2_MM_0P5)                   0.03      0.71 f
+  U4237/X (HDBSLT20_ND2_MM_1)                      0.02      0.72 r
+  U4238/X (HDBSLT20_OR2_0P75)                      0.02      0.74 r
+  U4239/X (HDBSLT20_NR3_0P75)                      0.01      0.75 f
+  U4240/X (HDBSLT20_ND2_MM_1)                      0.01      0.76 r
+  U2349/X (HDBSLT20_NR2_MM_1)                      0.01      0.78 f
+  U2455/X (HDBSLT20_ND2B_V1_1)                     0.01      0.79 r
+  U2451/X (HDBSLT20_NR2_MM_1)                      0.01      0.80 f
+  U2698/X (HDBSLT20_ND2_MM_1)                      0.01      0.81 r
+  U3372/X (HDBSLT20_OR2_1)                         0.02      0.83 r
+  U2348/X (HDBSLT20_NR2B_0P5)                      0.01      0.84 f
+  U4242/X (HDBSLT20_ND2_MM_1)                      0.01      0.85 r
+  U2683/X (HDBSLT20_NR2_MM_1)                      0.01      0.87 f
+  U2680/X (HDBSLT20_AN2_1)                         0.01      0.88 f
+  U2345/X (HDBSLT20_ND2_1)                         0.01      0.89 r
+  U4243/X (HDBSLT20_OR4B_1)                        0.02      0.91 r
+  U2663/X (HDBSLT20_NR2_MM_1)                      0.01      0.92 f
+  U4244/X (HDBSLT20_ND2_MM_1)                      0.01      0.93 r
+  U2655/X (HDBSLT20_NR2_MM_1)                      0.01      0.94 f
+  U2650/X (HDBSLT20_NR2B_1)                        0.01      0.96 f
+  U2344/X (HDBSLT20_NR4_1)                         0.02      0.98 r
+  U2343/X (HDBSLT20_NR2_1P5)                       0.02      1.00 f
+  U4285/X (HDBSLT20_MAJI3_1)                       0.02      1.02 r
+  U2327/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.05 r
+  U2643/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.08 r
+  U4298/X (HDBSLT20_EO2_V2_1)                      0.02      1.10 r
+  U2637/X (HDBSLT20_EN2_V2_1)                      0.01      1.11 f
+  U4299/X (HDBSLT20_NR2_1)                         0.01      1.12 r
+  mdata_reg[2][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.12 r
+  data arrival time                                          1.12
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[2][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  clock uncertainty                               -0.03      0.97
+  library setup time                              -0.01      0.96
+  data required time                                         0.96
+  ------------------------------------------------------------------------
+  data required time                                         0.96
+  data arrival time                                         -1.12
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.17
+
+
+
+  Startpoint: read_data_i[15] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.30      0.30 r
+  read_data_i[15] (in)                             0.00      0.30 r
+  asic_model_gen.memory_core/word[22].word_bits[15].memory_cell/genblk1[0].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.05      0.35 r
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.03      0.38 f
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.05      0.43 r
+  asic_model_gen.memory_core/word[22].match_word[0].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.07      0.51 f
+  asic_model_gen.memory_core/word[22].match_word[0].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.04      0.54 r
+  U2601/X (HDBSLT20_ND2_1)                         0.05      0.60 f
+  U3888/X (HDBSLT20_NR2_MM_1)                      0.02      0.61 r
+  U3892/X (HDBSLT20_NR4_0P75)                      0.01      0.63 f
+  U3893/X (HDBSLT20_ND3_MM_0P5)                    0.01      0.64 r
+  U3894/X (HDBSLT20_NR3_0P75)                      0.01      0.65 f
+  U3948/X (HDBSLT20_NR2_MM_1)                      0.01      0.66 r
+  U2481/X (HDBSLT20_NR2_MM_1)                      0.02      0.68 f
+  U4262/X (HDBSLT20_ND2_MM_1)                      0.01      0.69 r
+  U4280/X (HDBSLT20_ND4B_1)                        0.01      0.71 r
+  U4281/X (HDBSLT20_ND2B_V1_1)                     0.01      0.72 f
+  U4282/X (HDBSLT20_ND2_MM_1)                      0.01      0.72 r
+  U2717/X (HDBSLT20_ND2_MM_1)                      0.01      0.73 f
+  U2708/X (HDBSLT20_ND2_MM_1)                      0.01      0.74 r
+  U2705/X (HDBSLT20_ND2_MM_1)                      0.01      0.75 f
+  U2700/X (HDBSLT20_ND2_MM_1)                      0.01      0.76 r
+  U2699/X (HDBSLT20_ND2_MM_1)                      0.01      0.77 f
+  U2696/X (HDBSLT20_ND2_MM_1)                      0.01      0.77 r
+  U2690/X (HDBSLT20_ND2_MM_1)                      0.01      0.78 f
+  U2687/X (HDBSLT20_ND2_MM_1)                      0.01      0.79 r
+  U2682/X (HDBSLT20_ND2_MM_1)                      0.01      0.80 f
+  U2678/X (HDBSLT20_ND2_MM_1)                      0.01      0.81 r
+  U2672/X (HDBSLT20_ND2_MM_1)                      0.01      0.82 f
+  U2667/X (HDBSLT20_ND2_MM_1)                      0.01      0.82 r
+  U2661/X (HDBSLT20_ND2_MM_1)                      0.01      0.83 f
+  U2658/X (HDBSLT20_ND2_MM_1)                      0.01      0.84 r
+  U2657/X (HDBSLT20_ND2_MM_1)                      0.01      0.85 f
+  U2653/X (HDBSLT20_ND2_MM_1)                      0.01      0.86 r
+  U2649/X (HDBSLT20_ND2_MM_1)                      0.01      0.87 f
+  U2647/X (HDBSLT20_ND2_MM_1)                      0.01      0.88 r
+  U2645/X (HDBSLT20_ND2_MM_1)                      0.01      0.89 f
+  U2644/X (HDBSLT20_ND2_MM_1)                      0.01      0.89 r
+  U2642/X (HDBSLT20_ND2_MM_1)                      0.01      0.90 f
+  U2640/X (HDBSLT20_ND2_MM_1)                      0.01      0.91 r
+  U2636/X (HDBSLT20_ND2_MM_1)                      0.01      0.92 f
+  U2635/X (HDBSLT20_ND2_MM_1)                      0.01      0.93 r
+  U2634/X (HDBSLT20_ND2_MM_1)                      0.01      0.94 f
+  U2633/X (HDBSLT20_ND2_MM_1)                      0.01      0.95 r
+  U2632/X (HDBSLT20_ND2_1)                         0.03      0.98 f
+  U4283/X (HDBSLT20_ND2_1)                         0.03      1.01 r
+  U4297/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.04 r
+  intadd_0/U3/CO (HDBSLT20_ADDF_V1_1)              0.03      1.06 r
+  intadd_0/U2/S (HDBSLT20_ADDF_V1_1)               0.04      1.10 f
+  U4291/X (HDBSLT20_NR2_1)                         0.01      1.11 r
+  mdata_reg[0][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.11 r
+  data arrival time                                          1.11
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  clock uncertainty                               -0.03      0.97
+  library setup time                              -0.01      0.96
+  data required time                                         0.96
+  ------------------------------------------------------------------------
+  data required time                                         0.96
+  data arrival time                                         -1.11
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.16
+
+
+
+  Startpoint: head_i[1] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.30      0.30 f
+  head_i[1] (in)                                   0.00      0.30 f
+  U3401/X (HDBSLT20_INV_1)                         0.03      0.33 r
+  U2614/X (HDBSLT20_ND2B_V1_1)                     0.02      0.35 r
+  U3363/X (HDBSLT20_INV_1)                         0.01      0.35 f
+  U3365/X (HDBSLT20_INV_1)                         0.10      0.46 r
+  U2338/X (HDBSLT20_INV_1)                         0.08      0.54 f
+  U3077/X (HDBSLT20_ND2_MM_1)                      0.02      0.56 r
+  U3620/X (HDBSLT20_ND3_MM_0P5)                    0.02      0.58 f
+  U3622/X (HDBSLT20_NR3_0P75)                      0.03      0.61 r
+  U3631/X (HDBSLT20_MUXI2_1)                       0.02      0.63 f
+  U2814/X (HDBSLT20_MUXI2_MM_0P5)                  0.02      0.65 r
+  U2354/X (HDBSLT20_ND2B_V1_1)                     0.02      0.67 f
+  U3650/X (HDBSLT20_NR3_0P75)                      0.02      0.69 r
+  U3677/X (HDBSLT20_ND2_MM_1)                      0.02      0.70 f
+  U2707/X (HDBSLT20_NR2_MM_1)                      0.01      0.71 r
+  U2453/X (HDBSLT20_ND2B_V1_1)                     0.01      0.73 f
+  U2703/X (HDBSLT20_NR2_MM_1)                      0.01      0.74 r
+  U3691/X (HDBSLT20_ND2_MM_1)                      0.01      0.75 f
+  U3373/X (HDBSLT20_OR2_1)                         0.02      0.77 f
+  U2340/X (HDBSLT20_NR2B_1)                        0.01      0.79 r
+  U3693/X (HDBSLT20_ND2_MM_1)                      0.01      0.80 f
+  U3695/X (HDBSLT20_NR2_1)                         0.01      0.81 r
+  U2446/X (HDBSLT20_AN2_1)                         0.02      0.83 r
+  U2445/X (HDBSLT20_ND2_1)                         0.01      0.85 f
+  U2665/X (HDBSLT20_OR4B_1)                        0.03      0.87 f
+  U2659/X (HDBSLT20_NR2_1)                         0.01      0.89 r
+  U3696/X (HDBSLT20_ND2_MM_1)                      0.02      0.90 f
+  U3697/X (HDBSLT20_NR2_1)                         0.02      0.92 r
+  U2651/X (HDBSLT20_NR2B_1)                        0.02      0.94 r
+  U3698/X (HDBSLT20_NR3_0P75)                      0.01      0.95 f
+  U2648/X (HDBSLT20_ND3_1)                         0.01      0.96 r
+  U2341/X (HDBSLT20_ND2_1)                         0.02      0.97 f
+  U3375/X (HDBSLT20_INV_1)                         0.01      0.99 r
+  U2641/X (HDBSLT20_MAJI3_1)                       0.02      1.01 f
+  U2639/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.04 f
+  U2638/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.07 f
+  U3374/X (HDBSLT20_EO2_V2_1)                      0.02      1.08 f
+  U3705/X (HDBSLT20_EN2_V2_1)                      0.02      1.10 f
+  U3707/X (HDBSLT20_NR2_1)                         0.01      1.11 r
+  mdata_reg[1][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.11 r
+  data arrival time                                          1.11
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  clock uncertainty                               -0.03      0.97
+  library setup time                              -0.01      0.96
+  data required time                                         0.96
+  ------------------------------------------------------------------------
+  data required time                                         0.96
+  data arrival time                                         -1.11
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.15
+
+
+
+  Startpoint: read_data_i[115] (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.30      0.30 r
+  read_data_i[115] (in)                            0.00      0.30 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/genblk1[2].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.05      0.35 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.03      0.38 f
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.05      0.43 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.08      0.50 f
+  asic_model_gen.memory_core/word[26].match_word[2].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.03      0.53 r
+  U2609/X (HDBSLT20_ND2_1)                         0.04      0.58 f
+  U3193/X (HDBSLT20_INV_0P75)                      0.01      0.59 r
+  U3050/X (HDBSLT20_ND2_MM_0P5)                    0.02      0.61 f
+  U2982/X (HDBSLT20_ND4_MM_1)                      0.01      0.62 r
+  U2940/X (HDBSLT20_OR2_0P75)                      0.02      0.64 r
+  U2868/X (HDBSLT20_NR4_0P75)                      0.02      0.66 f
+  U4195/X (HDBSLT20_OR2_0P75)                      0.02      0.68 f
+  U2476/X (HDBSLT20_MUX2_MM_0P5)                   0.03      0.71 f
+  U4237/X (HDBSLT20_ND2_MM_1)                      0.02      0.72 r
+  U4238/X (HDBSLT20_OR2_0P75)                      0.02      0.74 r
+  U4239/X (HDBSLT20_NR3_0P75)                      0.01      0.75 f
+  U4240/X (HDBSLT20_ND2_MM_1)                      0.01      0.76 r
+  U2349/X (HDBSLT20_NR2_MM_1)                      0.01      0.78 f
+  U2455/X (HDBSLT20_ND2B_V1_1)                     0.01      0.79 r
+  U2451/X (HDBSLT20_NR2_MM_1)                      0.01      0.80 f
+  U2698/X (HDBSLT20_ND2_MM_1)                      0.01      0.81 r
+  U3372/X (HDBSLT20_OR2_1)                         0.02      0.83 r
+  U2348/X (HDBSLT20_NR2B_0P5)                      0.01      0.84 f
+  U4242/X (HDBSLT20_ND2_MM_1)                      0.01      0.85 r
+  U2683/X (HDBSLT20_NR2_MM_1)                      0.01      0.87 f
+  U2680/X (HDBSLT20_AN2_1)                         0.01      0.88 f
+  U2345/X (HDBSLT20_ND2_1)                         0.01      0.89 r
+  U4243/X (HDBSLT20_OR4B_1)                        0.02      0.91 r
+  U2663/X (HDBSLT20_NR2_MM_1)                      0.01      0.92 f
+  U4244/X (HDBSLT20_ND2_MM_1)                      0.01      0.93 r
+  U2655/X (HDBSLT20_NR2_MM_1)                      0.01      0.94 f
+  U2650/X (HDBSLT20_NR2B_1)                        0.01      0.96 f
+  U2344/X (HDBSLT20_NR4_1)                         0.02      0.98 r
+  U2343/X (HDBSLT20_NR2_1P5)                       0.02      1.00 f
+  U4285/X (HDBSLT20_MAJI3_1)                       0.02      1.02 r
+  U2327/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.05 r
+  U2643/S (HDBSLT20_ADDF_V1_1)                     0.04      1.09 f
+  U4294/X (HDBSLT20_NR2_1)                         0.01      1.10 r
+  mdata_reg[2][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.10 r
+  data arrival time                                          1.10
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[2][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  clock uncertainty                               -0.03      0.97
+  library setup time                              -0.01      0.96
+  data required time                                         0.96
+  ------------------------------------------------------------------------
+  data required time                                         0.96
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][15] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[0][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: typ_corner
+  Scenario: TT_nominal
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  source latency                                   0.00      0.00
+  clk (in)                                         0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/Q (HDBSLT20_FDPQ_V2_4)
+                                                   0.03      0.03 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.05 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  transparency open edge                                     0.00
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (ideal)                            0.00      0.50
+  library setup time                              -0.02      0.48
+  transparency close edge                                    0.48
+
+  available borrow at through pin                  0.43      0.05
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.05 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/Q (HDBSLT20_LDPQ_1)
+                                                   0.03      0.08 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/genblk1[0].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.02      0.10 r
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.02      0.12 f
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.04      0.15 r
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.06      0.21 f
+  asic_model_gen.memory_core/word[23].match_word[0].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.03      0.24 r
+  U3328/X (HDBSLT20_ND2_MM_1)                      0.03      0.27 f
+  U3199/X (HDBSLT20_INV_0P75)                      0.02      0.29 r
+  U3115/X (HDBSLT20_ND2_MM_1)                      0.01      0.30 f
+  U3893/X (HDBSLT20_ND3_MM_0P5)                    0.01      0.31 r
+  U3894/X (HDBSLT20_NR3_0P75)                      0.01      0.32 f
+  U3948/X (HDBSLT20_NR2_MM_1)                      0.01      0.33 r
+  U2481/X (HDBSLT20_NR2_MM_1)                      0.02      0.34 f
+  U4262/X (HDBSLT20_ND2_MM_1)                      0.01      0.35 r
+  U4280/X (HDBSLT20_ND4B_1)                        0.01      0.36 r
+  U4281/X (HDBSLT20_ND2B_V1_1)                     0.01      0.37 f
+  U4282/X (HDBSLT20_ND2_MM_1)                      0.01      0.37 r
+  U2717/X (HDBSLT20_ND2_MM_1)                      0.01      0.38 f
+  U2708/X (HDBSLT20_ND2_MM_1)                      0.01      0.39 r
+  U2705/X (HDBSLT20_ND2_MM_1)                      0.01      0.39 f
+  U2700/X (HDBSLT20_ND2_MM_1)                      0.01      0.40 r
+  U2699/X (HDBSLT20_ND2_MM_1)                      0.01      0.41 f
+  U2696/X (HDBSLT20_ND2_MM_1)                      0.01      0.41 r
+  U2690/X (HDBSLT20_ND2_MM_1)                      0.01      0.42 f
+  U2687/X (HDBSLT20_ND2_MM_1)                      0.01      0.42 r
+  U2682/X (HDBSLT20_ND2_MM_1)                      0.01      0.43 f
+  U2678/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 r
+  U2672/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 f
+  U2667/X (HDBSLT20_ND2_MM_1)                      0.01      0.45 r
+  U2661/X (HDBSLT20_ND2_MM_1)                      0.01      0.46 f
+  U2658/X (HDBSLT20_ND2_MM_1)                      0.01      0.46 r
+  U2657/X (HDBSLT20_ND2_MM_1)                      0.01      0.47 f
+  U2653/X (HDBSLT20_ND2_MM_1)                      0.01      0.48 r
+  U2649/X (HDBSLT20_ND2_MM_1)                      0.01      0.48 f
+  U2647/X (HDBSLT20_ND2_MM_1)                      0.01      0.49 r
+  U2645/X (HDBSLT20_ND2_MM_1)                      0.01      0.49 f
+  U2644/X (HDBSLT20_ND2_MM_1)                      0.01      0.50 r
+  U2642/X (HDBSLT20_ND2_MM_1)                      0.01      0.51 f
+  U2640/X (HDBSLT20_ND2_MM_1)                      0.01      0.51 r
+  U2636/X (HDBSLT20_ND2_MM_1)                      0.01      0.52 f
+  U2635/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 r
+  U2634/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 f
+  U2633/X (HDBSLT20_ND2_MM_1)                      0.01      0.54 r
+  U2632/X (HDBSLT20_ND2_1)                         0.03      0.57 f
+  U4283/X (HDBSLT20_ND2_1)                         0.02      0.58 r
+  U4297/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.61 r
+  intadd_0/U3/CO (HDBSLT20_ADDF_V1_1)              0.02      0.63 r
+  intadd_0/U2/CO (HDBSLT20_ADDF_V1_1)              0.02      0.65 r
+  U4308/X (HDBSLT20_EN2_V2_1)                      0.01      0.66 r
+  U2627/X (HDBSLT20_EN2_V2_1)                      0.01      0.67 f
+  U2439/X (HDBSLT20_NR2_1)                         0.01      0.68 r
+  mdata_reg[0][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      0.68 r
+  data arrival time                                          0.68
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  library setup time                              -0.01      0.99
+  data required time                                         0.99
+  ------------------------------------------------------------------------
+  data required time                                         0.99
+  data arrival time                                         -0.68
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.31
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][15] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: typ_corner
+  Scenario: TT_nominal
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  source latency                                   0.00      0.00
+  clk (in)                                         0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/Q (HDBSLT20_FDPQ_V2_4)
+                                                   0.03      0.03 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.05 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  transparency open edge                                     0.00
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (ideal)                            0.00      0.50
+  library setup time                              -0.02      0.48
+  transparency close edge                                    0.48
+
+  available borrow at through pin                  0.43      0.05
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.05 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/Q (HDBSLT20_LDPQ_1)
+                                                   0.03      0.08 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/genblk1[2].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.02      0.10 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.02      0.12 f
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.04      0.15 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.06      0.21 f
+  asic_model_gen.memory_core/word[26].match_word[2].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.02      0.23 r
+  U2609/X (HDBSLT20_ND2_1)                         0.03      0.26 f
+  U3193/X (HDBSLT20_INV_0P75)                      0.01      0.27 r
+  U3050/X (HDBSLT20_ND2_MM_0P5)                    0.02      0.29 f
+  U2982/X (HDBSLT20_ND4_MM_1)                      0.01      0.30 r
+  U2940/X (HDBSLT20_OR2_0P75)                      0.02      0.31 r
+  U2868/X (HDBSLT20_NR4_0P75)                      0.01      0.33 f
+  U4195/X (HDBSLT20_OR2_0P75)                      0.01      0.34 f
+  U2476/X (HDBSLT20_MUX2_MM_0P5)                   0.02      0.36 f
+  U4237/X (HDBSLT20_ND2_MM_1)                      0.01      0.37 r
+  U4238/X (HDBSLT20_OR2_0P75)                      0.01      0.39 r
+  U4239/X (HDBSLT20_NR3_0P75)                      0.01      0.40 f
+  U4240/X (HDBSLT20_ND2_MM_1)                      0.01      0.40 r
+  U2349/X (HDBSLT20_NR2_MM_1)                      0.01      0.42 f
+  U2455/X (HDBSLT20_ND2B_V1_1)                     0.01      0.42 r
+  U2451/X (HDBSLT20_NR2_MM_1)                      0.01      0.43 f
+  U2698/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 r
+  U3372/X (HDBSLT20_OR2_1)                         0.01      0.45 r
+  U2348/X (HDBSLT20_NR2B_0P5)                      0.01      0.47 f
+  U4242/X (HDBSLT20_ND2_MM_1)                      0.01      0.47 r
+  U2683/X (HDBSLT20_NR2_MM_1)                      0.01      0.49 f
+  U2680/X (HDBSLT20_AN2_1)                         0.01      0.50 f
+  U2345/X (HDBSLT20_ND2_1)                         0.01      0.50 r
+  U4243/X (HDBSLT20_OR4B_1)                        0.01      0.52 r
+  U2663/X (HDBSLT20_NR2_MM_1)                      0.01      0.53 f
+  U4244/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 r
+  U2655/X (HDBSLT20_NR2_MM_1)                      0.01      0.55 f
+  U2650/X (HDBSLT20_NR2B_1)                        0.01      0.56 f
+  U2344/X (HDBSLT20_NR4_1)                         0.02      0.57 r
+  U2343/X (HDBSLT20_NR2_1P5)                       0.01      0.58 f
+  U4285/X (HDBSLT20_MAJI3_1)                       0.02      0.60 r
+  U2327/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.62 r
+  U2643/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.64 r
+  U4298/X (HDBSLT20_EO2_V2_1)                      0.01      0.66 r
+  U2637/X (HDBSLT20_EN2_V2_1)                      0.01      0.67 f
+  U4299/X (HDBSLT20_NR2_1)                         0.01      0.67 r
+  mdata_reg[2][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      0.67 r
+  data arrival time                                          0.67
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[2][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  library setup time                              -0.01      0.99
+  data required time                                         0.99
+  ------------------------------------------------------------------------
+  data required time                                         0.99
+  data arrival time                                         -0.67
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.32
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][15] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[0][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: typ_corner
+  Scenario: TT_nominal
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  source latency                                   0.00      0.00
+  clk (in)                                         0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/Q (HDBSLT20_FDPQ_V2_4)
+                                                   0.03      0.03 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.05 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  transparency open edge                                     0.00
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (ideal)                            0.00      0.50
+  library setup time                              -0.02      0.48
+  transparency close edge                                    0.48
+
+  available borrow at through pin                  0.43      0.05
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.05 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/Q (HDBSLT20_LDPQ_1)
+                                                   0.03      0.08 r
+  asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/genblk1[0].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.02      0.10 r
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.02      0.12 f
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.04      0.15 r
+  asic_model_gen.memory_core/word[23].match_word[0].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.06      0.21 f
+  asic_model_gen.memory_core/word[23].match_word[0].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.03      0.24 r
+  U3328/X (HDBSLT20_ND2_MM_1)                      0.03      0.27 f
+  U3199/X (HDBSLT20_INV_0P75)                      0.02      0.29 r
+  U3115/X (HDBSLT20_ND2_MM_1)                      0.01      0.30 f
+  U3893/X (HDBSLT20_ND3_MM_0P5)                    0.01      0.31 r
+  U3894/X (HDBSLT20_NR3_0P75)                      0.01      0.32 f
+  U3948/X (HDBSLT20_NR2_MM_1)                      0.01      0.33 r
+  U2481/X (HDBSLT20_NR2_MM_1)                      0.02      0.34 f
+  U4262/X (HDBSLT20_ND2_MM_1)                      0.01      0.35 r
+  U4280/X (HDBSLT20_ND4B_1)                        0.01      0.36 r
+  U4281/X (HDBSLT20_ND2B_V1_1)                     0.01      0.37 f
+  U4282/X (HDBSLT20_ND2_MM_1)                      0.01      0.37 r
+  U2717/X (HDBSLT20_ND2_MM_1)                      0.01      0.38 f
+  U2708/X (HDBSLT20_ND2_MM_1)                      0.01      0.39 r
+  U2705/X (HDBSLT20_ND2_MM_1)                      0.01      0.39 f
+  U2700/X (HDBSLT20_ND2_MM_1)                      0.01      0.40 r
+  U2699/X (HDBSLT20_ND2_MM_1)                      0.01      0.41 f
+  U2696/X (HDBSLT20_ND2_MM_1)                      0.01      0.41 r
+  U2690/X (HDBSLT20_ND2_MM_1)                      0.01      0.42 f
+  U2687/X (HDBSLT20_ND2_MM_1)                      0.01      0.42 r
+  U2682/X (HDBSLT20_ND2_MM_1)                      0.01      0.43 f
+  U2678/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 r
+  U2672/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 f
+  U2667/X (HDBSLT20_ND2_MM_1)                      0.01      0.45 r
+  U2661/X (HDBSLT20_ND2_MM_1)                      0.01      0.46 f
+  U2658/X (HDBSLT20_ND2_MM_1)                      0.01      0.46 r
+  U2657/X (HDBSLT20_ND2_MM_1)                      0.01      0.47 f
+  U2653/X (HDBSLT20_ND2_MM_1)                      0.01      0.48 r
+  U2649/X (HDBSLT20_ND2_MM_1)                      0.01      0.48 f
+  U2647/X (HDBSLT20_ND2_MM_1)                      0.01      0.49 r
+  U2645/X (HDBSLT20_ND2_MM_1)                      0.01      0.49 f
+  U2644/X (HDBSLT20_ND2_MM_1)                      0.01      0.50 r
+  U2642/X (HDBSLT20_ND2_MM_1)                      0.01      0.51 f
+  U2640/X (HDBSLT20_ND2_MM_1)                      0.01      0.51 r
+  U2636/X (HDBSLT20_ND2_MM_1)                      0.01      0.52 f
+  U2635/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 r
+  U2634/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 f
+  U2633/X (HDBSLT20_ND2_MM_1)                      0.01      0.54 r
+  U2632/X (HDBSLT20_ND2_1)                         0.03      0.57 f
+  U4283/X (HDBSLT20_ND2_1)                         0.02      0.58 r
+  U4297/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.61 r
+  intadd_0/U3/CO (HDBSLT20_ADDF_V1_1)              0.02      0.63 r
+  intadd_0/U2/S (HDBSLT20_ADDF_V1_1)               0.03      0.65 f
+  U4291/X (HDBSLT20_NR2_1)                         0.01      0.66 r
+  mdata_reg[0][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      0.66 r
+  data arrival time                                          0.66
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  library setup time                              -0.01      0.99
+  data required time                                         0.99
+  ------------------------------------------------------------------------
+  data required time                                         0.99
+  data arrival time                                         -0.66
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.33
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][15] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: typ_corner
+  Scenario: TT_nominal
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  source latency                                   0.00      0.00
+  clk (in)                                         0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/Q (HDBSLT20_FDPQ_V2_4)
+                                                   0.03      0.03 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.05 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  transparency open edge                                     0.00
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (ideal)                            0.00      0.50
+  library setup time                              -0.02      0.48
+  transparency close edge                                    0.48
+
+  available borrow at through pin                  0.43      0.05
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.05 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/Q (HDBSLT20_LDPQ_1)
+                                                   0.03      0.08 r
+  asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/genblk1[2].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.02      0.10 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.02      0.12 f
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.04      0.15 r
+  asic_model_gen.memory_core/word[26].match_word[2].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.06      0.21 f
+  asic_model_gen.memory_core/word[26].match_word[2].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.02      0.23 r
+  U2609/X (HDBSLT20_ND2_1)                         0.03      0.26 f
+  U3193/X (HDBSLT20_INV_0P75)                      0.01      0.27 r
+  U3050/X (HDBSLT20_ND2_MM_0P5)                    0.02      0.29 f
+  U2982/X (HDBSLT20_ND4_MM_1)                      0.01      0.30 r
+  U2940/X (HDBSLT20_OR2_0P75)                      0.02      0.31 r
+  U2868/X (HDBSLT20_NR4_0P75)                      0.01      0.33 f
+  U4195/X (HDBSLT20_OR2_0P75)                      0.01      0.34 f
+  U2476/X (HDBSLT20_MUX2_MM_0P5)                   0.02      0.36 f
+  U4237/X (HDBSLT20_ND2_MM_1)                      0.01      0.37 r
+  U4238/X (HDBSLT20_OR2_0P75)                      0.01      0.39 r
+  U4239/X (HDBSLT20_NR3_0P75)                      0.01      0.40 f
+  U4240/X (HDBSLT20_ND2_MM_1)                      0.01      0.40 r
+  U2349/X (HDBSLT20_NR2_MM_1)                      0.01      0.42 f
+  U2455/X (HDBSLT20_ND2B_V1_1)                     0.01      0.42 r
+  U2451/X (HDBSLT20_NR2_MM_1)                      0.01      0.43 f
+  U2698/X (HDBSLT20_ND2_MM_1)                      0.01      0.44 r
+  U3372/X (HDBSLT20_OR2_1)                         0.01      0.45 r
+  U2348/X (HDBSLT20_NR2B_0P5)                      0.01      0.47 f
+  U4242/X (HDBSLT20_ND2_MM_1)                      0.01      0.47 r
+  U2683/X (HDBSLT20_NR2_MM_1)                      0.01      0.49 f
+  U2680/X (HDBSLT20_AN2_1)                         0.01      0.50 f
+  U2345/X (HDBSLT20_ND2_1)                         0.01      0.50 r
+  U4243/X (HDBSLT20_OR4B_1)                        0.01      0.52 r
+  U2663/X (HDBSLT20_NR2_MM_1)                      0.01      0.53 f
+  U4244/X (HDBSLT20_ND2_MM_1)                      0.01      0.53 r
+  U2655/X (HDBSLT20_NR2_MM_1)                      0.01      0.55 f
+  U2650/X (HDBSLT20_NR2B_1)                        0.01      0.56 f
+  U2344/X (HDBSLT20_NR4_1)                         0.02      0.57 r
+  U2343/X (HDBSLT20_NR2_1P5)                       0.01      0.58 f
+  U4285/X (HDBSLT20_MAJI3_1)                       0.02      0.60 r
+  U2327/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.62 r
+  U2643/S (HDBSLT20_ADDF_V1_1)                     0.03      0.65 f
+  U4294/X (HDBSLT20_NR2_1)                         0.01      0.66 r
+  mdata_reg[2][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      0.66 r
+  data arrival time                                          0.66
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[2][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  library setup time                              -0.01      0.99
+  data required time                                         0.99
+  ------------------------------------------------------------------------
+  data required time                                         0.99
+  data arrival time                                         -0.66
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.33
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][15] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[1][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: typ_corner
+  Scenario: TT_nominal
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  source latency                                   0.00      0.00
+  clk (in)                                         0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/CK (HDBSLT20_FDPQ_V2_4)
+                                                   0.00      0.00 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][15]/Q (HDBSLT20_FDPQ_V2_4)
+                                                   0.03      0.03 r
+  asic_model_gen.memory_core/word[24].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.05 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  transparency open edge                                     0.00
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (ideal)                            0.00      0.50
+  library setup time                              -0.02      0.48
+  transparency close edge                                    0.48
+
+  available borrow at through pin                  0.43      0.05
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[24].word_bits[15].memory_cell/cam_latch/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.05 r
+  asic_model_gen.memory_core/word[24].word_bits[15].memory_cell/cam_latch/Q (HDBSLT20_LDPQ_1)
+                                                   0.03      0.08 r
+  asic_model_gen.memory_core/word[24].word_bits[15].memory_cell/genblk1[1].XNOR_comparator/X (HDBSLT20_EN2_V2_0P5)
+                                                   0.02      0.10 r
+  asic_model_gen.memory_core/word[24].match_word[1].word_match_logic/genblk1.first_stage_nand4[3].NAND4_STAGE_1/X (HDBSLT20_ND4_1)
+                                                   0.02      0.12 f
+  asic_model_gen.memory_core/word[24].match_word[1].word_match_logic/genblk6.second_stage_nor4[0].NOR4_STAGE_2/X (HDBSLT20_NR4_1)
+                                                   0.04      0.15 r
+  asic_model_gen.memory_core/word[24].match_word[1].word_match_logic/genblk10.third_stage_nand4[0].NAND4_STAGE_3/X (HDBSLT20_ND4_1)
+                                                   0.06      0.21 f
+  asic_model_gen.memory_core/word[24].match_word[1].match_enabler_gate/match_enable_gate/X (HDBSLT20_NR2B_1)
+                                                   0.02      0.23 r
+  U2610/X (HDBSLT20_ND2_1)                         0.03      0.26 f
+  U3200/X (HDBSLT20_INV_0P75)                      0.02      0.28 r
+  U3510/X (HDBSLT20_ND2_MM_0P5)                    0.01      0.30 f
+  U2989/X (HDBSLT20_ND4_MM_1)                      0.01      0.31 r
+  U2477/X (HDBSLT20_ND2_MM_0P5)                    0.01      0.32 f
+  U3514/X (HDBSLT20_MUXI2_1)                       0.02      0.34 r
+  U3558/X (HDBSLT20_NR2_MM_1)                      0.01      0.35 f
+  U3559/X (HDBSLT20_ND2_MM_1)                      0.01      0.36 r
+  U3650/X (HDBSLT20_NR3_0P75)                      0.01      0.37 f
+  U3677/X (HDBSLT20_ND2_MM_1)                      0.01      0.38 r
+  U2707/X (HDBSLT20_NR2_MM_1)                      0.01      0.39 f
+  U2453/X (HDBSLT20_ND2B_V1_1)                     0.01      0.40 r
+  U2703/X (HDBSLT20_NR2_MM_1)                      0.01      0.41 f
+  U3691/X (HDBSLT20_ND2_MM_1)                      0.01      0.42 r
+  U3373/X (HDBSLT20_OR2_1)                         0.01      0.43 r
+  U2340/X (HDBSLT20_NR2B_1)                        0.01      0.44 f
+  U3693/X (HDBSLT20_ND2_MM_1)                      0.01      0.45 r
+  U3695/X (HDBSLT20_NR2_1)                         0.01      0.45 f
+  U2446/X (HDBSLT20_AN2_1)                         0.01      0.46 f
+  U2445/X (HDBSLT20_ND2_1)                         0.01      0.47 r
+  U2665/X (HDBSLT20_OR4B_1)                        0.01      0.48 r
+  U2659/X (HDBSLT20_NR2_1)                         0.01      0.49 f
+  U3696/X (HDBSLT20_ND2_MM_1)                      0.01      0.50 r
+  U3697/X (HDBSLT20_NR2_1)                         0.01      0.51 f
+  U2651/X (HDBSLT20_NR2B_1)                        0.01      0.52 f
+  U3698/X (HDBSLT20_NR3_0P75)                      0.01      0.53 r
+  U2648/X (HDBSLT20_ND3_1)                         0.02      0.55 f
+  U2341/X (HDBSLT20_ND2_1)                         0.01      0.56 r
+  U3375/X (HDBSLT20_INV_1)                         0.01      0.57 f
+  U2641/X (HDBSLT20_MAJI3_1)                       0.01      0.58 r
+  U2639/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.61 r
+  U2638/CO (HDBSLT20_ADDF_V1_1)                    0.02      0.62 r
+  U3374/X (HDBSLT20_EO2_V2_1)                      0.01      0.64 r
+  U3705/X (HDBSLT20_EN2_V2_1)                      0.01      0.65 f
+  U3707/X (HDBSLT20_NR2_1)                         0.01      0.65 r
+  mdata_reg[1][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      0.65 r
+  data arrival time                                          0.65
+
+  clock clk_core (rise edge)                       1.00      1.00
+  source latency                                   0.00      1.00
+  clk (in)                                         0.00      1.00 r
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.00 r
+
+  library setup time                              -0.01      0.99
+  data required time                                         0.99
+  ------------------------------------------------------------------------
+  data required time                                         0.99
+  data arrival time                                         -0.65
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.34
+
+
+1

@@ -1,0 +1,28 @@
+****************************************
+Report : report_placement
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Fri Jul 14 18:13:20 2023
+****************************************
+  ==================
+  Note: Including violations of fixed cells or between fixed pairs of cells. 
+        To ignore violations of / between fixed cells, enable -ignore_fixed. 
+  ==================
+
+  Wire length report (all)
+  ==================
+  wire length in design vlsu_cam_top: 62852.328 microns.
+  wire length in design vlsu_cam_top (see through blk pins): 62852.328 microns.
+
+  Physical hierarchy violations report
+  ====================================
+  Violations in design vlsu_cam_top:
+     0 cells have placement violation.
+
+  Voltage area violations report
+  ====================================
+  Voltage area placement violations in design vlsu_cam_top:
+     0 cells placed outside the voltage area which they belong to.
+
+Information: Default error view vlsu_cam_top_dpplace.err is created in GUI error browser. (DPP-054)
+1

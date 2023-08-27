@@ -1,0 +1,1721 @@
+****************************************
+Report : constraint
+        -all_violators
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Fri Jul 14 19:22:09 2023
+****************************************
+
+   late_timing
+   -----------
+
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: func_mode Corner: slow_corner
+   Scenario: slow
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   asic_model_gen.memory_core/ctosc_drc_0
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.26          -0.11  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.25          -0.10  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.24          -0.09  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.23          -0.08  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.22          -0.07  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.22          -0.07  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.22          -0.07  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.22          -0.07  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.21          -0.06  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.21          -0.06  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[5].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[4].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[3].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[2].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[31].word_bits[1].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_3
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[5].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[4].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[3].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[2].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[1].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[16].word_bits[0].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_10
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.20          -0.05  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[7].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_25
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[5].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[24].word_bits[4].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_30
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[29].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_17
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[15].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_20
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[19].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_28
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[27].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_12
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[9].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_11
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[8].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_22
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[21].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_9
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[6].word_bits[6].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_21
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[20].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_23
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.19          -0.04  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[22].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_16
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[14].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_27
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.18          -0.03  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[14].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[13].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[12].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[11].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[10].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[9].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[8].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[26].word_bits[7].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_24
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[21].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[20].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[19].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[18].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[17].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[16].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[23].word_bits[15].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_26
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.17          -0.02  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[28].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[27].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[26].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[25].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[24].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[23].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[25].word_bits[22].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_15
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[13].word_bits[29].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_13
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[40].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[39].memory_cell/cam_latch/G
+                                0.15           0.16          -0.01  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[38].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[37].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[36].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[35].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[34].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[33].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[32].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[31].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[11].word_bits[30].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+   asic_model_gen.memory_core/ctosc_drc_19
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[49].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[48].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[47].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[46].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[45].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[44].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[43].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[42].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+     PIN : asic_model_gen.memory_core/word[18].word_bits[41].memory_cell/cam_latch/G
+                                0.15           0.15          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 21
+
+   Mode: func_mode Corner: slow_corner
+   Scenario: slow
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: func_mode Corner: slow_corner
+   Scenario: slow
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: slow
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 21
+1

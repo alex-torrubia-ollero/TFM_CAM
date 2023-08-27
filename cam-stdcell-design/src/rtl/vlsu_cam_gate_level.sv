@@ -1,0 +1,601 @@
+`timescale 1ps / 1ps
+
+/*******************************************************************************************************
+ *  MODULE                                                                                              *
+ *  CAM INSTANCE                                                                                        *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module builds the CAM description to be optimized                                              *
+ *  A CAM cell is instaciated for each bit defined in DATA, by DEPTH rows each WRITE port.              *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ * clk              Clock signal                                                                        *
+ * address_enable   Address enable signal for each CAM row                                              *
+ * write_data_i     Input word to be written inside a CAM row                                           *
+ * read_i           Read enable signal for each port                                                    *
+ * read_data_i      Data to be compared in each port                                                    *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * match_line      Signal asserted when the data to be compared and the written data matches            *
+ *                                                                                                      *
+ *******************************************************************************************************/
+module memory_core_instance #(
+    `include "vpu_cam_parameters.svh"
+    )
+    (
+        input   logic               clk,
+        input   depth_t [WRITE-1:0] address_enable,
+        input   sdata_t [WRITE-1:0] write_data_i,
+        input   logic   [READ-1:0]  read_i,
+        input   sdata_t [READ-1:0]  read_data_i,
+        output  depth_t [READ-1:0]  match_line
+    );
+    
+    genvar write_port, row, bits, read_port;
+    
+    /* Declare the matching bits to be multiplied in the match logic*/
+    logic [READ-1:0][DEPTH-1:0][DATA-1:0] match_bits;
+    depth_t [READ-1:0] match_result;
+    depth_t gclk;
+    depth_t address_write_enable;
+    sdata_t write_data;
+    
+    /* Get each write port dependant signal */    
+    for(write_port=0; write_port < WRITE; write_port++) begin: port_write
+        assign address_write_enable =address_enable[write_port];
+        assign write_data = write_data_i[write_port];
+    end
+    
+    /* Iterate for each row */
+    for(row=0; row<DEPTH;row++) begin: word
+        /* One clock gate cell per row */
+        clock_gate_cell clkgate (
+            .clk(clk),
+            .enable(address_write_enable[row]),
+            .gclk(gclk[row])
+        );
+
+        /* Iterate for each bit */
+        for(bits=0; bits < DATA; bits++) begin: word_bits
+            
+            /* Change the order of the read_data_i and read_i signals for an easier manipulation */
+            wire logic [READ-1:0] search_line;
+            wire logic [READ-1:0] read_port_enable;
+            for(read_port=0; read_port<READ; read_port++) begin
+                assign search_line[read_port] = read_data_i[read_port][bits];
+                //assign read_port_enable[read_port] = read_i[read_port][row];
+            end
+            
+            /* Declare the CAM cell output wire */
+            logic  [READ-1:0]  standalone_match_signal;
+            
+            /* Instanciate the CAM cell */
+            memory_block_cell memory_cell(
+                .gclk               (gclk[row]), 
+                .write_bit          (write_data[bits]), 
+                .bit_search_line    (search_line), 
+                //.read_enable        (read_port_enable),
+                .bit_match          (standalone_match_signal)
+            );
+            
+            /* Merges the bit match output to a bus including the bit matching data of every bit of the row */
+            for(read_port=0; read_port<READ; read_port++) begin
+                assign match_bits[read_port][row][bits] = standalone_match_signal[read_port];
+            end
+            
+        end
+        /* Multiply the match_bits to obtain a row matching result */
+        for(read_port=0; read_port<READ; read_port++) begin: match_word
+            match_tree word_match_tree(
+                .bit_match(match_bits[read_port][row]), 
+                .match_result(match_result[read_port][row])
+            );
+            match_enable_logic match_enabler_gate (
+                .read_enable(read_i[read_port]),
+                .match_input(match_result[read_port][row]),
+                .match_output(match_line[read_port][row])
+            ); 
+        end
+        
+
+        
+    end
+
+endmodule: memory_core_instance    
+
+
+/********************************************************************************************************
+ *  MODULE                                                                                              *
+ *  CLOCK GATE CELL                                                                                     *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module instances the clock gating cell.                                                        *
+ *  The clock gate signal follows the clk when enable is 1. clock gate signal = 1 when otherwise        *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ * clk              Clock signal                                                                        *
+ * enable           Enable for the gate clock to follow the clock signal                                *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * gclk             Clock gate signal. Idle at 1 when enable is not active                              *
+ *                                                                                                      *
+ ********************************************************************************************************/
+module clock_gate_cell (
+        input logic                 clk,
+        input logic                 enable,
+        output logic                gclk
+    ); 
+    `ifdef GATES
+    reg scan_en;
+    
+        HDBSLT20_TIE0_V1_1 TIELO_CKGT(
+            .X(scan_en)
+        );
+    
+        HDBSLT20_CKGTPLT_V8_1 SC_clockgate(
+            .Q(gclk), 
+            .CK(clk), 
+            .EN(enable), 
+            .SE(scan_en)
+        );
+
+    `else
+    reg clk_enable;
+    
+        always_latch begin: gclk_cell
+            if (!clk) begin
+                clk_enable <= (enable);
+            end
+        end
+        always_comb begin: gclk_and
+            gclk = clk_enable & clk;
+        end
+    `endif
+    
+endmodule
+
+
+/********************************************************************************************************
+ *  MODULE                                                                                              *
+ *  INPUT DATA DELAY CELL                                                                               *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module instances the a delay cell on the CAM design.                                           *
+ *  Two FF, one active on negative clock and the other active on positive clock, give a delay of one    *
+ *  clk cycle to write on the clock gated active word.                                                  *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ * clk              Clock signal                                                                        *
+ * data_i           Enable for the gate clock to follow the clock signal                                *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * data_delayed             Clock gate signal. Idle at 1 when enable is not active                      *
+ *                                                                                                      *
+ ********************************************************************************************************/
+module write_data_delay #(
+    `include "vpu_cam_parameters.svh"
+    )
+    (
+        input logic				    clk,
+        input sdata_t [WRITE-1:0]   data_i,
+        output sdata_t [WRITE-1:0]  data_delayed
+    ); 
+    sdata_t [WRITE-1:0]  write_data_middle;
+    
+    always_ff @(negedge clk) begin: delay_ff_neg
+        write_data_middle <= data_i;
+    end
+    
+    always_ff @(posedge clk) begin: delay_ff_pos
+        data_delayed <= write_data_middle;
+    end
+    
+endmodule
+ /*******************************************************************************************************
+ *  MODULE                                                                                              *
+ *  CAM DECODER                                                                                         *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module builds the CAM decoder needed for each WRITE operation                                  *
+ *  When a write operation is requested, the address will be asserted to write only at the correct row  *
+ *                                                                                                      *
+ ********************************************************************************************************
+ *  INPUTS                                                                                              *
+ *  clk_i            Clock signal                                                                       *
+ *  input_address    Input address to write                                                             *
+ *  write_enable     Write enable signal. If signal is not asserted, output is 0                        *
+ *                                                                                                      *
+ ********************************************************************************************************
+ *  OUTPUTS                                                                                             *
+ *  address_enable   Asserts the row that is being selected to do a write operation                     *
+ *                                                                                                      *
+ *******************************************************************************************************/
+module cam_decoder #(
+    `include "vpu_cam_parameters.svh"
+
+    )
+    (
+        input logic				    clk_i,
+        input index_t [WRITE-1:0]   input_address,
+        input logic   [WRITE-1:0]   write_enable, 
+        output depth_t [WRITE-1:0]  address_enable
+    ); 
+
+    index_t [WRITE-1:0]  addr_ff;
+    logic   [WRITE-1:0]  we_ff;
+
+    /* Flip flop declarations to synchronize the inputs */
+    always_ff @(posedge clk_i) begin
+    we_ff <= write_enable;
+    addr_ff <= input_address;
+    end
+
+    /* Decoder instance */
+    always_comb begin: Decoder
+        for (int write_ports = 0; write_ports < WRITE; write_ports++) begin
+            if(we_ff[write_ports] == 1) begin
+                address_enable[write_ports] = unsigned '(1) << addr_ff[write_ports];
+            end else begin
+                address_enable[write_ports] = 0;
+            end
+        end
+    end
+  
+    endmodule: cam_decoder
+
+    
+/********************************************************************************************************
+ *  MODULE                                                                                              *
+ *  MEMORY BLOCK CELL                                                                                   *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module builds the memory cell with a latch component                                           *
+ *  Data will be stored on a latch only when a clock event is active low                                *
+ *  Data will be compared only when read_enable is active                                               *
+ *  If the data stored is the same as the read data, produces a match at the corresponding read port    *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ *  gclk                Gated clock signal                                                              *
+ *  write_bit           Write enable signal. If signal is not asserted, output is 0                     *
+ *  bit_search_line     Bit to be compared with the stored value                                        *
+ *  read_enable         Enables each port to be compared                                                *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * bit_match            Asserted when the search line matches the stored bit for each enabled port      *
+ *                                                                                                      *
+ *******************************************************************************************************/
+module memory_block_cell #(
+    `include "vpu_cam_parameters.svh"
+
+    )
+    (
+        input   logic               gclk,	           
+        input   logic               write_bit,         
+        input   logic [READ-1:0]    bit_search_line,   
+        //input   logic [READ-1:0]    read_enable,
+        output  logic [READ-1:0]    bit_match        
+    ); 
+    /* Genvar iteration variable declaration*/
+    /* Variable to iterate through all the read ports*/
+    genvar read_port;
+    
+    /* Net at the latch output where the memory value is stored*/
+    reg cam_memory;
+    /* Net at the XNOR output where the comparison result is held*/
+    reg [READ-1:0] comparison_result;
+    
+    /* Compiler directive to enable logic gates hardware description*/
+    `ifdef GATES
+        /* Instance the memory block */
+        HDBSLT20_LDPQ_1 cam_latch(
+            .Q(cam_memory), 
+            .G(gclk), 
+            .D(write_bit)
+        );
+        
+        /* Instance the comparison logic */
+        for (read_port = 0; read_port < READ; read_port++) begin
+            /* XNOR comparison */            
+            HDBSLT20_EN2_V2_0P5 XNOR_comparator(
+                .X(bit_match[read_port]), 
+                .A1(bit_search_line[read_port]), 
+                .A2(cam_memory)
+            );
+            
+            /* NAND enabling output */
+                //HDBSLT20_ND2_0P75 match_enable(
+                //.X(bit_match[read_port]), 
+                //.A1(read_enable[read_port]), 
+                //.A2(comparison_result[read_port])
+            //);
+            
+        end
+        
+    `else
+        
+        /* CAM FF declaration */
+        always_latch begin: Memory_latch
+            if (gclk) begin
+                cam_memory <= write_bit;
+            end
+        end
+
+        always_comb begin: latch_data_comparison
+            for (int read_port = 0; read_port<READ; read_port++) begin
+                /* Compare the incoming data from all the read ports with the FF value */
+                bit_match[read_port] = bit_search_line[read_port] ~^ cam_memory; 
+            end
+        end
+    `endif
+endmodule: memory_block_cell
+
+/*******************************************************************************************************
+ *  MODULE                                                                                              *
+ *  MATCH TREE                                                                                         *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module multiplies the input data (word match result) to achieve a bit wide match result        *                                                                                                     
+ *  achieved by a concatenation of NOR + NAND logic gates.                                              *
+ *  This module must end in a NOR stage, otherwise an inverter is used to comply with the outer         *
+ *  data treatment                                                                                      *
+ *  If there are any odd number of wires for any stage, an inverter is used                             *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ *  bit_match   Matching data from the CAM cells                                                        *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * match_result Asserted when all the input bits match                                                  *
+ *                                                                                                      *
+ *******************************************************************************************************/
+module match_tree #(
+    `include "vpu_cam_parameters.svh"
+
+    
+    )
+    (
+        input logic [DATA-1:0] bit_match,      
+        output logic  match_result
+    );
+    
+    /* Compiler directive to enable logic gates hardware description*/
+    `ifdef GATES
+        /* Define every stage with its size*/
+        logic [SIZE_OF_STAGE_1-1:0] first_stage_o;
+        logic [SIZE_OF_STAGE_2-1:0] second_stage_o;
+        logic [SIZE_OF_STAGE_3-1:0] third_stage_o;
+        
+        /* Define iteration variables */
+        genvar nor_nand4, nor_nand_3, nor_nand_2, inv;
+
+        
+        /********************************/
+        /*      FIRST NAND STAGE         */
+        /********************************/
+        if(NUM_OF_NAND4_STAGE_1>0) begin
+            /* First stage, NAND4 gates*/
+            for(nor_nand4 = 0; nor_nand4 < (NUM_OF_NAND4_STAGE_1); nor_nand4++) begin: first_stage_nand4
+                HDBSLT20_ND4_1 NAND4_STAGE_1(
+                    .X(first_stage_o[nor_nand4]), 
+                    .A1(bit_match[nor_nand4*4]), 
+                    .A2(bit_match[nor_nand4*4+1]), 
+                    .A3(bit_match[nor_nand4*4+2]), 
+                    .A4(bit_match[nor_nand4*4+3])
+                );
+            end  
+        end
+       
+        if(NUM_OF_NAND3_STAGE_1>0) begin
+            /* First stage, NAND3 gates*/
+            for(nor_nand_3 = 0; nor_nand_3 < (NUM_OF_NAND3_STAGE_1); nor_nand_3++) begin: first_stage_nand3
+                HDBSLT20_ND3_0P75 NAND3_STAGE_1(
+                    .X(first_stage_o[NUM_OF_NAND4_STAGE_1]), 
+                    .A1(bit_match[NUM_OF_NAND4_STAGE_1*4+nor_nand_3*3]), 
+                    .A2(bit_match[NUM_OF_NAND4_STAGE_1*4+nor_nand_3*3+1]), 
+                    .A3(bit_match[NUM_OF_NAND4_STAGE_1*4+nor_nand_3*3+2]) 
+                );
+            end  
+        end
+        
+        if(NUM_OF_NAND2_STAGE_1>0) begin
+            /* First stage, NAND2 gates */
+            for(nor_nand_2 = 0; nor_nand_2 < (NUM_OF_NAND2_STAGE_1); nor_nand_2++) begin: first_stage_nand2
+                HDBSLT20_ND2_1 NAND2_STAGE_1(
+                    .X(first_stage_o[NUM_OF_NAND4_STAGE_1+NUM_OF_NAND3_STAGE_1+nor_nand_2]), 
+                    .A1(bit_match[NUM_OF_NAND4_STAGE_1*4+NUM_OF_NAND3_STAGE_1*3+nor_nand_2*2]), 
+                    .A2(bit_match[NUM_OF_NAND4_STAGE_1*4+NUM_OF_NAND3_STAGE_1*3+nor_nand_2*2+1])
+                );
+
+            end    
+        end
+
+        if(NUM_OF_INV_STAGE_1>0) begin
+            /* First stage, INV gates */
+            for(inv = 0; inv < (NUM_OF_INV_STAGE_1); inv++) begin: first_stage_inv
+                HDBSLT20_INV_0P75 INV_STAGE_1(
+                    .X(first_stage_o[NUM_OF_NAND4_STAGE_1+NUM_OF_NAND3_STAGE_1+NUM_OF_NAND2_STAGE_1+inv]), 
+                    .A(bit_match[NUM_OF_NAND4_STAGE_1*4+NUM_OF_NAND3_STAGE_1*3+NUM_OF_NAND2_STAGE_1*2+inv])
+                );
+
+            end    
+        end
+        
+        if(SIZE_OF_STAGE_1==1) begin
+            assign match_result = first_stage_o;
+        end
+            
+            
+        /********************************/
+        /*    SECOND NOR STAGE          */
+        /********************************/
+        if(NUM_OF_NOR4_STAGE_2>0) begin
+            /* Second stage, NOR4 gates*/
+            for(nor_nand4 = 0; nor_nand4 < (NUM_OF_NOR4_STAGE_2); nor_nand4++) begin: second_stage_nor4
+                HDBSLT20_NR4_1 NOR4_STAGE_2(
+                    .X(second_stage_o[nor_nand4]), 
+                    .A1(first_stage_o[nor_nand4*4]), 
+                    .A2(first_stage_o[nor_nand4*4+1]), 
+                    .A3(first_stage_o[nor_nand4*4+2]), 
+                    .A4(first_stage_o[nor_nand4*4+3])
+                );
+            end  
+        end
+       
+        if(NUM_OF_NOR3_STAGE_2>0) begin
+            /* Second stage, NOR3 gates*/
+            for(nor_nand_3 = 0; nor_nand_3 < (NUM_OF_NOR3_STAGE_2); nor_nand_3++) begin: second_stage_nor3
+                HDBSLT20_NR3_0P75 NOR3_STAGE_2(
+                    .X(second_stage_o[NUM_OF_NOR4_STAGE_2]), 
+                    .A1(first_stage_o[NUM_OF_NOR4_STAGE_2*4+nor_nand_3*3]), 
+                    .A2(first_stage_o[NUM_OF_NOR4_STAGE_2*4+nor_nand_3*3+1]), 
+                    .A3(first_stage_o[NUM_OF_NOR4_STAGE_2*4+nor_nand_3*3+2]) 
+                );
+            end  
+        end
+        
+        if(NUM_OF_NOR2_STAGE_2>0) begin
+            /* Second stage, NOR2 gates */
+            for(nor_nand_2 = 0; nor_nand_2 < (NUM_OF_NOR2_STAGE_2); nor_nand_2++) begin: second_stage_nor2
+                HDBSLT20_NR2_1 NOR2_STAGE_2(
+                    .X(second_stage_o[NUM_OF_NOR4_STAGE_2+NUM_OF_NOR3_STAGE_2+nor_nand_2]), 
+                    .A1(first_stage_o[NUM_OF_NOR4_STAGE_2*4+NUM_OF_NOR3_STAGE_2*3+nor_nand_2*2]), 
+                    .A2(first_stage_o[NUM_OF_NOR4_STAGE_2*4+NUM_OF_NOR3_STAGE_2*3+nor_nand_2*2+1])
+                );
+
+            end    
+        end
+
+        if(NUM_OF_INV_STAGE_2>0) begin
+            /* Second stage, INV gates */
+            for(inv = 0; inv < (NUM_OF_INV_STAGE_2); inv++) begin: second_stage_inv
+                HDBSLT20_INV_0P75 INV_STAGE_2(
+                    .X(second_stage_o[NUM_OF_NOR4_STAGE_2+NUM_OF_NOR3_STAGE_2+NUM_OF_NOR2_STAGE_2+inv]), 
+                    .A(first_stage_o[NUM_OF_NOR4_STAGE_2*4+NUM_OF_NOR3_STAGE_2*3+NUM_OF_NOR2_STAGE_2*2+inv])
+                );
+
+            end    
+        end
+        
+        /* If the size of the NAND stage is 1, the next stage must be an inverter, therefore it cannot output directly a NAND stage */
+        
+        /********************************/
+        /*     THIRD NAND STAGE          */
+        /********************************/
+        if(NUM_OF_NAND4_STAGE_3>0) begin
+            /* First stage, NAND4 gates*/
+            for(nor_nand4 = 0; nor_nand4 < (NUM_OF_NAND4_STAGE_3); nor_nand4++) begin: third_stage_nand4
+                HDBSLT20_ND4_1 NAND4_STAGE_3(
+                    .X(third_stage_o[nor_nand4]), 
+                    .A1(second_stage_o[nor_nand4*4]), 
+                    .A2(second_stage_o[nor_nand4*4+1]), 
+                    .A3(second_stage_o[nor_nand4*4+2]), 
+                    .A4(second_stage_o[nor_nand4*4+3])
+                );
+            end  
+        end
+       
+        if(NUM_OF_NAND3_STAGE_3>0) begin
+            /* First stage, NAND3 gates*/
+            for(nor_nand_3 = 0; nor_nand_3 < (NUM_OF_NAND3_STAGE_3); nor_nand_3++) begin: third_stage_nand3
+                HDBSLT20_ND3_0P75 NAND3_STAGE_3(
+                    .X(third_stage_o[NUM_OF_NAND4_STAGE_3]), 
+                    .A1(second_stage_o[NUM_OF_NAND4_STAGE_3*4+nor_nand_3*3]), 
+                    .A2(second_stage_o[NUM_OF_NAND4_STAGE_3*4+nor_nand_3*3+1]), 
+                    .A3(second_stage_o[NUM_OF_NAND4_STAGE_3*4+nor_nand_3*3+2])
+                );
+            end  
+        end
+        
+        if(NUM_OF_NAND2_STAGE_3>0) begin
+            /* First stage, NAND2 gates */
+            for(nor_nand_2 = 0; nor_nand_2 < (NUM_OF_NAND2_STAGE_3); nor_nand_2++) begin: third_stage_nand2
+                HDBSLT20_ND2_1 NAND2_STAGE_3(
+                    .X(third_stage_o[NUM_OF_NAND4_STAGE_3+NUM_OF_NAND3_STAGE_3+nor_nand_2]), 
+                    .A1(second_stage_o[NUM_OF_NAND4_STAGE_3*4+NUM_OF_NAND3_STAGE_3*3+nor_nand_2*2]), 
+                    .A2(second_stage_o[NUM_OF_NAND4_STAGE_3*4+NUM_OF_NAND3_STAGE_3*3+nor_nand_2*2+1])
+                );
+
+            end    
+        end
+
+        if(NUM_OF_INV_STAGE_3>0) begin
+            /* Third stage, inverter gates */
+            for(inv = 0; inv < (NUM_OF_INV_STAGE_3); inv++) begin: third_stage_inv
+                HDBSLT20_INV_0P75 INV_STAGE_3(
+                    .X(third_stage_o[NUM_OF_NAND4_STAGE_3+NUM_OF_NAND3_STAGE_3+NUM_OF_NAND2_STAGE_3+inv]), 
+                    .A(second_stage_o[NUM_OF_NAND4_STAGE_3*4+NUM_OF_NAND3_STAGE_3*3+NUM_OF_NAND2_STAGE_3*2+inv])
+                );
+
+            end    
+        end
+        
+        if(SIZE_OF_STAGE_3==1) begin
+            assign match_result = third_stage_o;
+        end
+        
+    `else
+
+        always_comb begin: match_tree
+            /* The output is equivalent to the AND operation for every bit on the bus */
+            match_result = &bit_match;
+        end
+
+    `endif    
+endmodule : match_tree
+
+
+/*******************************************************************************************************
+ *  MODULE                                                                                              *
+ *  MATCH_ENABLE                                                                                        *
+ ********************************************************************************************************
+ *  Description                                                                                         *
+ *  This module builds the CAM description to be optimized                                              *
+ *  A CAM cell is instaciated for each bit defined in DATA, by DEPTH rows each WRITE port.              *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * INPUTS                                                                                               *
+ * read_enable   Signal that enables the read of the port (read_i)                                      *
+ * match_input   Result of the comparison and match tree                                                *                                           *
+ *                                                                                                      *
+ ********************************************************************************************************
+ * OUTPUTS                                                                                              *
+ * match_output If the signal read_enable is asserted, output the match_input result. Otherwise, "0"    *
+ *                                                                                                      *
+ *******************************************************************************************************/
+module match_enable_logic  #(
+    `include "vpu_cam_parameters.svh"
+
+    
+    )
+    (
+        input   logic read_enable,
+        input   logic match_input,
+        output  logic match_output
+    ); 
+    `ifdef GATES
+        
+        HDBSLT20_NR2B_1 match_enable_gate (
+            .X(match_output),
+            .A(read_enable),
+            .B(match_input)
+        );
+
+    `else
+    always_comb begin
+        if (read_enable) begin
+            match_output <= match_input;
+        end else begin
+            match_output <= 0;
+        end
+    end
+    `endif
+    
+endmodule: match_enable_logic
+/*@EOF*/

@@ -1,0 +1,28 @@
+****************************************
+Report : qor
+        -summary
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Sat Jul 15 10:24:19 2023
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+SS_maxRC           (Setup)             0.01           0.00              0
+TT_nominal         (Setup)             0.23           0.00              0
+Design             (Setup)             0.01           0.00              0
+
+SS_maxRC           (Hold)              0.02           0.00              0
+TT_nominal         (Hold)              0.02           0.00              0
+Design             (Hold)              0.02           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           4788.54
+Cell Area (netlist and physical only):         5462.21
+Nets with DRC Violations:        0
+1

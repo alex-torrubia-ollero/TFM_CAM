@@ -1,0 +1,4 @@
+Warning: Nothing implicitly matched 'typ' (SEL-003)
+Error: Nothing matched for -scenarios (SEL-005)
+Warning: No valid active scenarios found in the user specified mode/corner/scenario list in design 'vlsu_cam_top' hence power analysis is disabled. (POW-008)
+0

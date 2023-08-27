@@ -1,0 +1,1067 @@
+****************************************
+Report : design
+        -library
+        -netlist
+        -floorplan
+        -routing
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Sun Jul 16 21:33:46 2023
+****************************************
+--------------------------------------------------------------------------------
+                              LIBRARY INFORMATION
+--------------------------------------------------------------------------------
+
+Search path : /users/atorrubia/WORK/cam-stdcell-design/0_designEnvironment/0_synth+PnR_original/5_Results/1_Synth_results/all_gates/ /technos/GF22FDX/standardCells/GF22FDX_SC9T_116CPP/globalfoundaries22nhsda/20hd/hdl/ulvt/6.01a/liberty/ccs_lvf/
+
+Units : 
+    time                : 1.00ns
+    resistance          : 1.00kOhm
+    capacitance         : 1.00pF
+    voltage             : 1.00V
+    current             : 1.00mA
+    power               : 1.00nW
+
+Tech file : /technos/GF22FDX/PDK_V1.0_4.1/PlaceRoute/ICC2/Techfiles/10M_2Mx_6Cx_2Ix_LB/22FDSOI_10M_2Mx_6Cx_2Ix_LB_116cpp_9t_mw.tf
+
+Total number of standard cells 	= 1348
+
+Total number of dont_use lib cells 	= 199
+Total number of dont_touch lib cells 	= 11
+
+Total number of buffers 	= 96
+Total number of inverters 	= 40
+Total number of flip-flops 	= 351
+Total number of latches 	= 22
+Total number of ICGs 		= 48
+
+
+Library : gf22nsdvlogl20hdl116a_TT_0P90V_0P00V_0P00V_0P00V_85C
+  File path : /users/atorrubia/WORK/cam-stdcell-design/0_designEnvironment/0_synth+PnR_original/0_environment/CLIBs/gf22nsdvlogl20hdl116a_5C.ndm
+  Source .db libs :
+    gf22nsdvlogl20hdl116a_TT_0P90V_0P00V_0P00V_0P00V_85C : /technos/GF22FDX/standardCells/GF22FDX_SC9T_116CPP/globalfoundaries22nhsda/20hd/hdl/ulvt/6.01a/liberty/ccs_lvf/gf22nsdvlogl20hdl116a_TT_0P90V_0P00V_0P00V_0P00V_85C.db
+    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C : /technos/GF22FDX/standardCells/GF22FDX_SC9T_116CPP/globalfoundaries22nhsda/20hd/hdl/ulvt/6.01a/liberty/ccs_lvf/gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C.db
+
+--------------------------------------------------------------------------------
+                              NETLIST INFORMATION
+--------------------------------------------------------------------------------
+
+CELL INSTANCE INFORMATION
+-----------------------------------------------------------------------------
+Cell Instance Type          Count % of         Area  % of siteAreaPerSite
+                                  total             total
+-----------------------------------------------------------------------------
+TOTAL LEAF CELLS            18793  100     7983.677   100 unit:95590  
+
+  Standard cells            11158   59     6287.302    78 unit:75279  
+  Filler cells               5730   30     1315.941    16 unit:15756  
+  Diode cells                   0    0        0.000     0 
+  Hard macro cells              0    0        0.000     0 
+  Soft macro cells              0    0        0.000     0 
+    Black box cells             0    0        0.000     0 
+  Analog block cells            0    0        0.000     0 
+  Pad cells                     0    0        0.000     0 
+    Flip-chip pad cells         0    0        0.000     0 
+  Cover cells                   0    0        0.000     0 
+  Flip-chip driver cells        0    0        0.000     0 
+  Corner pad cells              0    0        0.000     0 
+  Pad spacer cells              0    0        0.000     0 
+  Others                     1905   10      380.434     4 unit:4555  
+
+Special cells                   0    0        0.000     0 
+  Level shifter                 0    0        0.000     0 
+  Isolation                     0    0        0.000     0 
+  Switch                        0    0        0.000     0 
+  Always on                     0    0        0.000     0 
+  Retention                     0    0        0.000     0 
+  Tie off                       0    0        0.000     0 
+
+LVT                             0    0        0.000     0 
+HVT                             0    0        0.000     0 
+Normal VT                       0    0        0.000     0 
+Others                      18793  100     7983.677   100 unit:95590  
+
+Netlist cells               11158   59     6287.302    78 unit:75279  
+Physical only                7635   40     1696.375    21 unit:20311  
+
+Fixed cells                  1905   10      380.434     4 unit:4555  
+Moveable cells              16888   89     7603.243    95 unit:91035  
+
+Combinational               17175   91     5953.640    74 unit:71284  
+Sequential                   1618    8     2030.037    25 unit:24306  
+Others                          0    0        0.000     0 
+
+Buffer                        332    1      144.907     1 unit:1735  
+Inverter                     1853    9      398.223     4 unit:4768  
+Buffer/inverter              2185   11      543.131     6 unit:6503  
+
+Spare cells                     0    0        0.000     0 
+ICG cells                       0    0        0.000     0 
+Flip-flop cells              1618    8     2030.037    25 unit:24306  
+Latch cells                     0    0        0.000     0 
+Antenna cells                   0    0        0.000     0 
+
+Mux logic                       0    0        0.000     0 
+Double height                   0    0        0.000     0 
+Triple height                   0    0        0.000     0 
+More than triple height         0    0        0.000     0 
+
+Logic Hierarchies          1
+
+REFERENCE DESIGN INFORMATION
+----------------------------------------------------------------------------------------------
+Number of reference designs used:206  
+----------------------------------------------------------------------------------------------
+Name           Type          Count     Width    Height        Area   PinDens SiteName siteArea
+----------------------------------------------------------------------------------------------
+HDBSLT20_AOI22_0P5
+               lib_cell       1981      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_FILL1 filler         1832      0.12      0.72       0.084    47.893 unit            1
+HDBSLT20_FDPQ_V2_1
+               lib_cell       1600      1.74      0.72       1.253     5.587 unit           15
+HDBSLT20_INV_0P75
+               lib_cell       1490      0.23      0.72       0.167    35.920 unit            2
+HDBSLT20_FILL2 filler         1444      0.23      0.72       0.167    23.946 unit            2
+HDBSLT20_FILL3 filler          991      0.35      0.72       0.251    15.964 unit            3
+HDBSLT20_AOI221_0P5
+               lib_cell        969      0.70      0.72       0.501    19.955 unit            6
+HDBSLT20_AOI2222_V2_0P5
+               lib_cell        939      1.16      0.72       0.835    15.565 unit           10
+HDBSLT20_CAPB1 end_cap         772      0.12      0.72       0.084    35.920 unit            1
+HDBSLT20_CAPT1 end_cap         772      0.12      0.72       0.084    23.946 unit            1
+HDBSLT20_OAI22_0P5
+               lib_cell        696      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_FILL5 filler          607      0.58      0.72       0.418     9.579 unit            5
+HDBSLT20_OAI221_0P5
+               lib_cell        583      0.70      0.72       0.501    19.955 unit            6
+HDBSLT20_FILL4 filler          563      0.46      0.72       0.334    11.973 unit            4
+HDBSLT20_OAI22_MM_0P5
+               lib_cell        361      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_OA2BB2_0P5
+               lib_cell        310      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_ND4_0P5
+               lib_cell        297      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_FILL8 filler          263      0.93      0.72       0.668     5.987 unit            8
+HDBSLT20_NR4_0P5
+               lib_cell        181      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_CAPL9_1
+               end_cap         119      1.04      0.72       0.752     5.321 unit            9
+HDBSLT20_CAPR9_1
+               end_cap         119      1.04      0.72       0.752     5.321 unit            9
+HDBSLT20_TAPSS well_tap        119      0.81      0.72       0.585     6.842 unit            7
+HDBSLT20_ND4_MMF_0P5
+               lib_cell        112      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_BUF_S_1P5
+               lib_cell         95      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_ND4_MM_0P5
+               lib_cell         70      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_BUF_S_1
+               lib_cell         68      0.58      0.72       0.418    14.368 unit            5
+HDBSLT20_NR4_2 lib_cell         63      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_INV_2 lib_cell         62      0.35      0.72       0.251    23.946 unit            3
+HDBSLT20_INV_1P5
+               lib_cell         56      0.35      0.72       0.251    23.946 unit            3
+HDBSLT20_BUF_S_0P5
+               lib_cell         54      0.58      0.72       0.418    14.368 unit            5
+HDBSLT20_ND2_MM_0P5
+               lib_cell         52      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_NR2_MM_0P5
+               lib_cell         46      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_OAI221_1
+               lib_cell         43      0.70      0.72       0.501    19.955 unit            6
+HDBSLT20_OR4_1 lib_cell         42      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_INV_3 lib_cell         37      0.46      0.72       0.334    17.960 unit            4
+HDBSLT20_INV_S_4
+               lib_cell         31      0.81      0.72       0.585    10.263 unit            7
+HDBSLT20_OR4B_1
+               lib_cell         30      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_ND2_MM_2
+               lib_cell         30      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_INV_S_2P5
+               lib_cell         27      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_OR2_1P5
+               lib_cell         27      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_INV_S_5
+               lib_cell         27      0.93      0.72       0.668     8.980 unit            8
+HDBSLT20_ND4_MM_1
+               lib_cell         27      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_INV_1 lib_cell         26      0.23      0.72       0.167    35.920 unit            2
+HDBSLT20_BUF_0P5
+               lib_cell         24      0.35      0.72       0.251    23.946 unit            3
+HDBSLT20_ND4_0P75
+               lib_cell         23      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_BUF_S_1P25
+               lib_cell         23      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_FILL16
+               filler           22      1.86      0.72       1.336     2.993 unit           16
+HDBSLT20_INV_6 lib_cell         22      0.81      0.72       0.585    10.263 unit            7
+HDBSLT20_AOI22_MMF_0P5
+               lib_cell         21      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_INV_S_3
+               lib_cell         20      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_BUF_L_1
+               lib_cell         20      0.46      0.72       0.334    17.960 unit            4
+HDBSLT20_INV_5 lib_cell         19      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_NR4_3 lib_cell         18      1.51      0.72       1.086     8.289 unit           13
+HDBSLT20_FDPRBQ_V2_1
+               lib_cell         18      1.97      0.72       1.420     5.634 unit           17
+HDBSLT20_AOI2222_V2_1
+               lib_cell         16      1.16      0.72       0.835    15.565 unit           10
+HDBSLT20_ND2_1P5
+               lib_cell         16      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_AOI21_0P5
+               lib_cell         16      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_ND2_0P75
+               lib_cell         15      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_OAI21_0P5
+               lib_cell         14      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_OAOI211_0P5
+               lib_cell         14      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_BUF_S_2
+               lib_cell         14      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_INV_4 lib_cell         13      0.58      0.72       0.418    14.368 unit            5
+HDBSLT20_NR3_0P75
+               lib_cell         12      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_ND2_MM_3
+               lib_cell         12      0.81      0.72       0.585    11.973 unit            7
+HDBSLT20_NR2B_0P5
+               lib_cell         12      0.46      0.72       0.334    20.953 unit            4
+HDBSLT20_ND2_MM_1
+               lib_cell         11      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_ND2_MMF_0P5
+               lib_cell         10      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_BUF_1 lib_cell         10      0.35      0.72       0.251    23.946 unit            3
+HDBSLT20_INV_S_6
+               lib_cell          9      1.04      0.72       0.752     7.982 unit            9
+HDBSLT20_AN2_1 lib_cell          9      0.46      0.72       0.334    20.953 unit            4
+HDBSLT20_INV_S_2
+               lib_cell          8      0.58      0.72       0.418    14.368 unit            5
+HDBSLT20_ND4_MMF_1
+               lib_cell          8      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_AN2_MM_1
+               lib_cell          8      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_BUF_4 lib_cell          7      0.81      0.72       0.585    10.263 unit            7
+HDBSLT20_ND3_0P75
+               lib_cell          7      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_EN2_V2_0P5
+               lib_cell          7      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_BUF_D_4
+               lib_cell          7      0.70      0.72       0.501    11.973 unit            6
+HDBSLT20_AOI222_0P5
+               lib_cell          7      0.93      0.72       0.668    16.463 unit            8
+HDBSLT20_OR4B_2
+               lib_cell          6      0.93      0.72       0.668    13.470 unit            8
+HDBSLT20_AOAI211_2
+               lib_cell          6      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_FILL32
+               filler            6      3.71      0.72       2.673     1.497 unit           32
+HDBSLT20_ND2_MM_0P75
+               lib_cell          6      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_ND3_2 lib_cell          6      0.81      0.72       0.585    13.684 unit            7
+HDBSLT20_OAI211_0P5
+               lib_cell          6      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_ND4_2 lib_cell          6      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_AO2222_0P5
+               lib_cell          5      1.39      0.72       1.002    12.971 unit           12
+HDBSLT20_AOI2222_0P5
+               lib_cell          5      1.62      0.72       1.169    11.118 unit           14
+HDBSLT20_OAI211_0P75
+               lib_cell          5      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_NR2_MM_0P75
+               lib_cell          4      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_ND4_1P5
+               lib_cell          4      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_ND2B_0P5
+               lib_cell          4      0.46      0.72       0.334    20.953 unit            4
+HDBSLT20_ND2_2 lib_cell          4      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_AO222_1
+               lib_cell          4      1.04      0.72       0.752    14.634 unit            9
+HDBSLT20_AN3B_0P5
+               lib_cell          4      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_AOI2222_1
+               lib_cell          4      1.62      0.72       1.169    11.118 unit           14
+HDBSLT20_ND4_MM_1P5
+               lib_cell          4      1.16      0.72       0.835    10.776 unit           10
+HDBSLT20_OR2_2P5
+               lib_cell          4      0.93      0.72       0.668    10.477 unit            8
+HDBSLT20_BUF_M_3
+               lib_cell          4      0.58      0.72       0.418    14.368 unit            5
+HDBSLT20_AOAI211_0P5
+               lib_cell          4      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_AOI211_0P5
+               lib_cell          4      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_NR2B_2
+               lib_cell          3      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_AOAI211_0P75
+               lib_cell          3      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_AOI22_MM_0P5
+               lib_cell          3      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_AOI31_0P5
+               lib_cell          3      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_NR2_2 lib_cell          3      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_OAOI211_1
+               lib_cell          3      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_ADDF_V1_2
+               lib_cell          3      1.97      0.72       1.420     6.339 unit           17
+HDBSLT20_NR4_1 lib_cell          3      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_AN2_MM_1P5
+               lib_cell          3      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_OAI21B_0P5
+               lib_cell          3      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_ND2_3 lib_cell          3      0.81      0.72       0.585    11.973 unit            7
+HDBSLT20_NR2_MM_1P5
+               lib_cell          3      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_ADDF_V1_1
+               lib_cell          3      1.86      0.72       1.336     6.735 unit           16
+HDBSLT20_AN4_0P5
+               lib_cell          3      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_OAI311_2
+               lib_cell          2      1.28      0.72       0.919    10.885 unit           11
+HDBSLT20_OA21B_0P5
+               lib_cell          2      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_NR2_1P5
+               lib_cell          2      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_OAI21_MM_2
+               lib_cell          2      0.81      0.72       0.585    13.684 unit            7
+HDBSLT20_ND4B_1
+               lib_cell          2      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_ND2_MMF_0P75
+               lib_cell          2      0.58      0.72       0.418    16.762 unit            5
+HDBSLT20_AN3B_2
+               lib_cell          2      0.81      0.72       0.585    13.684 unit            7
+HDBSLT20_OAI22_1
+               lib_cell          2      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_AO21B_0P5
+               lib_cell          2      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_AO2BB2_0P5
+               lib_cell          2      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_ND3_MM_2
+               lib_cell          2      1.04      0.72       0.752    10.643 unit            9
+HDBSLT20_ND3B_0P5
+               lib_cell          2      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_AOAI211_1
+               lib_cell          2      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_OAI21_MMF_0P5
+               lib_cell          2      0.70      0.72       0.501    15.964 unit            6
+HDBSLT20_AOAOI2111_0P75
+               lib_cell          2      0.70      0.72       0.501    19.955 unit            6
+HDBSLT20_OR3_3 lib_cell          2      1.16      0.72       0.835     9.579 unit           10
+HDBSLT20_ND2_MM_4
+               lib_cell          2      1.04      0.72       0.752     9.312 unit            9
+HDBSLT20_AOI22_0P75
+               lib_cell          2      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_ND3B_1
+               lib_cell          2      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_AOI21_0P75
+               lib_cell          2      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_OAOI211_V2_2
+               lib_cell          2      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_MAJ3_2
+               lib_cell          2      0.93      0.72       0.668    11.973 unit            8
+HDBSLT20_INV_9 lib_cell          2      1.16      0.72       0.835     7.184 unit           10
+HDBSLT20_AOI221_2
+               lib_cell          2      1.28      0.72       0.919    10.885 unit           11
+HDBSLT20_ND2_1 lib_cell          2      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_NR4_0P75
+               lib_cell          2      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_FILL64
+               filler            2      7.42      0.72       5.345     0.748 unit           64
+HDBSLT20_ND3_MMF_0P5
+               lib_cell          2      0.70      0.72       0.501    15.964 unit            6
+HDBSLT20_BUF_2 lib_cell          2      0.46      0.72       0.334    17.960 unit            4
+HDBSLT20_NR2_1 lib_cell          1      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_AOI32_2
+               lib_cell          1      1.28      0.72       0.919    10.885 unit           11
+HDBSLT20_EO2_V2_2
+               lib_cell          1      1.04      0.72       0.752     9.312 unit            9
+HDBSLT20_ND3_1 lib_cell          1      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_ND4B_4
+               lib_cell          1      2.20      0.72       1.587     5.672 unit           19
+HDBSLT20_OAI21B_1
+               lib_cell          1      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_AOA211_2
+               lib_cell          1      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_NR4B_1
+               lib_cell          1      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_CAPTOUCL9_1
+               end_cap           1      1.04      0.72       0.752     2.661 unit            9
+HDBSLT20_AO2222_1
+               lib_cell          1      1.39      0.72       1.002    12.971 unit           12
+HDBSLT20_AOI221_1
+               lib_cell          1      0.81      0.72       0.585    17.105 unit            7
+HDBSLT20_OR3_1P5
+               lib_cell          1      0.70      0.72       0.501    15.964 unit            6
+HDBSLT20_AOI22_MM_1
+               lib_cell          1      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_NR2_MM_3
+               lib_cell          1      0.81      0.72       0.585    11.973 unit            7
+HDBSLT20_OAI211_1P5
+               lib_cell          1      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_ND3_MM_1
+               lib_cell          1      0.70      0.72       0.501    15.964 unit            6
+HDBSLT20_ND3_3 lib_cell          1      1.16      0.72       0.835     9.579 unit           10
+HDBSLT20_AOI2222_2
+               lib_cell          1      1.74      0.72       1.253    10.377 unit           15
+HDBSLT20_ND2B_3
+               lib_cell          1      1.04      0.72       0.752     9.312 unit            9
+HDBSLT20_OR4_2 lib_cell          1      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_OAI22_MM_1
+               lib_cell          1      0.58      0.72       0.418    21.552 unit            5
+HDBSLT20_OAI22_2
+               lib_cell          1      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_OR4_4 lib_cell          1      1.51      0.72       1.086     8.289 unit           13
+HDBSLT20_INV_S_9
+               lib_cell          1      1.39      0.72       1.002     5.987 unit           12
+HDBSLT20_AOI21_MM_2
+               lib_cell          1      0.93      0.72       0.668    11.973 unit            8
+HDBSLT20_OR2_3 lib_cell          1      0.93      0.72       0.668    10.477 unit            8
+HDBSLT20_ND2B_MM_2
+               lib_cell          1      0.81      0.72       0.585    11.973 unit            7
+HDBSLT20_AO2BB2_1
+               lib_cell          1      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_NR2_MM_1
+               lib_cell          1      0.35      0.72       0.251    27.937 unit            3
+HDBSLT20_BUF_3P5
+               lib_cell          1      0.81      0.72       0.585    10.263 unit            7
+HDBSLT20_NR2B_1
+               lib_cell          1      0.46      0.72       0.334    20.953 unit            4
+HDBSLT20_OAI21_MM_0P5
+               lib_cell          1      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_NR2B_1P5
+               lib_cell          1      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_ADDAB_1
+               lib_cell          1      1.39      0.72       1.002     7.982 unit           12
+HDBSLT20_BUF_8 lib_cell          1      1.51      0.72       1.086     5.526 unit           13
+HDBSLT20_BUF_S_2P5
+               lib_cell          1      0.93      0.72       0.668     8.980 unit            8
+HDBSLT20_CAPBOUCL9_1
+               end_cap           1      1.04      0.72       0.752     5.321 unit            9
+HDBSLT20_INV_8 lib_cell          1      1.04      0.72       0.752     7.982 unit            9
+HDBSLT20_INV_S_10
+               lib_cell          1      1.51      0.72       1.086     5.526 unit           13
+HDBSLT20_INV_10
+               lib_cell          1      1.28      0.72       0.919     6.531 unit           11
+HDBSLT20_CAPBOUCR9_1
+               end_cap           1      1.04      0.72       0.752     5.321 unit            9
+HDBSLT20_ND2B_2
+               lib_cell          1      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_CAPTOUCR9_1
+               end_cap           1      1.04      0.72       0.752     2.661 unit            9
+HDBSLT20_AOI222_1
+               lib_cell          1      0.93      0.72       0.668    16.463 unit            8
+HDBSLT20_MAJI3B_4
+               lib_cell          1      2.67      0.72       1.921     4.165 unit           23
+HDBSLT20_AOI21_3
+               lib_cell          1      1.16      0.72       0.835     9.579 unit           10
+HDBSLT20_OAOI211_2
+               lib_cell          1      1.04      0.72       0.752    11.973 unit            9
+HDBSLT20_NR2_4 lib_cell          1      1.04      0.72       0.752     9.312 unit            9
+HDBSLT20_AO2BB2_0P75
+               lib_cell          1      0.70      0.72       0.501    17.960 unit            6
+HDBSLT20_OA21B_1
+               lib_cell          1      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_OAI21_0P75
+               lib_cell          1      0.46      0.72       0.334    23.946 unit            4
+HDBSLT20_EO2_V2_0P5
+               lib_cell          1      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_OR3B_0P5
+               lib_cell          1      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_NR2_3 lib_cell          1      0.81      0.72       0.585    11.973 unit            7
+HDBSLT20_OA32_1
+               lib_cell          1      0.81      0.72       0.585    17.105 unit            7
+HDBSLT20_OAI2111_1
+               lib_cell          1      0.70      0.72       0.501    19.955 unit            6
+HDBSLT20_AO22_1
+               lib_cell          1      0.81      0.72       0.585    15.394 unit            7
+HDBSLT20_OA21_1
+               lib_cell          1      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_ND2B_V1_2
+               lib_cell          1      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_ND4_MM_2
+               lib_cell          1      1.16      0.72       0.835    10.776 unit           10
+HDBSLT20_EN2_V2_1
+               lib_cell          1      0.70      0.72       0.501    13.969 unit            6
+HDBSLT20_OR3_1 lib_cell          1      0.58      0.72       0.418    19.157 unit            5
+HDBSLT20_BUF_1P5
+               lib_cell          1      0.46      0.72       0.334    17.960 unit            4
+
+NET INFORMATION
+------------------------------------------------------------------
+NetType                 Count FloatingNets         Vias Nets/Cells
+------------------------------------------------------------------
+Total                   11480            0       177598      0.611
+Signal                  11224            0       165091      0.597
+Power                       1            0         2992      0.000
+Ground                      1            0         2992      0.000
+Analog Signal               0            0            0      0.000
+Analog Ground               0            0            0      0.000
+Analog Power                0            0            0      0.000
+Clock                     254            0         6523      0.014
+Tie Low                     0            0            0      0.000
+Tie High                    0            0            0      0.000
+Others                      0            0            0      0.000
+
+NET FANOUT AND PIN COUNT INFORMATION
+---------------------------------------------------
+Fanout        Netcount     netPinCount     NetCount
+---------------------------------------------------
+<2                7092     <2                     0
+2                  909     2                   7092
+3                  663     3                    909
+4                  360     4                    663
+5                  567     5                    360
+6-10              1356     6-10                1880
+11-20               72     11-20                107
+21-30              159     21-30                157
+31-50              300     31-50                310
+51-100               0     51-100                 0
+101-500              0     101-500                0
+501-1000             0     501-1000               0
+>1000                2     >1000                  2
+
+PORT AND PIN INFORMATION
+------------------------------------------------------------------------------
+Type         Total     Input    Output     Inout      3-st     Power    Ground
+------------------------------------------------------------------------------
+Total       123651    112486     11165         0         0     18019     18021
+Macro            0         0         0         0         0         0         0
+Ports          333       315        18         0         0         1         1
+------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                              FLOORPLAN INFORMATION
+--------------------------------------------------------------------------------
+
+CORE AND CHIP AREA INFORMATION
+---------------------------
+Core Area is :     7983.677
+Chip Area is :     7983.677
+---------------------------
+
+SITE ROW INFORMATION
+-----------------------------------------------------------------------
+Site Name    Width    Height   Total Rows     Total Tiles          Area
+-----------------------------------------------------------------------
+unit          0.12      0.72          121           95590      7983.677
+-----------------------------------------------------------------------
+
+BLOCKAGE INFORMATION
+------------------------------------------------
+Blockage Type                Count          Area
+------------------------------------------------
+Hard placement                   0         0.000
+Soft placement                   0         0.000
+Hard macro                       0         0.000
+Partial placement                0         0.000
+Register                         0         0.000
+Placement allow Buffer Only      0         0.000
+Placement allow RP Group Only
+                                 0         0.000
+RP Group                         0         0.000
+Category                         0         0.000
+Routing                          0         0.000
+Routing for Top                  0         0.000
+Routing For Design Rule          0         0.000
+Shaping                          0         0.000
+------------------------------------------------
+
+POWER DOMAIN INFORMATION
+--------------------------------------------------------------------
+Power Domain Name    VA Name         Primary Power Net Primary Ground Net
+--------------------------------------------------------------------
+DEFAULT_POWER_DOMAIN DEFAULT_VA      VDD               VSS
+--------------------------------------------------------------------
+
+VOLTAGE AREA INFORMATION
+-------------------------------------------------------------------------------------
+VA Name          Number             Area       Target    bbox    bbox    bbox    bbox
+              of shapes                   Utilization     llx     lly     urx     ury
+-------------------------------------------------------------------------------------
+DEFAULT_VA            1         7983.677         1.00    0.00    0.00   91.64   87.12
+-------------------------------------------------------------------------------------
+
+GROUP BOUND INFORMATION
+----------------------------------------
+No Group Bound exists
+
+EXCLUSIVE MOVEBOUND INFORMATION
+----------------------------------------
+No Exclusive MoveBound exists.
+
+HARD AND SOFT MOVEBOUND INFORMATION
+----------------------------------------
+No Hard Or Soft MoveBound exists.
+
+ROUTE GUIDE INFORMATION
+------------------------------------------------
+Route Guide Type             Count          Area
+------------------------------------------------
+Extra Detour Region              0         0.000
+Over icovl CellLayers            0         0.000
+River Routing                    0         0.000
+Area Double Via                  0         0.000
+Access Preference                0         0.000
+Default                          0         0.000
+Switched Direction Only          0         0.000
+Max Patterns                     0         0.000
+Others                           0         0.000
+------------------------------------------------
+
+MULTIBIT REGISTER INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+MULTIBIT LS/ISO CELLS INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+RP GROUP INFORMATION
+----------------------------------------
+No RP Group exists
+
+LAYER INFORMATION
+--------------------------------------------------------------------------
+Layer Name Direction Ignored Pitch  default minWidth minSpacing    sameNet
+                                      Width                     MinSpacing
+--------------------------------------------------------------------------
+M1         Hor       YES      0.12     0.04     0.04       0.04       0.00
+M2         Hor       NO       0.08     0.04     0.04       0.04       0.00
+C1         Ver       NO       0.09     0.04     0.04       0.05       0.00
+C2         Hor       NO       0.09     0.04     0.04       0.05       0.00
+C3         Ver       NO       0.09     0.04     0.04       0.05       0.00
+C4         Hor       NO       0.09     0.04     0.04       0.05       0.00
+C5         Ver       NO       0.09     0.04     0.04       0.05       0.00
+C6         Hor       NO       0.09     0.04     0.04       0.05       0.00
+IA         Ver       NO       0.72     0.36     0.36       0.36       0.00
+IB         Hor       YES      0.72     0.36     0.36       0.36       0.00
+LB         Ver       YES      3.60     1.80     1.80       1.80       0.00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+                              ROUTING INFORMATION
+--------------------------------------------------------------------------------
+
+Total wire length = 165029.86 micron
+Total number of wires = 236771
+Total number of contacts = 177598
+
+FINAL WIRING STATISTICS
+
+Signal Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+PC                      0        0.00%         0.00             0.00%
+M1                  32686       14.35%      2206.99             1.37%
+M2                  55287       24.26%     10750.02             6.68%
+C1                  69365       30.44%     24656.54            15.33%
+C2                  42032       18.45%     39528.74            24.57%
+C3                  18496        8.12%     34588.70            21.50%
+C4                   6578        2.89%     23675.41            14.72%
+C5                   2624        1.15%     16089.24            10.00%
+C6                    786        0.34%      9365.46             5.82%
+IA                      0        0.00%         0.00             0.00%
+IB                      0        0.00%         0.00             0.00%
+LB                      0        0.00%         0.00             0.00%
+
+Clock Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+PC                      0        0.00%         0.00             0.00%
+M1                   1808       20.28%       131.15             3.15%
+M2                   2347       26.32%       401.66             9.63%
+C1                   2986       33.49%      1574.89            37.78%
+C2                   1491       16.72%      1461.50            35.06%
+C3                    242        2.71%       486.45            11.67%
+C4                     32        0.36%        43.82             1.05%
+C5                     11        0.12%        69.30             1.66%
+C6                      0        0.00%         0.00             0.00%
+IA                      0        0.00%         0.00             0.00%
+IB                      0        0.00%         0.00             0.00%
+LB                      0        0.00%         0.00             0.00%
+
+P/G Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+PC                      0        0.00%         0.00             0.00%
+M1                    122        5.79%     11424.08            74.78%
+M2                      0        0.00%         0.00             0.00%
+C1                    976       46.34%       478.24             3.13%
+C2                      0        0.00%         0.00             0.00%
+C3                    976       46.34%       450.91             2.95%
+C4                      0        0.00%         0.00             0.00%
+C5                     16        0.76%      1425.92             9.33%
+C6                     16        0.76%      1498.24             9.81%
+IA                      0        0.00%         0.00             0.00%
+IB                      0        0.00%         0.00             0.00%
+LB                      0        0.00%         0.00             0.00%
+
+Shape Pattern Wiring Statistics
+
+Metal layer     Num shapePatterns
+                           % of total#  Wire length % of total length
+PC                      0        0.00%         0.00             0.00%
+M1                      0        0.00%         0.00             0.00%
+M2                      0        0.00%         0.00             0.00%
+C1                      0        0.00%         0.00             0.00%
+C2                      0        0.00%         0.00             0.00%
+C3                      0        0.00%         0.00             0.00%
+C4                      0        0.00%         0.00             0.00%
+C5                      0        0.00%         0.00             0.00%
+C6                      0        0.00%         0.00             0.00%
+IA                      0        0.00%         0.00             0.00%
+IB                      0        0.00%         0.00             0.00%
+LB                      0        0.00%         0.00             0.00%
+
+All the PG shape patterns stand for 0 shapes.
+
+Horizontal/Vertical Wire Distribution
+
+Metal layer  Hor. length  % of hor.    Ver. length  % of ver.
+PC                   0.00        0.00%         0.00        0.00%
+M1                 362.57        0.43%      1844.42        2.41%
+M2               10587.90       12.57%       162.12        0.21%
+C1                 964.97        1.15%     23691.57       30.91%
+C2               39138.28       46.47%       390.45        0.51%
+C3                 138.75        0.16%     34449.95       44.95%
+C4               23649.43       28.08%        25.98        0.03%
+C5                  13.50        0.02%     16075.74       20.97%
+C6                9362.22       11.12%         3.24        0.00%
+IA                   0.00        0.00%         0.00        0.00%
+IB                   0.00        0.00%         0.00        0.00%
+LB                   0.00        0.00%         0.00        0.00%
+
+FINAL VIA STATISTICS
+
+Via layer    Via def name                Count        % of layer vias
+V1           VIA01_10_20_0_30_HH_V1              2380        5.29%
+V1           VIA01                              23224       51.65%
+V1           VIA01_10_20_0_30_VV_V1               114        0.25%
+V1           VIA01_0_30_20_20_VX_V1               394        0.88%
+V1           VIA01_10_20_0_30_VH_V1              4854       10.79%
+V1           VIA01_0_30_0_30_HH_V1               7262       16.15%
+V1           VIA01_7_25_0_30_HV_V1(rot)          1520        3.38%
+V1           VIA01_0_30_7_25_VH_V1                 78        0.17%
+V1           VIA01_10_20_0_30_HV_V1(rot)         1216        2.70%
+V1           VIA01_0_30_0_30_VV_V1                581        1.29%
+V1           VIA01_0_30_30_30_VX_V1                29        0.06%
+V1           VIA01_10_20_0_30_VV_V1(rot)          295        0.66%
+V1           VIA01_0_30_10_25_VH_V1               215        0.48%
+V1           VIA01_7_25_20_20_VX_V1(rot)           13        0.03%
+V1           VIA01_0_30_20_20_VX_V1(rot)          180        0.40%
+V1           VIA01_10_20_20_20_VX_V1(rot)
+                                                  113        0.25%
+V1           VIA01_10_20_10_25_VH_V1               96        0.21%
+V1           VIA01_7_25_0_30_VV_V1(rot)           215        0.48%
+V1           VIA01_5_30_0_30_VH_V1                 71        0.16%
+V1           VIA01_10_20_5_30_VH_V1                13        0.03%
+V1           VIA01_BAR_V_0_30_10_25_V1            149        0.33%
+V1           VIA01_BAR_V_10_20_10_25_V1            60        0.13%
+V1           VIA01_10_20_20_20_VX_V1              185        0.41%
+V1           VIA01_BAR_V_7_25_10_25_V1(rot)
+                                                   32        0.07%
+V1           VIA01_BAR_V_5_30_3_30_V1(rot)
+                                                    1        0.00%
+V1           VIA01_BAR_V_5_30_5_30_V1(rot)
+                                                   23        0.05%
+V1           VIA01_0_30_5_30_VH_V1                 44        0.10%
+V1           VIA01_BAR_V_7_25_10_25_V1             58        0.13%
+V1           VIA01_7_25_20_20_VX_V1                38        0.08%
+V1           VIA01_7_25_0_30_VV_V1                 11        0.02%
+V1           VIA01(rot)                            42        0.09%
+V1           VIA01_BAR_V_10_20_7_25_V1              6        0.01%
+V1           VIA01_BAR_V_5_30_10_25_V1             37        0.08%
+V1           VIA01_5_30_0_30_VH_V1(rot)             2        0.00%
+V1           VIA01_7_25_10_25_VH_V1                22        0.05%
+V1           VIA01_BAR_V_10_20_10_25_V1(rot)
+                                                   28        0.06%
+V1           VIA01_0_30_10_25_VH_V1(rot)           27        0.06%
+V1           VIA01_5_30_0_30_HH_V1                  6        0.01%
+V1           VIA01_0_30_30_30_VX_V1(rot)            6        0.01%
+V1           VIA01_BAR_V_5_30_7_25_V1(rot)
+                                                    2        0.00%
+V1           VIA01_10_20_10_25_VH_V1(rot)
+                                                   25        0.06%
+V1           VIA01_BAR_V_5_30_5_30_V1               7        0.02%
+V1           VIA01_BAR_V_10_20_5_30_V1              3        0.01%
+V1           VIA01_7_25_30_30_VX_V1                21        0.05%
+V1           VIA01_10_20_0_30_HV_V1                83        0.18%
+V1           VIA01_10_20_7_25_VH_V1                42        0.09%
+V1           VIA01_7_25_7_25_VH_V1                 14        0.03%
+V1           VIA01_BAR_V_0_30_5_30_V1              11        0.02%
+V1           VIA01_BAR_V_7_25_7_25_V1(rot)
+                                                   12        0.03%
+V1           VIA01_BAR_V_10_20_7_25_V1(rot)
+                                                    6        0.01%
+V1           VIA01_7_25_30_30_VX_V1(rot)           16        0.04%
+V1           VIA01_BAR_V_5_30_10_25_V1(rot)
+                                                   27        0.06%
+V1           VIA01_20_20_0_30_XH_V1                 5        0.01%
+V1           VIA01_BAR_V_10_20_5_30_V1(rot)
+                                                    6        0.01%
+V1           VIA01_10_20_5_30_VH_V1(rot)            1        0.00%
+V1           VIA01_0_30_5_30_VH_V1(rot)            10        0.02%
+V1           VIA01_7_25_0_30_HV_V1                  7        0.02%
+V1           VIA01_BAR_V_0_30_10_25_V1(rot)
+                                                    5        0.01%
+V1           VIA01_7_25_10_25_VH_V1(rot)            3        0.01%
+V1           VIA01_BAR_V_7_25_5_30_V1(rot)
+                                                    1        0.00%
+V1           VIA01_7_25_5_30_VH_V1(rot)             2        0.00%
+V1           VIA01_20_20_20_20_XX_V1                1        0.00%
+V1           VIA01_BAR_V_0_30_3_30_V1               2        0.00%
+V1           VIA01_BAR_V_7_25_7_25_V1               7        0.02%
+V1           VIA01_BAR_V_0_30_7_25_V1(rot)
+                                                    1        0.00%
+V1           VIA01_BAR_V_0_30_7_25_V1               9        0.02%
+V1           VIA01_BAR_V_3_30_10_25_V1(rot)
+                                                    1        0.00%
+V1           VIA01_BAR_V_7_25_5_30_V1               1        0.00%
+V1           VIA01_BAR_V_7_25_3_30_V1(rot)
+                                                    1        0.00%
+V1           VIA01_10_20_30_30_VX_V1(rot)
+                                                    3        0.01%
+V1           VIA01_BAR_V_3_30_10_25_V1              3        0.01%
+V1           VIA01_10_20_30_30_VX_V1                3        0.01%
+V1           VIA01_7_25_7_25_VH_V1(rot)             1        0.00%
+V1           VIA01_0_30_7_25_VH_V1(rot)             1        0.00%
+V1           VIA01_BAR_V_5_30_7_25_V1               1        0.00%
+V1           VIA01_7_25_3_30_VH_V1                  1        0.00%
+V1           VIA01_10_20_7_25_VH_V1(rot)            2        0.00%
+V1           VIA01_BAR_V_0_30_3_30_V1(rot)
+                                                    1        0.00%
+V1           VIA01_7_25_5_30_VH_V1                  1        0.00%
+V1           VIA01_BAR_V_0_30_5_30_V1(rot)
+                                                    1        0.00%
+V1           VIA01_0_30_0_30_HH_V1(1X4)           976        2.17%
+  Double via conversion rate for layer V1 = 2.17% (976 / 44966 vias)
+    Among them, double via conversion rate of detail route vias for layer V1 = 0.00% (0 / 43990 vias)
+
+AY           VIA02                              47608       87.41%
+AY           VIA02_0_30_2_34_VV_AY                328        0.60%
+AY           VIA02_BAR_H_20_20_2_30_AY(rot)
+                                                  423        0.78%
+AY           VIA02_0_30_20_20_HX_AY               572        1.05%
+AY           VIA02_0_30_5_34_HV_AY                181        0.33%
+AY           VIA02_0_30_2_34_HH_AY               1354        2.49%
+AY           VIA02_5_30_2_34_HV_AY                381        0.70%
+AY           VIA02_BAR_H_30_30_2_30_AY(rot)
+                                                    3        0.01%
+AY           VIA02_5_30_20_20_HX_AY                17        0.03%
+AY           VIA02_7_25_2_34_HV_AY                 71        0.13%
+AY           VIA02_0_30_2_34_VH_AY                174        0.32%
+AY           VIA02_10_25_2_34_HH_AY(rot)          270        0.50%
+AY           VIA02_BAR_V_20_20_2_55_AY_R            7        0.01%
+AY           VIA02_0_30_10_30_HV_AY               364        0.67%
+AY           VIA02_BAR_H_0_30_10_25_AY(rot)
+                                                   47        0.09%
+AY           VIA02_20_20_2_34_XV_AY               109        0.20%
+AY           VIA02_0_30_30_30_HX_AY(rot)            6        0.01%
+AY           VIA02_BAR_H_5_30_2_30_AY(rot)
+                                                  201        0.37%
+AY           VIA02_3_30_2_34_HV_AY                 30        0.06%
+AY           VIA02_10_25_2_34_HV_AY(rot)           11        0.02%
+AY           VIA02_5_30_2_63_HH_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_10_25_20_20_HX_AY(rot)
+                                                   17        0.03%
+AY           VIA02_BAR_H_5_30_2_30_AY              14        0.03%
+AY           VIA02_10_25_2_34_HV_AY               326        0.60%
+AY           VIA02_5_30_2_34_HH_AY(rot)            63        0.12%
+AY           VIA02_5_30_2_34_HV_AY(rot)            13        0.02%
+AY           VIA02_20_20_2_34_XH_AY(rot)          104        0.19%
+AY           VIA02_0_30_10_30_HH_AY                21        0.04%
+AY           VIA02_BAR_H_10_20_20_20_AY(rot)
+                                                   10        0.02%
+AY           VIA02_5_30_2_53_HV_AY_R                6        0.01%
+AY           VIA02_20_20_20_20_XX_AY               49        0.09%
+AY           VIA02_BAR_V_20_20_2_30_AY(rot)
+                                                    7        0.01%
+AY           VIA02_BAR_H_0_30_10_25_AY             46        0.08%
+AY           VIA02_20_20_2_53_XH_AY_R(rot)
+                                                    4        0.01%
+AY           VIA02_7_25_2_34_HH_AY(rot)            42        0.08%
+AY           VIA02_0_30_10_30_HH_AY(rot)            5        0.01%
+AY           VIA02_20_20_10_30_XH_AY(rot)
+                                                   30        0.06%
+AY           VIA02_10_25_2_63_HV_AY_R              76        0.14%
+AY           VIA02_7_25_30_30_HX_AY(rot)           15        0.03%
+AY           VIA02_BAR_V_20_20_2_30_AY              7        0.01%
+AY           VIA02_7_25_20_20_HX_AY(rot)           21        0.04%
+AY           VIA02_20_20_2_34_XV_AY(rot)           14        0.03%
+AY           VIA02_3_30_2_34_HH_AY(rot)             1        0.00%
+AY           VIA02_10_25_2_53_HH_AY_R(rot)
+                                                    7        0.01%
+AY           VIA02_10_25_5_34_HV_AY                14        0.03%
+AY           VIA02_7_25_2_34_HV_AY(rot)             4        0.01%
+AY           VIA02_0_30_30_30_HX_AY                12        0.02%
+AY           VIA02_7_25_5_34_HH_AY(rot)             6        0.01%
+AY           VIA02_BAR_H_5_30_10_25_AY(rot)
+                                                   30        0.06%
+AY           VIA02_5_30_20_20_HX_AY(rot)           15        0.03%
+AY           VIA02_5_30_2_34_HH_AY                 14        0.03%
+AY           VIA02_5_30_10_30_HV_AY                 8        0.01%
+AY           VIA02_BAR_H_30_30_10_25_AY(rot)
+                                                    3        0.01%
+AY           VIA02_BAR_H_10_20_2_30_AY(rot)
+                                                   19        0.03%
+AY           VIA02_10_25_30_30_HX_AY                3        0.01%
+AY           VIA02_0_30_5_34_HH_AY                  1        0.00%
+AY           VIA02_20_20_2_53_XV_AY_R               3        0.01%
+AY           VIA02_BAR_H_0_30_5_30_AY(rot)
+                                                   13        0.02%
+AY           VIA02_10_25_10_30_HH_AY(rot)
+                                                    9        0.02%
+AY           VIA02_10_25_10_30_HV_AY               37        0.07%
+AY           VIA02_5_30_2_53_HH_AY_R                4        0.01%
+AY           VIA02_30_30_30_30_XX_AY                7        0.01%
+AY           VIA02_20_20_2_34_XH_AY                 1        0.00%
+AY           VIA02_7_25_20_20_HX_AY                10        0.02%
+AY           VIA02_10_25_20_20_HX_AY               12        0.02%
+AY           VIA02_BAR_V_30_30_5_30_AY              1        0.00%
+AY           VIA02_30_30_2_34_XH_AY(rot)           22        0.04%
+AY           VIA02_BAR_H_10_20_10_25_AY(rot)
+                                                    3        0.01%
+AY           VIA02_20_20_5_34_XH_AY(rot)            4        0.01%
+AY           VIA02_30_30_10_30_XV_AY(rot)
+                                                    1        0.00%
+AY           VIA02_7_25_10_30_HH_AY(rot)            6        0.01%
+AY           VIA02_7_25_10_30_HV_AY(rot)            2        0.00%
+AY           VIA02_10_25_2_34_HH_AY                17        0.03%
+AY           VIA02_BAR_H_5_30_5_30_AY(rot)
+                                                   11        0.02%
+AY           VIA02_10_25_10_30_HH_AY                3        0.01%
+AY           VIA02_0_30_20_20_HX_AY(rot)           16        0.03%
+AY           VIA02_BAR_H_3_30_2_30_AY(rot)
+                                                    7        0.01%
+AY           VIA02_BAR_H_10_20_2_30_AY              1        0.00%
+AY           VIA02_7_25_30_30_HX_AY                 7        0.01%
+AY           VIA02_BAR_V_10_25_2_55_AY_R            8        0.01%
+AY           VIA02_BAR_H_5_30_5_30_AY               1        0.00%
+AY           VIA02_7_25_2_34_HH_AY                  1        0.00%
+AY           VIA02_BAR_V_10_25_2_55_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_0_30_10_30_HV_AY(rot)            8        0.01%
+AY           VIA02_7_25_10_30_HV_AY                 4        0.01%
+AY           VIA02_5_30_5_34_HV_AY                  4        0.01%
+AY           VIA02_0_30_7_30_HH_AY                  1        0.00%
+AY           VIA02_5_30_2_53_HV_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_10_25_2_53_HH_AY_R               4        0.01%
+AY           VIA02_20_20_10_30_XV_AY                1        0.00%
+AY           VIA02_10_25_10_30_HV_AY(rot)
+                                                    5        0.01%
+AY           VIA02_0_30_5_34_HH_AY(rot)             9        0.02%
+AY           VIA02_10_25_30_30_HX_AY(rot)
+                                                    6        0.01%
+AY           VIA02_7_25_2_53_HH_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_BAR_V_20_20_10_25_AY             4        0.01%
+AY           VIA02_5_30_10_30_HH_AY(rot)            6        0.01%
+AY           VIA02_30_30_2_63_XV_AY_R               3        0.01%
+AY           VIA02_BAR_H_10_20_5_30_AY(rot)
+                                                    1        0.00%
+AY           VIA02_BAR_V_30_30_2_30_AY              1        0.00%
+AY           VIA02_BAR_H_5_30_10_25_AY              2        0.00%
+AY           VIA02_20_20_2_63_XV_AY_R               3        0.01%
+AY           VIA02_0_30_7_30_HV_AY                  1        0.00%
+AY           VIA02_10_25_2_63_HV_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_7_25_2_53_HH_AY_R                1        0.00%
+AY           VIA02_30_30_10_30_XV_AY                1        0.00%
+AY           VIA02_7_25_2_53_HV_AY_R                2        0.00%
+AY           VIA02_5_30_5_34_HV_AY(rot)             1        0.00%
+AY           VIA02_10_25_2_53_HV_AY_R               5        0.01%
+AY           VIA02_20_20_2_53_XH_AY_R               1        0.00%
+AY           VIA02_30_30_2_53_XV_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_3_30_20_20_HX_AY(rot)            1        0.00%
+AY           VIA02_5_30_2_63_HV_AY_R                4        0.01%
+AY           VIA02_7_25_5_34_HV_AY                  1        0.00%
+AY           VIA02_5_30_5_34_HH_AY(rot)             2        0.00%
+AY           VIA02_20_20_2_63_XH_AY_R               1        0.00%
+AY           VIA02_3_30_2_63_HH_AY_R(rot)
+                                                    1        0.00%
+AY           VIA02_BAR_H_20_20_10_25_AY(rot)
+                                                    1        0.00%
+AY           VIA02_BAR_V_20_20_5_30_AY              1        0.00%
+AY           VIA02_20_20_5_34_XH_AY                 1        0.00%
+AY           VIA02_30_30_2_34_XV_AY                 2        0.00%
+AY           VIA02_20_20_10_30_XV_AY(rot)
+                                                    1        0.00%
+AY           VIA02_20_20_7_30_XH_AY(rot)            1        0.00%
+AY           VIA02_10_25_5_34_HH_AY(rot)            1        0.00%
+AY           VIA02_0_30_30_30_HX_AY(1X4)          976        1.79%
+  Double via conversion rate for layer AY = 1.79% (976 / 54465 vias)
+    Among them, double via conversion rate of detail route vias for layer AY = 0.00% (0 / 53489 vias)
+
+A1           VIA03                              40629       97.21%
+A1           VIA03_0_25_0_32_VV_A1                 34        0.08%
+A1           VIA03_0_25_10_20_VH_A1                43        0.10%
+A1           VIA03_0_25_0_32_VV_A1(rot)           103        0.25%
+A1           VIA03_BAR_H_18_18_0_36_A1              1        0.00%
+A1           VIA03_0_25_18_18_VX_A1                 4        0.01%
+A1           VIA03(rot)                             3        0.01%
+A1           VIA03_4_20_10_20_VH_A1                 1        0.00%
+A1           VIA03(1X4)                           976        2.34%
+  Double via conversion rate for layer A1 = 2.34% (976 / 41794 vias)
+    Among them, double via conversion rate of detail route vias for layer A1 = 0.00% (0 / 40818 vias)
+
+A2           VIA04                              21009       95.46%
+A2           VIA04_0_25_0_32_HH_A2(rot)            18        0.08%
+A2           VIA04_0_25_10_20_HV_A2                 2        0.01%
+A2           VIA04_0_25_0_32_HH_A2                  2        0.01%
+A2           VIA04_0_25_18_18_HX_A2                 1        0.00%
+A2           VIA04_0_25_10_20_HH_A2(1X4)          976        4.43%
+  Double via conversion rate for layer A2 = 4.43% (976 / 22008 vias)
+    Among them, double via conversion rate of detail route vias for layer A2 = 0.00% (0 / 21032 vias)
+
+A3           VIA05                               7922       89.02%
+A3           VIA05_0_25_0_32_VV_A3(rot)             1        0.01%
+A3           VIA05(1X4)                           976       10.97%
+  Double via conversion rate for layer A3 = 10.97% (976 / 8899 vias)
+    Among them, double via conversion rate of detail route vias for layer A3 = 0.00% (0 / 7923 vias)
+
+A4           VIA06                               3138       76.28%
+A4           VIA06_0_25_0_32_HH_A4(1X4)           976       23.72%
+  Double via conversion rate for layer A4 = 23.72% (976 / 4114 vias)
+    Among them, double via conversion rate of detail route vias for layer A4 = 0.00% (0 / 3138 vias)
+
+A5           VIA07                               1224       90.53%
+A5           VIA07(3X4)                           128        9.47%
+  Double via conversion rate for layer A5 = 9.47% (128 / 1352 vias)
+    Among them, double via conversion rate of detail route vias for layer A5 = 0.00% (0 / 1224 vias)
+
+
+Custom Via Statistics
+
+No custom vias found in the design.
+Overall double via conversion rate = 3.37%
+  Among them, overall double via conversion rate of detail route vias = 0.00% (0 / 171614 vias)
+  *Detail route vias are vias whose shape_use is detail_route.
+
+Via Matrix Statistics
+
+No via matrices found in the design.
+
+FINAL DRC STATISTICS
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	99
+	Diff net spacing : 5
+	Diff net via-cut spacing : 3
+	End of line enclosure : 8
+	End of line spacing : 2
+	Less than minimum area : 2
+	Less than minimum edge length : 56
+	Needs fat contact : 3
+	Self aligned via cut spacing : 1
+	Self aligned via invalid enclosure : 3
+	Short : 9
+	Via-Metal Concave corner rule : 7
+Total number of nets = 11480
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 99
+Total number of antenna violations = 0
+1

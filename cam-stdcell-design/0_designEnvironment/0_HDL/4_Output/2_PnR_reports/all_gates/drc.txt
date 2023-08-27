@@ -1,0 +1,15 @@
+Total DRC Err: 95
+Total Cells w/ DRC Err: 11
+Total PinDensity DRC Err: 95
+Total Cells w/ PinD DRC Err: 11
+Diff net spacing                                  : 5
+Diff net via-cut spacing                          : 3
+End of line enclosure                             : 5
+End of line spacing                               : 2
+Less than minimum area                            : 2
+Less than minimum edge length                     : 56
+Needs fat contact                                 : 3
+Self aligned via cut spacing                      : 1
+Self aligned via invalid enclosure                : 2
+Short                                             : 9
+Via-Metal Concave corner rule                     : 7

@@ -1,0 +1,23 @@
+Total DRC Err: 1517
+Total Cells w/ DRC Err: 181
+Total PinDensity DRC Err: 1517
+Total Cells w/ PinD DRC Err: 181
+Convex metal cut keepout                          : 7
+Diff net spacing                                  : 188
+Diff net via-cut spacing                          : 55
+End of line enclosure                             : 32
+End of line spacing                               : 29
+Less than minimum area                            : 43
+Less than minimum edge length                     : 845
+Less than minimum width                           : 13
+Local double pattern cycle                        : 14
+Needs fat contact                                 : 68
+Neighbor un/aligned via-cut spacing               : 2
+Same net spacing                                  : 5
+Same net via-cut spacing                          : 2
+Self aligned via cut spacing                      : 4
+Self aligned via invalid enclosure                : 33
+Short                                             : 75
+Special notch spacing                             : 3
+U shape spacing                                   : 2
+Via-Metal Concave corner rule                     : 97

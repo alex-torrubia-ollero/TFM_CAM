@@ -1,0 +1,68 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Fri Jul 14 19:22:11 2023
+****************************************
+Information: Activity propagation will be performed for scenario TT_nominal.
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Turn on parallel simulation of generator nets.
+Information: Running switching activity propagation with 16 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: func_mode
+Corner: typ_corner
+Scenario: TT_nominal
+Voltage: 0.90
+Temperature: 85.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell asic_model_gen.memory_core/word[0].clkgate/SC_clockgate for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.080109 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[0].memory_cell/genblk1[0].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000324 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[0].memory_cell/genblk1[1].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[0].memory_cell/genblk1[2].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000229 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[1].memory_cell/genblk1[0].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000381 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[1].memory_cell/genblk1[1].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000019 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[1].memory_cell/genblk1[2].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000248 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[2].memory_cell/genblk1[0].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000706 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[2].memory_cell/genblk1[1].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell asic_model_gen.memory_core/word[0].word_bits[2].memory_cell/genblk1[2].XNOR_comparator for parameter Tinp. Lowest table value = 0.002622, highest table value = 0.393500, value = 0.000210 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 1.11e+06 nW ( 60.5%)
+  Net Switching Power    = 7.26e+05 nW ( 39.5%)
+Total Dynamic Power      = 1.84e+06 nW (100.0%)
+
+Cell Leakage Power       = 2.21e+06 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             7.17e+05               2.21e+05               4.50e+04               9.83e+05    ( 24.3%)        i
+register                  4.77e+04               7.22e+04               6.98e+05               8.18e+05    ( 20.2%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.49e+05               4.33e+05               1.46e+06               2.25e+06    ( 55.5%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.11e+06 nW            7.26e+05 nW            2.21e+06 nW            4.05e+06 nW
+1

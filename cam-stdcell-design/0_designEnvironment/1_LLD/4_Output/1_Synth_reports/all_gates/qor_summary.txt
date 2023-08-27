@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Mon Jul  3 19:44:39 2023
+****************************************
+
+
+  Timing Path Group 'I2R'
+  -----------------------------------
+  Levels of Logic:              42.00
+  Critical Path Length:          0.66
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'R2O'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.04
+  Critical Path Slack:           0.66
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'R2R'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.06
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        332
+  Leaf Cell Count:               9282
+  Buf/Inv Cell Count:             987
+  Buf Cell Count:                 285
+  Inv Cell Count:                 702
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      7526
+  Sequential Cell Count:         1756
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     3196.310354
+  Noncombinational Area:  1385.095705
+  Buf/Inv Area:            218.571839
+  Total Buffer Area:           100.64
+  Total Inverter Area:         117.93
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              4581.406059
+  Design Area:            4581.406059
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          9597
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: epi01
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.87
+  Logic Optimization:                 37.34
+  Mapping Optimization:               67.51
+  -----------------------------------------
+  Overall Compile Time:              262.50
+  Overall Compile Wall Clock Time:   156.32
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

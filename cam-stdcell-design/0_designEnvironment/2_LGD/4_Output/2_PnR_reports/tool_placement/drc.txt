@@ -1,0 +1,6 @@
+Total DRC Err: 42
+Total Cells w/ DRC Err: 42
+Total PinDensity DRC Err: 42
+Total Cells w/ PinD DRC Err: 42
+Diff net spacing                                  : 39
+Short                                             : 3

@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : clock tree
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Sat Jul  8 16:09:09 2023
+****************************************
+
+
+============ Global Skew Report ================
+
+Clock Tree Name                : "clk_core"
+Clock Period                   : 1.00000        
+Clock Tree root pin            : "clk"
+Number of Levels               : 2
+Number of Sinks                : 1724
+Number of CT Buffers           : 0
+Number of CTS added gates      : 0
+Number of Preexisting Gates    : 32
+Number of Preexisting Buf/Inv  : 0
+Total Number of Clock Cells    : 32
+Total Area of CT Buffers       : 0.00000        
+Total Area of CT cells         : 0.00000        
+Max Global Skew                : 0.18928   
+Number of MaxTran Violators    : 1632
+Number of MaxCap Violators     : 0
+Number of MaxFanout Violators  : 0
+
+
+Operating Condition               worst
+Clock global Skew                 0.189
+Longest path delay                0.189
+Shortest path delay               0.000
+
+The longest path delay end pin: asic_model_gen.memory_core/word[0].word_bits[0].memory_cell/cam_latch/G
+The shortest path delay end pin: mdata_reg[0][3]/CK
+
+The longest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+clk                                         0.000            1  0.000     0.000     0.000     r
+clk                                         0.164          156  0.000     0.000     0.000     r
+asic_model_gen.memory_core/word[0].clkgate/SC_clockgate/CK
+                                            0.164            1  0.000     0.000     0.000     r
+asic_model_gen.memory_core/word[0].clkgate/SC_clockgate/Q
+                                            0.062           50  0.318     0.189     0.189     r
+asic_model_gen.memory_core/word[0].word_bits[0].memory_cell/cam_latch/G
+                                            0.062            0  0.318     0.000     0.189     r
+[clock delay]                                                                       0.189
+----------------------------------------------------------------------------------------------------
+
+The Shortest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+clk                                         0.000            1  0.000     0.000     0.000     r
+clk                                         0.164          156  0.000     0.000     0.000     r
+mdata_reg[0][3]/CK                          0.164            0  0.000     0.000     0.000     r
+[clock delay]                                                                       0.000
+----------------------------------------------------------------------------------------------------
+
+1

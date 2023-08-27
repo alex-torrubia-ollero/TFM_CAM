@@ -1,0 +1,318 @@
+ 
+****************************************
+Report : reference
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Thu Jul  6 13:05:39 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HDBSLT20_ADDF_V1_1 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.336320       5      6.681600  r
+HDBSLT20_ADDF_V1_2 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.419840       1      1.419840  r
+HDBSLT20_ADDH_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.751680       2      1.503360  r
+HDBSLT20_AN2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      22      7.349760  
+HDBSLT20_AN3B_0P5  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_AO2BB2_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       4      2.004480  
+HDBSLT20_AO21B_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       2      0.835200  
+HDBSLT20_AO21B_1   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       2      0.835200  
+HDBSLT20_AO2222_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.002240       1      1.002240  
+HDBSLT20_AO2222_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.002240       4      4.008960  
+HDBSLT20_AOA211_2  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.584640       2      1.169280  
+HDBSLT20_AOAI211_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_AOAI211_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       7      2.923200  
+HDBSLT20_AOAI211_1 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       7      2.923200  
+HDBSLT20_AOI21B_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       2      0.835200  
+HDBSLT20_AOI21_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      12      4.008960  
+HDBSLT20_AOI21_1   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       4      1.336320  
+HDBSLT20_AOI22_0P5 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     181     75.585601  
+HDBSLT20_AOI22_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      37     15.451200  
+HDBSLT20_AOI22_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_AOI31_0P5 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       3      1.252800  
+HDBSLT20_AOI32_1   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_AOI211_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       5      2.088000  
+HDBSLT20_AOI221_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       7      3.507840  
+HDBSLT20_AOI222_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.668160       1      0.668160  
+HDBSLT20_AOI2222_V2_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.835200       9      7.516800  
+HDBSLT20_AOI2222_V2_1
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.835200      41     34.243200  
+HDBSLT20_BUF_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       2      0.501120  
+HDBSLT20_EN2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.668160       1      0.668160  
+HDBSLT20_EN2_V2_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       2      1.002240  
+HDBSLT20_EN2_V2_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       5      2.505600  
+HDBSLT20_EO2_V2_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       2      1.002240  
+HDBSLT20_FDPRBQ_V2_1
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.419840      18     25.557120  n
+HDBSLT20_INV_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.167040     163     27.227521  
+HDBSLT20_INV_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.167040      33      5.512320  
+HDBSLT20_INV_1P5   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       1      0.250560  
+HDBSLT20_INV_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       2      0.501120  
+HDBSLT20_MAJI3_1   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_ND2B_0P5  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       3      1.002240  
+HDBSLT20_ND2B_2    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_ND2B_V1_1 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       2      0.668160  
+HDBSLT20_ND2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       2      0.501120  
+HDBSLT20_ND2_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       5      2.088000  
+HDBSLT20_ND2_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      22      5.512320  
+HDBSLT20_ND2_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560     128     32.071678  
+HDBSLT20_ND3B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_ND3_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       4      1.336320  
+HDBSLT20_ND3_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.584640       2      1.169280  
+HDBSLT20_ND3_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       3      1.002240  
+HDBSLT20_ND4B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       3      1.503360  
+HDBSLT20_ND4_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      14      5.846400  
+HDBSLT20_ND4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       4      1.670400  
+HDBSLT20_ND4_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.751680       1      0.751680  
+HDBSLT20_ND4_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      33     13.780800  
+HDBSLT20_ND4_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      29     12.110400  
+HDBSLT20_NR2B_0P5  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      13      4.343040  
+HDBSLT20_NR2B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       5      1.670400  
+HDBSLT20_NR2B_1P5  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       2      1.002240  
+HDBSLT20_NR2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      15      3.758400  
+HDBSLT20_NR2_1P5   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       8      3.340800  
+HDBSLT20_NR2_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      40     10.022399  
+HDBSLT20_NR3_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      16      5.345280  
+HDBSLT20_NR4_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      46     19.209600  
+HDBSLT20_OA2BB2_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_OA21B_1   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OA31_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       2      1.002240  
+HDBSLT20_OA32_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.584640       1      0.584640  
+HDBSLT20_OAI21B_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       3      1.252800  
+HDBSLT20_OAI21B_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OAI21_0P5 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      11      3.674880  
+HDBSLT20_OAI21_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080      11      3.674880  
+HDBSLT20_OAI22_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     199     83.102401  
+HDBSLT20_OAI211_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       2      0.835200  
+HDBSLT20_OAI211_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       8      3.340800  
+HDBSLT20_OAI211_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       5      2.088000  
+HDBSLT20_OAI221_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       2      1.002240  
+HDBSLT20_OAOI211_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      14      5.846400  
+HDBSLT20_OAOI211_1 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       6      2.505600  
+HDBSLT20_OAOI211_V2_1
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OAOI211_V2_2
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.751680       1      0.751680  
+HDBSLT20_OR2_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       1      0.334080  
+HDBSLT20_OR2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       1      0.334080  
+HDBSLT20_OR2_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OR2_2P5   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.668160       7      4.677120  
+HDBSLT20_OR3_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OR4B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_OR4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120      14      7.015680  
+vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                               5457.280281       1   5457.280281  h, n
+-----------------------------------------------------------------------------
+Total 88 references                                  5959.151963
+
+****************************************
+Design: vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HDBSLT20_AN4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       3      1.503360  
+HDBSLT20_AO2222_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.002240       1      1.002240  
+HDBSLT20_AOI22_0P5 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600    1806    754.185611  
+HDBSLT20_AOI22_0P75
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600      11      4.593600  
+HDBSLT20_AOI221_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120     958    480.072932  
+HDBSLT20_AOI2222_V2_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.835200     337    281.462404  
+HDBSLT20_AOI2222_V2_1
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.835200     577    481.910407  
+HDBSLT20_BUF_0P5   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      11      2.756160  
+HDBSLT20_BUF_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      67     16.787519  
+HDBSLT20_BUF_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       4      1.336320  
+HDBSLT20_FDPQ_V2_1 gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  1.252800    1600   2004.479980  n
+HDBSLT20_INV_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.167040    1342    224.167687  
+HDBSLT20_INV_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.167040     221     36.915841  
+HDBSLT20_INV_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       3      0.751680  
+HDBSLT20_ND2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       1      0.250560  
+HDBSLT20_ND2_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       4      1.002240  
+HDBSLT20_ND3B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_ND3_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       5      1.670400  
+HDBSLT20_ND4_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     101     42.177601  
+HDBSLT20_ND4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       4      1.670400  
+HDBSLT20_ND4_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     166     69.321601  
+HDBSLT20_ND4_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     209     87.278401  
+HDBSLT20_NR2B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       1      0.334080  
+HDBSLT20_NR2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560      31      7.767360  
+HDBSLT20_NR2_2     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_NR2_MM_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.250560       1      0.250560  
+HDBSLT20_NR4B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120       1      0.501120  
+HDBSLT20_NR4_0P75  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     218     91.036801  
+HDBSLT20_NR4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OA2BB2_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120     310    155.347191  
+HDBSLT20_OAI22_MM_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600     862    359.971205  
+HDBSLT20_OAI221_0P5
+                   gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120     498    249.557746  
+HDBSLT20_OAI221_1  gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120     125     62.639996  
+HDBSLT20_OR2_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.334080       1      0.334080  
+HDBSLT20_OR3B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.417600       1      0.417600  
+HDBSLT20_OR4B_1    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120      35     17.539199  
+HDBSLT20_OR4_1     gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+                                  0.501120      30     15.033599  
+-----------------------------------------------------------------------------
+Total 37 references                                  5457.280281
+1

@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Thu Jul  6 12:57:36 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk_core         1.00   {0 0.5}                       {clk}
+--------------------------------------------------------------------------------
+1

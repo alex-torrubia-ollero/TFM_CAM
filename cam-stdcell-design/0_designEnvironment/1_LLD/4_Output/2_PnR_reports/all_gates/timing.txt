@@ -1,0 +1,2714 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 50
+        -report_by design
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Sat Jul 15 10:24:20 2023
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.16      0.16
+  clock uncertainty                               -0.03      0.13
+  transparency open edge                                     0.13
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.15      0.65
+  clock uncertainty                               -0.03      0.62
+  library setup time                              -0.07      0.56
+  transparency close edge                                    0.56
+
+  available borrow at through pin                  0.20      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.05      0.41 r
+  asic_model_gen.memory_core/U682/X (HDBSLT20_INV_0P75)
+                                                   0.03      0.43 f
+  asic_model_gen.memory_core/U675/X (HDBSLT20_AOI2222_V2_0P5)
+                                                   0.05      0.48 r
+  asic_model_gen.memory_core/U441/X (HDBSLT20_ND4_0P5)
+                                                   0.09      0.57 f
+  asic_model_gen.memory_core/U210/X (HDBSLT20_NR4_2)
+                                                   0.07      0.64 r
+  U1670/X (HDBSLT20_ND2_MMF_0P5)                   0.06      0.70 f
+  U1937/X (HDBSLT20_INV_0P75)                      0.04      0.74 r
+  U2571/X (HDBSLT20_AOI22_0P5)                     0.03      0.77 f
+  U1857/X (HDBSLT20_ND4_1P5)                       0.02      0.79 r
+  U2574/X (HDBSLT20_INV_0P75)                      0.01      0.80 f
+  U2575/X (HDBSLT20_AOI21_0P5)                     0.01      0.81 r
+  U2587/X (HDBSLT20_OAOI211_1)                     0.02      0.83 f
+  U2588/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.85 r
+  U1790/X (HDBSLT20_INV_1)                         0.01      0.87 f
+  U1785/X (HDBSLT20_ND3_2)                         0.01      0.88 r
+  U1599/X (HDBSLT20_NR2B_2)                        0.01      0.88 f
+  U1597/X (HDBSLT20_ND2_MM_2)                      0.01      0.89 r
+  U1529/X (HDBSLT20_NR2_2)                         0.01      0.90 f
+  U1593/X (HDBSLT20_ND2B_2)                        0.01      0.91 r
+  U1592/X (HDBSLT20_NR2_2)                         0.01      0.92 f
+  U1589/X (HDBSLT20_ND2_3)                         0.01      0.93 r
+  ctmTdsLR_1_1083/X (HDBSLT20_AN3B_2)              0.01      0.94 f
+  U1585/X (HDBSLT20_ND2_2)                         0.01      0.94 r
+  U1528/X (HDBSLT20_NR2B_2)                        0.01      0.95 f
+  U1583/X (HDBSLT20_ND2_MM_2)                      0.01      0.96 r
+  U1527/X (HDBSLT20_NR2_2)                         0.01      0.97 f
+  U1761/X (HDBSLT20_ND2_1P5)                       0.01      0.98 r
+  U2633/X (HDBSLT20_NR2_2)                         0.01      0.99 f
+  ctmTdsLR_1_1048/X (HDBSLT20_OR3B_2)              0.01      1.00 r
+  U1757/X (HDBSLT20_NR2_1P5)                       0.01      1.01 f
+  U2116/X (HDBSLT20_AN2_1)                         0.01      1.02 f
+  U2639/X (HDBSLT20_AOI31_1)                       0.01      1.04 r
+  U1752/X (HDBSLT20_ND4_2)                         0.03      1.07 f
+  U1558/X (HDBSLT20_ND2_0P75)                      0.02      1.09 r
+  ctmTdsLR_1_1100/X (HDBSLT20_AOI21B_2)            0.02      1.11 r
+  U1744/X (HDBSLT20_OAI21_2)                       0.01      1.12 f
+  ctmTdsLR_1_1044/X (HDBSLT20_AO21B_1)             0.02      1.14 f
+  U2654/X (HDBSLT20_EN2_V2_1)                      0.01      1.15 r
+  U2125/X (HDBSLT20_AN2_MM_1)                      0.02      1.17 r
+  mdata_reg[2][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.17 r
+  data arrival time                                          1.17
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.21      1.21
+  mdata_reg[2][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.21 r
+  clock uncertainty                               -0.03      1.18
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+
+  Startpoint: read_data_i[96] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[96] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_1709_116/X (HDBSLT20_INV_S_5)
+                                                   0.01      0.39 f
+  asic_model_gen.memory_core/U4634/X (HDBSLT20_OAI22_MM_1)
+                                                   0.05      0.43 r
+  asic_model_gen.memory_core/U4635/X (HDBSLT20_AOI221_0P5)
+                                                   0.03      0.46 f
+  asic_model_gen.memory_core/U4636/X (HDBSLT20_OAI221_1)
+                                                   0.02      0.48 r
+  asic_model_gen.memory_core/U4637/X (HDBSLT20_AOI221_0P5)
+                                                   0.03      0.51 f
+  asic_model_gen.memory_core/U288/X (HDBSLT20_ND4_MM_1)
+                                                   0.03      0.54 r
+  asic_model_gen.memory_core/U4669/X (HDBSLT20_NR4_2)
+                                                   0.02      0.56 f
+  ZBUF_22_inst_2258/X (HDBSLT20_BUF_3)             0.02      0.58 f
+  U2143/X (HDBSLT20_ND2_0P75)                      0.02      0.60 r
+  U2179/X (HDBSLT20_INV_1P5)                       0.02      0.62 f
+  U2293/X (HDBSLT20_AOI22_0P5)                     0.02      0.64 r
+  U1878/X (HDBSLT20_ND4_0P5)                       0.04      0.67 f
+  U2294/X (HDBSLT20_OAI22_MM_0P5)                  0.03      0.70 r
+  U1814/X (HDBSLT20_AOI22_0P5)                     0.05      0.75 f
+  U2307/X (HDBSLT20_NR2_1P5)                       0.02      0.77 r
+  U2309/X (HDBSLT20_ND2_MM_1)                      0.02      0.79 f
+  U1605/X (HDBSLT20_NR2B_2)                        0.01      0.80 r
+  U1604/X (HDBSLT20_ND3_2)                         0.01      0.81 f
+  U1601/X (HDBSLT20_NR2B_2)                        0.01      0.83 r
+  U1598/X (HDBSLT20_ND2_MM_2)                      0.01      0.84 f
+  U1596/X (HDBSLT20_NR2_2)                         0.01      0.85 r
+  U1595/X (HDBSLT20_ND2B_MM_2)                     0.01      0.86 f
+  U1591/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.87 r
+  U1590/X (HDBSLT20_ND2_1P5)                       0.01      0.88 f
+  ctmTdsLR_1_1090/X (HDBSLT20_ND4B_1)              0.03      0.92 f
+  U1584/X (HDBSLT20_NR2B_2)                        0.02      0.93 r
+  U2378/X (HDBSLT20_ND2_MM_2)                      0.01      0.94 f
+  U1580/X (HDBSLT20_NR2_2)                         0.01      0.96 r
+  U1762/X (HDBSLT20_ND2_MM_2)                      0.01      0.97 f
+  U1577/X (HDBSLT20_NR2_2)                         0.01      0.98 r
+  ctmTdsLR_1_1047/X (HDBSLT20_OR3B_2)              0.01      0.99 f
+  U1573/X (HDBSLT20_NR2_MM_1P5)                    0.01      1.00 r
+  U1569/X (HDBSLT20_AOAI211_1)                     0.01      1.02 f
+  U1566/X (HDBSLT20_OAI211_0P75)                   0.02      1.03 r
+  ZBUF_45_inst_2248/X (HDBSLT20_BUF_S_3)           0.02      1.05 r
+  U1561/X (HDBSLT20_ND2_MM_2)                      0.01      1.06 f
+  U1520/X (HDBSLT20_INV_0P75)                      0.01      1.08 r
+  ctmTdsLR_1_1101/X (HDBSLT20_ND2B_V1_1)           0.01      1.09 f
+  ctmTdsLR_2_1102/X (HDBSLT20_AOA211_2)            0.02      1.11 f
+  U1743/X (HDBSLT20_OAI21_1P5)                     0.01      1.12 r
+  U2400/X (HDBSLT20_EN2_V2_0P5)                    0.02      1.14 r
+  U2126/X (HDBSLT20_AN2_1)                         0.02      1.16 r
+  mdata_reg[1][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.16 r
+  data arrival time                                          1.16
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.21      1.21
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.21 r
+  clock uncertainty                               -0.03      1.18
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+
+  Startpoint: read_data_i[22] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][4] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[22] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_910_211/X (HDBSLT20_INV_3)
+                                                   0.04      0.41 f
+  asic_model_gen.memory_core/U6026/X (HDBSLT20_AOI22_0P5)
+                                                   0.02      0.43 r
+  asic_model_gen.memory_core/U6027/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.47 f
+  asic_model_gen.memory_core/U6028/X (HDBSLT20_AOI221_0P5)
+                                                   0.02      0.49 r
+  asic_model_gen.memory_core/U6029/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.54 f
+  asic_model_gen.memory_core/U6038/X (HDBSLT20_NR4_0P5)
+                                                   0.03      0.57 r
+  asic_model_gen.memory_core/U307/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.05      0.62 f
+  asic_model_gen.memory_core/U6039/X (HDBSLT20_NR4_3)
+                                                   0.04      0.67 r
+  U1693/X (HDBSLT20_ND2_0P75)                      0.07      0.74 f
+  U2773/X (HDBSLT20_OAI22_0P5)                     0.02      0.76 r
+  U1946/X (HDBSLT20_NR4_0P5)                       0.04      0.80 f
+  U1613/X (HDBSLT20_AOI31_0P5)                     0.02      0.82 r
+  U2838/X (HDBSLT20_OAOI211_V2_1)                  0.02      0.84 f
+  U2839/X (HDBSLT20_NR2_1)                         0.01      0.85 r
+  U2840/X (HDBSLT20_OAI21_0P5)                     0.02      0.87 f
+  U2841/X (HDBSLT20_AOAI211_1)                     0.02      0.89 r
+  U2843/X (HDBSLT20_AOAI211_1)                     0.02      0.91 f
+  U2845/X (HDBSLT20_AOAI211_0P75)                  0.02      0.92 r
+  U2846/X (HDBSLT20_AOAI211_0P75)                  0.02      0.95 f
+  U2847/X (HDBSLT20_AOAI211_0P75)                  0.02      0.96 r
+  U2848/X (HDBSLT20_AOAI211_0P5)                   0.04      1.00 f
+  U2849/X (HDBSLT20_AOAI211_1)                     0.03      1.02 r
+  U1774/X (HDBSLT20_AOI21_MM_2)                    0.02      1.04 f
+  U1525/X (HDBSLT20_NR2_1P5)                       0.01      1.06 r
+  ctmTdsLR_1_1108/X (HDBSLT20_MAJI3B_1)            0.02      1.08 f
+  U2124/CO (HDBSLT20_ADDF_V1_2)                    0.03      1.11 f
+  U2865/CO (HDBSLT20_ADDF_V1_1)                    0.03      1.14 f
+  U2866/X (HDBSLT20_EO2_V2_1)                      0.01      1.15 r
+  U1758/X (HDBSLT20_AOAI211_1)                     0.01      1.16 f
+  U1572/X (HDBSLT20_AOI31_0P5)                     0.02      1.18 r
+  mdata_reg[0][4]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.18 r
+  data arrival time                                          1.18
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.23      1.23
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.23 r
+  clock uncertainty                               -0.03      1.20
+  library setup time                              -0.01      1.19
+  data required time                                         1.19
+  ------------------------------------------------------------------------
+  data required time                                         1.19
+  data arrival time                                         -1.18
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.01
+
+
+
+  Startpoint: read_data_i[66] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][1] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[66] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_627_324/X (HDBSLT20_INV_S_4)
+                                                   0.03      0.40 f
+  asic_model_gen.memory_core/U2083/X (HDBSLT20_AOI22_0P5)
+                                                   0.03      0.43 r
+  asic_model_gen.memory_core/U2084/X (HDBSLT20_OAI221_0P5)
+                                                   0.06      0.48 f
+  asic_model_gen.memory_core/U2089/X (HDBSLT20_NR4_0P5)
+                                                   0.05      0.53 r
+  asic_model_gen.memory_core/U252/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.04      0.58 f
+  asic_model_gen.memory_core/U2110/X (HDBSLT20_NR4_0P5)
+                                                   0.04      0.61 r
+  U2133/X (HDBSLT20_ND2_MM_0P75)                   0.05      0.66 f
+  U2194/X (HDBSLT20_INV_0P75)                      0.04      0.70 r
+  U2336/X (HDBSLT20_AOI22_0P5)                     0.03      0.73 f
+  U1634/X (HDBSLT20_ND4_MM_1)                      0.03      0.76 r
+  U2338/X (HDBSLT20_INV_0P75)                      0.02      0.78 f
+  U2340/X (HDBSLT20_AOI21_0P5)                     0.01      0.79 r
+  U2347/X (HDBSLT20_OAOI211_1)                     0.02      0.81 f
+  U1793/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.83 r
+  U1789/X (HDBSLT20_INV_0P75)                      0.01      0.84 f
+  U1604/X (HDBSLT20_ND3_2)                         0.01      0.85 r
+  U1601/X (HDBSLT20_NR2B_2)                        0.01      0.86 f
+  U1598/X (HDBSLT20_ND2_MM_2)                      0.01      0.87 r
+  U1596/X (HDBSLT20_NR2_2)                         0.01      0.88 f
+  U1595/X (HDBSLT20_ND2B_MM_2)                     0.01      0.89 r
+  U1591/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.90 f
+  U1590/X (HDBSLT20_ND2_1P5)                       0.01      0.91 r
+  ctmTdsLR_1_1090/X (HDBSLT20_ND4B_1)              0.02      0.93 r
+  U1584/X (HDBSLT20_NR2B_2)                        0.01      0.94 f
+  U2378/X (HDBSLT20_ND2_MM_2)                      0.01      0.95 r
+  U1580/X (HDBSLT20_NR2_2)                         0.01      0.96 f
+  U1762/X (HDBSLT20_ND2_MM_2)                      0.01      0.97 r
+  U1577/X (HDBSLT20_NR2_2)                         0.01      0.98 f
+  ctmTdsLR_1_1047/X (HDBSLT20_OR3B_2)              0.01      0.99 r
+  U1573/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.99 f
+  U2121/X (HDBSLT20_AN2_1)                         0.02      1.01 f
+  U2396/X (HDBSLT20_AOI31_2)                       0.01      1.02 r
+  U2398/X (HDBSLT20_ND4_2)                         0.04      1.06 f
+  U1749/X (HDBSLT20_NR2_MM_2)                      0.01      1.07 r
+  U1518/X (HDBSLT20_INV_0P75)                      0.01      1.09 f
+  U1548/X (HDBSLT20_ND2_0P75)                      0.01      1.10 r
+  U2709/X (HDBSLT20_EN2_V2_1)                      0.02      1.11 r
+  U2710/X (HDBSLT20_AN2_MM_1)                      0.02      1.13 r
+  mdata_reg[1][1]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.13 r
+  data arrival time                                          1.13
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.18      1.18
+  mdata_reg[1][1]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.18 r
+  clock uncertainty                               -0.03      1.15
+  library setup time                              -0.01      1.15
+  data required time                                         1.15
+  ------------------------------------------------------------------------
+  data required time                                         1.15
+  data arrival time                                         -1.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: read_data_i[66] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[66] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_627_324/X (HDBSLT20_INV_S_4)
+                                                   0.03      0.40 f
+  asic_model_gen.memory_core/U2083/X (HDBSLT20_AOI22_0P5)
+                                                   0.03      0.43 r
+  asic_model_gen.memory_core/U2084/X (HDBSLT20_OAI221_0P5)
+                                                   0.06      0.48 f
+  asic_model_gen.memory_core/U2089/X (HDBSLT20_NR4_0P5)
+                                                   0.05      0.53 r
+  asic_model_gen.memory_core/U252/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.04      0.58 f
+  asic_model_gen.memory_core/U2110/X (HDBSLT20_NR4_0P5)
+                                                   0.04      0.61 r
+  U2133/X (HDBSLT20_ND2_MM_0P75)                   0.05      0.66 f
+  U2194/X (HDBSLT20_INV_0P75)                      0.04      0.70 r
+  U2336/X (HDBSLT20_AOI22_0P5)                     0.03      0.73 f
+  U1634/X (HDBSLT20_ND4_MM_1)                      0.03      0.76 r
+  U2338/X (HDBSLT20_INV_0P75)                      0.02      0.78 f
+  U2340/X (HDBSLT20_AOI21_0P5)                     0.01      0.79 r
+  U2347/X (HDBSLT20_OAOI211_1)                     0.02      0.81 f
+  U1793/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.83 r
+  U1789/X (HDBSLT20_INV_0P75)                      0.01      0.84 f
+  U1604/X (HDBSLT20_ND3_2)                         0.01      0.85 r
+  U1601/X (HDBSLT20_NR2B_2)                        0.01      0.86 f
+  U1598/X (HDBSLT20_ND2_MM_2)                      0.01      0.87 r
+  U1596/X (HDBSLT20_NR2_2)                         0.01      0.88 f
+  U1595/X (HDBSLT20_ND2B_MM_2)                     0.01      0.89 r
+  U1591/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.90 f
+  U1590/X (HDBSLT20_ND2_1P5)                       0.01      0.91 r
+  ctmTdsLR_1_1090/X (HDBSLT20_ND4B_1)              0.02      0.93 r
+  U1584/X (HDBSLT20_NR2B_2)                        0.01      0.94 f
+  U2378/X (HDBSLT20_ND2_MM_2)                      0.01      0.95 r
+  U1580/X (HDBSLT20_NR2_2)                         0.01      0.96 f
+  U1762/X (HDBSLT20_ND2_MM_2)                      0.01      0.97 r
+  U1577/X (HDBSLT20_NR2_2)                         0.01      0.98 f
+  U2399/X (HDBSLT20_OAOI211_0P5)                   0.02      0.99 r
+  U1574/X (HDBSLT20_ND3_0P75)                      0.05      1.04 f
+  U1567/X (HDBSLT20_NR2_MM_0P5)                    0.04      1.09 r
+  ctmTdsLR_1_1072/X (HDBSLT20_ND2B_0P5)            0.03      1.11 r
+  U2861/X (HDBSLT20_EO2_V2_0P5)                    0.02      1.14 r
+  U2862/X (HDBSLT20_AN2_MM_1)                      0.02      1.15 r
+  mdata_reg[1][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.22      1.22
+  mdata_reg[1][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.22 r
+  clock uncertainty                               -0.03      1.19
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][2] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.16      0.16
+  clock uncertainty                               -0.03      0.13
+  transparency open edge                                     0.13
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.15      0.65
+  clock uncertainty                               -0.03      0.62
+  library setup time                              -0.07      0.56
+  transparency close edge                                    0.56
+
+  available borrow at through pin                  0.20      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.05      0.41 r
+  asic_model_gen.memory_core/U682/X (HDBSLT20_INV_0P75)
+                                                   0.03      0.43 f
+  asic_model_gen.memory_core/U675/X (HDBSLT20_AOI2222_V2_0P5)
+                                                   0.05      0.48 r
+  asic_model_gen.memory_core/U441/X (HDBSLT20_ND4_0P5)
+                                                   0.09      0.57 f
+  asic_model_gen.memory_core/U210/X (HDBSLT20_NR4_2)
+                                                   0.07      0.64 r
+  U1670/X (HDBSLT20_ND2_MMF_0P5)                   0.06      0.70 f
+  U1937/X (HDBSLT20_INV_0P75)                      0.04      0.74 r
+  U2571/X (HDBSLT20_AOI22_0P5)                     0.03      0.77 f
+  U1857/X (HDBSLT20_ND4_1P5)                       0.02      0.79 r
+  U2574/X (HDBSLT20_INV_0P75)                      0.01      0.80 f
+  U2575/X (HDBSLT20_AOI21_0P5)                     0.01      0.81 r
+  U2587/X (HDBSLT20_OAOI211_1)                     0.02      0.83 f
+  U2588/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.85 r
+  U1790/X (HDBSLT20_INV_1)                         0.01      0.87 f
+  U1785/X (HDBSLT20_ND3_2)                         0.01      0.88 r
+  U1599/X (HDBSLT20_NR2B_2)                        0.01      0.88 f
+  U1597/X (HDBSLT20_ND2_MM_2)                      0.01      0.89 r
+  U1529/X (HDBSLT20_NR2_2)                         0.01      0.90 f
+  U1593/X (HDBSLT20_ND2B_2)                        0.01      0.91 r
+  U1592/X (HDBSLT20_NR2_2)                         0.01      0.92 f
+  U1589/X (HDBSLT20_ND2_3)                         0.01      0.93 r
+  ctmTdsLR_1_1083/X (HDBSLT20_AN3B_2)              0.01      0.94 f
+  U1585/X (HDBSLT20_ND2_2)                         0.01      0.94 r
+  U1528/X (HDBSLT20_NR2B_2)                        0.01      0.95 f
+  U1583/X (HDBSLT20_ND2_MM_2)                      0.01      0.96 r
+  U1527/X (HDBSLT20_NR2_2)                         0.01      0.97 f
+  U1761/X (HDBSLT20_ND2_1P5)                       0.01      0.98 r
+  U2633/X (HDBSLT20_NR2_2)                         0.01      0.99 f
+  ctmTdsLR_1_1048/X (HDBSLT20_OR3B_2)              0.01      1.00 r
+  U1757/X (HDBSLT20_NR2_1P5)                       0.01      1.01 f
+  U2116/X (HDBSLT20_AN2_1)                         0.01      1.02 f
+  U2639/X (HDBSLT20_AOI31_1)                       0.01      1.04 r
+  U1752/X (HDBSLT20_ND4_2)                         0.03      1.07 f
+  U1558/X (HDBSLT20_ND2_0P75)                      0.02      1.09 r
+  ctmTdsLR_1_1100/X (HDBSLT20_AOI21B_2)            0.02      1.11 r
+  U2852/X (HDBSLT20_EO2_V2_0P5)                    0.02      1.13 r
+  U2853/X (HDBSLT20_AN2_MM_1)                      0.02      1.15 r
+  mdata_reg[2][2]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.21      1.21
+  mdata_reg[2][2]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.21 r
+  clock uncertainty                               -0.03      1.18
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.16      0.16
+  clock uncertainty                               -0.03      0.13
+  transparency open edge                                     0.13
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.15      0.65
+  clock uncertainty                               -0.03      0.62
+  library setup time                              -0.07      0.56
+  transparency close edge                                    0.56
+
+  available borrow at through pin                  0.20      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.05      0.41 r
+  asic_model_gen.memory_core/U682/X (HDBSLT20_INV_0P75)
+                                                   0.03      0.43 f
+  asic_model_gen.memory_core/U675/X (HDBSLT20_AOI2222_V2_0P5)
+                                                   0.05      0.48 r
+  asic_model_gen.memory_core/U441/X (HDBSLT20_ND4_0P5)
+                                                   0.09      0.57 f
+  asic_model_gen.memory_core/U210/X (HDBSLT20_NR4_2)
+                                                   0.07      0.64 r
+  U1670/X (HDBSLT20_ND2_MMF_0P5)                   0.06      0.70 f
+  U1937/X (HDBSLT20_INV_0P75)                      0.04      0.74 r
+  U2571/X (HDBSLT20_AOI22_0P5)                     0.03      0.77 f
+  U1857/X (HDBSLT20_ND4_1P5)                       0.02      0.79 r
+  U2574/X (HDBSLT20_INV_0P75)                      0.01      0.80 f
+  U2575/X (HDBSLT20_AOI21_0P5)                     0.01      0.81 r
+  U2587/X (HDBSLT20_OAOI211_1)                     0.02      0.83 f
+  U2588/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.85 r
+  U1790/X (HDBSLT20_INV_1)                         0.01      0.87 f
+  U1785/X (HDBSLT20_ND3_2)                         0.01      0.88 r
+  U1599/X (HDBSLT20_NR2B_2)                        0.01      0.88 f
+  U1597/X (HDBSLT20_ND2_MM_2)                      0.01      0.89 r
+  U1529/X (HDBSLT20_NR2_2)                         0.01      0.90 f
+  U1593/X (HDBSLT20_ND2B_2)                        0.01      0.91 r
+  U1592/X (HDBSLT20_NR2_2)                         0.01      0.92 f
+  U1589/X (HDBSLT20_ND2_3)                         0.01      0.93 r
+  ctmTdsLR_1_1083/X (HDBSLT20_AN3B_2)              0.01      0.94 f
+  U1585/X (HDBSLT20_ND2_2)                         0.01      0.94 r
+  U1528/X (HDBSLT20_NR2B_2)                        0.01      0.95 f
+  U1583/X (HDBSLT20_ND2_MM_2)                      0.01      0.96 r
+  U1527/X (HDBSLT20_NR2_2)                         0.01      0.97 f
+  U1761/X (HDBSLT20_ND2_1P5)                       0.01      0.98 r
+  U2633/X (HDBSLT20_NR2_2)                         0.01      0.99 f
+  ctmTdsLR_1_1048/X (HDBSLT20_OR3B_2)              0.01      1.00 r
+  U1757/X (HDBSLT20_NR2_1P5)                       0.01      1.01 f
+  U2116/X (HDBSLT20_AN2_1)                         0.01      1.02 f
+  U2639/X (HDBSLT20_AOI31_1)                       0.01      1.04 r
+  U1752/X (HDBSLT20_ND4_2)                         0.03      1.07 f
+  U1558/X (HDBSLT20_ND2_0P75)                      0.02      1.09 r
+  ctmTdsLR_1_1100/X (HDBSLT20_AOI21B_2)            0.02      1.11 r
+  U1744/X (HDBSLT20_OAI21_2)                       0.01      1.12 f
+  U2859/X (HDBSLT20_EN2_V2_0P5)                    0.02      1.14 f
+  U2860/X (HDBSLT20_AN2_MM_1)                      0.02      1.16 f
+  mdata_reg[2][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.16 f
+  data arrival time                                          1.16
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.21      1.21
+  mdata_reg[2][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.21 r
+  clock uncertainty                               -0.03      1.18
+  library setup time                               0.00      1.19
+  data required time                                         1.19
+  ------------------------------------------------------------------------
+  data required time                                         1.19
+  data arrival time                                         -1.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: read_data_i[66] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][2] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[66] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_627_324/X (HDBSLT20_INV_S_4)
+                                                   0.03      0.40 f
+  asic_model_gen.memory_core/U2083/X (HDBSLT20_AOI22_0P5)
+                                                   0.03      0.43 r
+  asic_model_gen.memory_core/U2084/X (HDBSLT20_OAI221_0P5)
+                                                   0.06      0.48 f
+  asic_model_gen.memory_core/U2089/X (HDBSLT20_NR4_0P5)
+                                                   0.05      0.53 r
+  asic_model_gen.memory_core/U252/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.04      0.58 f
+  asic_model_gen.memory_core/U2110/X (HDBSLT20_NR4_0P5)
+                                                   0.04      0.61 r
+  U2133/X (HDBSLT20_ND2_MM_0P75)                   0.05      0.66 f
+  U2194/X (HDBSLT20_INV_0P75)                      0.04      0.70 r
+  U2336/X (HDBSLT20_AOI22_0P5)                     0.03      0.73 f
+  U1634/X (HDBSLT20_ND4_MM_1)                      0.03      0.76 r
+  U2338/X (HDBSLT20_INV_0P75)                      0.02      0.78 f
+  U2340/X (HDBSLT20_AOI21_0P5)                     0.01      0.79 r
+  U2347/X (HDBSLT20_OAOI211_1)                     0.02      0.81 f
+  U1793/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.83 r
+  U1789/X (HDBSLT20_INV_0P75)                      0.01      0.84 f
+  U1604/X (HDBSLT20_ND3_2)                         0.01      0.85 r
+  U1601/X (HDBSLT20_NR2B_2)                        0.01      0.86 f
+  U1598/X (HDBSLT20_ND2_MM_2)                      0.01      0.87 r
+  U1596/X (HDBSLT20_NR2_2)                         0.01      0.88 f
+  U1595/X (HDBSLT20_ND2B_MM_2)                     0.01      0.89 r
+  U1591/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.90 f
+  U1590/X (HDBSLT20_ND2_1P5)                       0.01      0.91 r
+  ctmTdsLR_1_1090/X (HDBSLT20_ND4B_1)              0.02      0.93 r
+  U1584/X (HDBSLT20_NR2B_2)                        0.01      0.94 f
+  U2378/X (HDBSLT20_ND2_MM_2)                      0.01      0.95 r
+  U1580/X (HDBSLT20_NR2_2)                         0.01      0.96 f
+  U1762/X (HDBSLT20_ND2_MM_2)                      0.01      0.97 r
+  U1577/X (HDBSLT20_NR2_2)                         0.01      0.98 f
+  ctmTdsLR_1_1047/X (HDBSLT20_OR3B_2)              0.01      0.99 r
+  U1573/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.99 f
+  U2121/X (HDBSLT20_AN2_1)                         0.02      1.01 f
+  U2396/X (HDBSLT20_AOI31_2)                       0.01      1.02 r
+  U2398/X (HDBSLT20_ND4_2)                         0.04      1.06 f
+  U1523/X (HDBSLT20_ND2_1)                         0.02      1.08 r
+  ctmTdsLR_1_1097/X (HDBSLT20_AOI21B_0P5)          0.03      1.11 r
+  U2857/X (HDBSLT20_EO2_V2_0P5)                    0.02      1.13 r
+  U2858/X (HDBSLT20_AN2_MM_1)                      0.02      1.15 r
+  mdata_reg[1][2]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.22      1.22
+  mdata_reg[1][2]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.22 r
+  clock uncertainty                               -0.03      1.19
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][1] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.16      0.16
+  clock uncertainty                               -0.03      0.13
+  transparency open edge                                     0.13
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.15      0.65
+  clock uncertainty                               -0.03      0.62
+  library setup time                              -0.07      0.56
+  transparency close edge                                    0.56
+
+  available borrow at through pin                  0.20      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.05      0.41 r
+  asic_model_gen.memory_core/U682/X (HDBSLT20_INV_0P75)
+                                                   0.03      0.43 f
+  asic_model_gen.memory_core/U675/X (HDBSLT20_AOI2222_V2_0P5)
+                                                   0.05      0.48 r
+  asic_model_gen.memory_core/U441/X (HDBSLT20_ND4_0P5)
+                                                   0.09      0.57 f
+  asic_model_gen.memory_core/U210/X (HDBSLT20_NR4_2)
+                                                   0.07      0.64 r
+  U1670/X (HDBSLT20_ND2_MMF_0P5)                   0.06      0.70 f
+  U1937/X (HDBSLT20_INV_0P75)                      0.04      0.74 r
+  U2571/X (HDBSLT20_AOI22_0P5)                     0.03      0.77 f
+  U1857/X (HDBSLT20_ND4_1P5)                       0.02      0.79 r
+  U2574/X (HDBSLT20_INV_0P75)                      0.01      0.80 f
+  U2575/X (HDBSLT20_AOI21_0P5)                     0.01      0.81 r
+  U2587/X (HDBSLT20_OAOI211_1)                     0.02      0.83 f
+  U2588/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.85 r
+  U1790/X (HDBSLT20_INV_1)                         0.01      0.87 f
+  U1785/X (HDBSLT20_ND3_2)                         0.01      0.88 r
+  U1599/X (HDBSLT20_NR2B_2)                        0.01      0.88 f
+  U1597/X (HDBSLT20_ND2_MM_2)                      0.01      0.89 r
+  U1529/X (HDBSLT20_NR2_2)                         0.01      0.90 f
+  U1593/X (HDBSLT20_ND2B_2)                        0.01      0.91 r
+  U1592/X (HDBSLT20_NR2_2)                         0.01      0.92 f
+  U1589/X (HDBSLT20_ND2_3)                         0.01      0.93 r
+  ctmTdsLR_1_1083/X (HDBSLT20_AN3B_2)              0.01      0.94 f
+  U1585/X (HDBSLT20_ND2_2)                         0.01      0.94 r
+  U1528/X (HDBSLT20_NR2B_2)                        0.01      0.95 f
+  U1583/X (HDBSLT20_ND2_MM_2)                      0.01      0.96 r
+  U1527/X (HDBSLT20_NR2_2)                         0.01      0.97 f
+  U1761/X (HDBSLT20_ND2_1P5)                       0.01      0.98 r
+  U2633/X (HDBSLT20_NR2_2)                         0.01      0.99 f
+  ctmTdsLR_1_1048/X (HDBSLT20_OR3B_2)              0.01      1.00 r
+  U1757/X (HDBSLT20_NR2_1P5)                       0.01      1.01 f
+  U2116/X (HDBSLT20_AN2_1)                         0.01      1.02 f
+  U2639/X (HDBSLT20_AOI31_1)                       0.01      1.04 r
+  U1752/X (HDBSLT20_ND4_2)                         0.03      1.07 f
+  U2117/X (HDBSLT20_OR2_1)                         0.03      1.10 f
+  U1748/X (HDBSLT20_ND2_MM_0P5)                    0.01      1.11 r
+  U2707/X (HDBSLT20_EN2_V2_0P5)                    0.02      1.13 r
+  U2708/X (HDBSLT20_AN2_MM_1P5)                    0.02      1.15 r
+  mdata_reg[2][1]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.22      1.22
+  mdata_reg[2][1]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.22 r
+  clock uncertainty                               -0.03      1.19
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: read_data_i[22] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][3] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[22] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_910_211/X (HDBSLT20_INV_3)
+                                                   0.04      0.41 f
+  asic_model_gen.memory_core/U6026/X (HDBSLT20_AOI22_0P5)
+                                                   0.02      0.43 r
+  asic_model_gen.memory_core/U6027/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.47 f
+  asic_model_gen.memory_core/U6028/X (HDBSLT20_AOI221_0P5)
+                                                   0.02      0.49 r
+  asic_model_gen.memory_core/U6029/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.54 f
+  asic_model_gen.memory_core/U6038/X (HDBSLT20_NR4_0P5)
+                                                   0.03      0.57 r
+  asic_model_gen.memory_core/U307/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.05      0.62 f
+  asic_model_gen.memory_core/U6039/X (HDBSLT20_NR4_3)
+                                                   0.04      0.67 r
+  U1693/X (HDBSLT20_ND2_0P75)                      0.07      0.74 f
+  U2773/X (HDBSLT20_OAI22_0P5)                     0.02      0.76 r
+  U1946/X (HDBSLT20_NR4_0P5)                       0.04      0.80 f
+  U1613/X (HDBSLT20_AOI31_0P5)                     0.02      0.82 r
+  U2838/X (HDBSLT20_OAOI211_V2_1)                  0.02      0.84 f
+  U2839/X (HDBSLT20_NR2_1)                         0.01      0.85 r
+  U2840/X (HDBSLT20_OAI21_0P5)                     0.02      0.87 f
+  U2841/X (HDBSLT20_AOAI211_1)                     0.02      0.89 r
+  U2843/X (HDBSLT20_AOAI211_1)                     0.02      0.91 f
+  U2845/X (HDBSLT20_AOAI211_0P75)                  0.02      0.92 r
+  U2846/X (HDBSLT20_AOAI211_0P75)                  0.02      0.95 f
+  U2847/X (HDBSLT20_AOAI211_0P75)                  0.02      0.96 r
+  U2848/X (HDBSLT20_AOAI211_0P5)                   0.04      1.00 f
+  U2849/X (HDBSLT20_AOAI211_1)                     0.03      1.02 r
+  U1774/X (HDBSLT20_AOI21_MM_2)                    0.02      1.04 f
+  U1525/X (HDBSLT20_NR2_1P5)                       0.01      1.06 r
+  ctmTdsLR_1_1108/X (HDBSLT20_MAJI3B_1)            0.02      1.08 f
+  U2124/CO (HDBSLT20_ADDF_V1_2)                    0.03      1.11 f
+  U2865/S (HDBSLT20_ADDF_V1_1)                     0.04      1.15 r
+  U1576/X (HDBSLT20_NR2_MM_0P5)                    0.02      1.16 f
+  mdata_reg[0][3]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.17 f
+  data arrival time                                          1.17
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.23      1.23
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.23 r
+  clock uncertainty                               -0.03      1.20
+  library setup time                               0.01      1.20
+  data required time                                         1.20
+  ------------------------------------------------------------------------
+  data required time                                         1.20
+  data arrival time                                         -1.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: read_data_i[22] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][1] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[22] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_910_211/X (HDBSLT20_INV_3)
+                                                   0.04      0.41 f
+  asic_model_gen.memory_core/U6026/X (HDBSLT20_AOI22_0P5)
+                                                   0.02      0.43 r
+  asic_model_gen.memory_core/U6027/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.47 f
+  asic_model_gen.memory_core/U6028/X (HDBSLT20_AOI221_0P5)
+                                                   0.02      0.49 r
+  asic_model_gen.memory_core/U6029/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.54 f
+  asic_model_gen.memory_core/U6038/X (HDBSLT20_NR4_0P5)
+                                                   0.03      0.57 r
+  asic_model_gen.memory_core/U307/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.05      0.62 f
+  asic_model_gen.memory_core/U6039/X (HDBSLT20_NR4_3)
+                                                   0.04      0.67 r
+  U1693/X (HDBSLT20_ND2_0P75)                      0.07      0.74 f
+  U2773/X (HDBSLT20_OAI22_0P5)                     0.02      0.76 r
+  U1946/X (HDBSLT20_NR4_0P5)                       0.04      0.80 f
+  U1613/X (HDBSLT20_AOI31_0P5)                     0.02      0.82 r
+  U2838/X (HDBSLT20_OAOI211_V2_1)                  0.02      0.84 f
+  U2839/X (HDBSLT20_NR2_1)                         0.01      0.85 r
+  U2840/X (HDBSLT20_OAI21_0P5)                     0.02      0.87 f
+  U2841/X (HDBSLT20_AOAI211_1)                     0.02      0.89 r
+  U2843/X (HDBSLT20_AOAI211_1)                     0.02      0.91 f
+  U2845/X (HDBSLT20_AOAI211_0P75)                  0.02      0.92 r
+  U2846/X (HDBSLT20_AOAI211_0P75)                  0.02      0.95 f
+  U2847/X (HDBSLT20_AOAI211_0P75)                  0.02      0.96 r
+  U2848/X (HDBSLT20_AOAI211_0P5)                   0.04      1.00 f
+  U2849/X (HDBSLT20_AOAI211_1)                     0.03      1.02 r
+  U1774/X (HDBSLT20_AOI21_MM_2)                    0.02      1.04 f
+  U1525/X (HDBSLT20_NR2_1P5)                       0.01      1.06 r
+  U2850/X (HDBSLT20_EO2_V2_0P5)                    0.03      1.08 f
+  U2851/X (HDBSLT20_OAI21_MMF_0P5)                 0.02      1.11 r
+  U1763/X (HDBSLT20_AOI21_0P5)                     0.03      1.13 f
+  mdata_reg[0][1]/D (HDBSLT20_FDPRBQ_V2_1)         0.02      1.15 f
+  data arrival time                                          1.15
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.23      1.23
+  mdata_reg[0][1]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.23 r
+  clock uncertainty                               -0.03      1.20
+  library setup time                               0.00      1.20
+  data required time                                         1.20
+  ------------------------------------------------------------------------
+  data required time                                         1.20
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: read_data_i[22] (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][2] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[22] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_910_211/X (HDBSLT20_INV_3)
+                                                   0.04      0.41 f
+  asic_model_gen.memory_core/U6026/X (HDBSLT20_AOI22_0P5)
+                                                   0.02      0.43 r
+  asic_model_gen.memory_core/U6027/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.47 f
+  asic_model_gen.memory_core/U6028/X (HDBSLT20_AOI221_0P5)
+                                                   0.02      0.49 r
+  asic_model_gen.memory_core/U6029/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.54 f
+  asic_model_gen.memory_core/U6038/X (HDBSLT20_NR4_0P5)
+                                                   0.03      0.57 r
+  asic_model_gen.memory_core/U307/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.05      0.62 f
+  asic_model_gen.memory_core/U6039/X (HDBSLT20_NR4_3)
+                                                   0.04      0.67 r
+  U1693/X (HDBSLT20_ND2_0P75)                      0.07      0.74 f
+  U2773/X (HDBSLT20_OAI22_0P5)                     0.02      0.76 r
+  U1946/X (HDBSLT20_NR4_0P5)                       0.04      0.80 f
+  U1613/X (HDBSLT20_AOI31_0P5)                     0.02      0.82 r
+  U2838/X (HDBSLT20_OAOI211_V2_1)                  0.02      0.84 f
+  U2839/X (HDBSLT20_NR2_1)                         0.01      0.85 r
+  U2840/X (HDBSLT20_OAI21_0P5)                     0.02      0.87 f
+  U2841/X (HDBSLT20_AOAI211_1)                     0.02      0.89 r
+  U2843/X (HDBSLT20_AOAI211_1)                     0.02      0.91 f
+  U2845/X (HDBSLT20_AOAI211_0P75)                  0.02      0.92 r
+  U2846/X (HDBSLT20_AOAI211_0P75)                  0.02      0.95 f
+  U2847/X (HDBSLT20_AOAI211_0P75)                  0.02      0.96 r
+  U2848/X (HDBSLT20_AOAI211_0P5)                   0.04      1.00 f
+  U2849/X (HDBSLT20_AOAI211_1)                     0.03      1.02 r
+  U1774/X (HDBSLT20_AOI21_MM_2)                    0.02      1.04 f
+  U1525/X (HDBSLT20_NR2_1P5)                       0.01      1.06 r
+  ctmTdsLR_1_1108/X (HDBSLT20_MAJI3B_1)            0.02      1.08 f
+  U2124/S (HDBSLT20_ADDF_V1_2)                     0.04      1.12 r
+  U1578/X (HDBSLT20_NR2_MM_0P5)                    0.02      1.14 f
+  mdata_reg[0][2]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.14 f
+  data arrival time                                          1.14
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.23      1.23
+  mdata_reg[0][2]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.23 r
+  clock uncertainty                               -0.03      1.20
+  library setup time                               0.01      1.20
+  data required time                                         1.20
+  ------------------------------------------------------------------------
+  data required time                                         1.20
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][0] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.16      0.16
+  clock uncertainty                               -0.03      0.13
+  transparency open edge                                     0.13
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.15      0.65
+  clock uncertainty                               -0.03      0.62
+  library setup time                              -0.07      0.56
+  transparency close edge                                    0.56
+
+  available borrow at through pin                  0.20      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[0].word_bits[9].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.05      0.41 r
+  asic_model_gen.memory_core/U682/X (HDBSLT20_INV_0P75)
+                                                   0.03      0.43 f
+  asic_model_gen.memory_core/U675/X (HDBSLT20_AOI2222_V2_0P5)
+                                                   0.05      0.48 r
+  asic_model_gen.memory_core/U441/X (HDBSLT20_ND4_0P5)
+                                                   0.09      0.57 f
+  asic_model_gen.memory_core/U210/X (HDBSLT20_NR4_2)
+                                                   0.07      0.64 r
+  U1670/X (HDBSLT20_ND2_MMF_0P5)                   0.06      0.70 f
+  U1937/X (HDBSLT20_INV_0P75)                      0.04      0.74 r
+  U2571/X (HDBSLT20_AOI22_0P5)                     0.03      0.77 f
+  U1857/X (HDBSLT20_ND4_1P5)                       0.02      0.79 r
+  U2574/X (HDBSLT20_INV_0P75)                      0.01      0.80 f
+  U2575/X (HDBSLT20_AOI21_0P5)                     0.01      0.81 r
+  U2587/X (HDBSLT20_OAOI211_1)                     0.02      0.83 f
+  U2588/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.85 r
+  U1790/X (HDBSLT20_INV_1)                         0.01      0.87 f
+  U1785/X (HDBSLT20_ND3_2)                         0.01      0.88 r
+  U1599/X (HDBSLT20_NR2B_2)                        0.01      0.88 f
+  U1597/X (HDBSLT20_ND2_MM_2)                      0.01      0.89 r
+  U1529/X (HDBSLT20_NR2_2)                         0.01      0.90 f
+  U1593/X (HDBSLT20_ND2B_2)                        0.01      0.91 r
+  U1592/X (HDBSLT20_NR2_2)                         0.01      0.92 f
+  U1589/X (HDBSLT20_ND2_3)                         0.01      0.93 r
+  ctmTdsLR_1_1083/X (HDBSLT20_AN3B_2)              0.01      0.94 f
+  U1585/X (HDBSLT20_ND2_2)                         0.01      0.94 r
+  U1528/X (HDBSLT20_NR2B_2)                        0.01      0.95 f
+  U1583/X (HDBSLT20_ND2_MM_2)                      0.01      0.96 r
+  U1527/X (HDBSLT20_NR2_2)                         0.01      0.97 f
+  U1761/X (HDBSLT20_ND2_1P5)                       0.01      0.98 r
+  U2633/X (HDBSLT20_NR2_2)                         0.01      0.99 f
+  ctmTdsLR_1_1048/X (HDBSLT20_OR3B_2)              0.01      1.00 r
+  U1757/X (HDBSLT20_NR2_1P5)                       0.01      1.01 f
+  U1568/X (HDBSLT20_AOAI211_1)                     0.01      1.01 r
+  U1754/X (HDBSLT20_OAI211_0P5)                    0.03      1.04 f
+  ZBUF_28_inst_1615/X (HDBSLT20_BUF_2)             0.02      1.07 f
+  U1559/X (HDBSLT20_ND2_MM_1)                      0.01      1.08 r
+  ctmTdsLR_2_1094/X (HDBSLT20_AN3B_0P5)            0.02      1.10 r
+  mdata_reg[2][0]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.10 r
+  data arrival time                                          1.10
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.21      1.21
+  mdata_reg[2][0]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.21 r
+  clock uncertainty                               -0.03      1.18
+  library setup time                              -0.01      1.17
+  data required time                                         1.17
+  ------------------------------------------------------------------------
+  data required time                                         1.17
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: read_data_i[66] (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][0] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: I2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.07      0.07
+  input external delay                             0.30      0.37 r
+  read_data_i[66] (in)                             0.00      0.37 r
+  asic_model_gen.memory_core/HFSINV_627_324/X (HDBSLT20_INV_S_4)
+                                                   0.03      0.40 f
+  asic_model_gen.memory_core/U2083/X (HDBSLT20_AOI22_0P5)
+                                                   0.03      0.43 r
+  asic_model_gen.memory_core/U2084/X (HDBSLT20_OAI221_0P5)
+                                                   0.06      0.48 f
+  asic_model_gen.memory_core/U2089/X (HDBSLT20_NR4_0P5)
+                                                   0.05      0.53 r
+  asic_model_gen.memory_core/U252/X (HDBSLT20_ND4_MM_0P5)
+                                                   0.04      0.58 f
+  asic_model_gen.memory_core/U2110/X (HDBSLT20_NR4_0P5)
+                                                   0.04      0.61 r
+  U2133/X (HDBSLT20_ND2_MM_0P75)                   0.05      0.66 f
+  U2194/X (HDBSLT20_INV_0P75)                      0.04      0.70 r
+  U2336/X (HDBSLT20_AOI22_0P5)                     0.03      0.73 f
+  U1634/X (HDBSLT20_ND4_MM_1)                      0.03      0.76 r
+  U2338/X (HDBSLT20_INV_0P75)                      0.02      0.78 f
+  U2340/X (HDBSLT20_AOI21_0P5)                     0.01      0.79 r
+  U2347/X (HDBSLT20_OAOI211_1)                     0.02      0.81 f
+  U1793/X (HDBSLT20_ND2_MM_0P75)                   0.02      0.83 r
+  U1789/X (HDBSLT20_INV_0P75)                      0.01      0.84 f
+  U1604/X (HDBSLT20_ND3_2)                         0.01      0.85 r
+  U1601/X (HDBSLT20_NR2B_2)                        0.01      0.86 f
+  U1598/X (HDBSLT20_ND2_MM_2)                      0.01      0.87 r
+  U1596/X (HDBSLT20_NR2_2)                         0.01      0.88 f
+  U1595/X (HDBSLT20_ND2B_MM_2)                     0.01      0.89 r
+  U1591/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.90 f
+  U1590/X (HDBSLT20_ND2_1P5)                       0.01      0.91 r
+  ctmTdsLR_1_1090/X (HDBSLT20_ND4B_1)              0.02      0.93 r
+  U1584/X (HDBSLT20_NR2B_2)                        0.01      0.94 f
+  U2378/X (HDBSLT20_ND2_MM_2)                      0.01      0.95 r
+  U1580/X (HDBSLT20_NR2_2)                         0.01      0.96 f
+  U1762/X (HDBSLT20_ND2_MM_2)                      0.01      0.97 r
+  U1577/X (HDBSLT20_NR2_2)                         0.01      0.98 f
+  ctmTdsLR_1_1047/X (HDBSLT20_OR3B_2)              0.01      0.99 r
+  U1573/X (HDBSLT20_NR2_MM_1P5)                    0.01      0.99 f
+  U1569/X (HDBSLT20_AOAI211_1)                     0.01      1.00 r
+  U1566/X (HDBSLT20_OAI211_0P75)                   0.03      1.03 f
+  ZBUF_45_inst_2248/X (HDBSLT20_BUF_S_3)           0.02      1.06 f
+  U1561/X (HDBSLT20_ND2_MM_2)                      0.01      1.06 r
+  ctmTdsLR_2_1096/X (HDBSLT20_AN3B_0P5)            0.03      1.09 r
+  mdata_reg[1][0]/D (HDBSLT20_FDPRBQ_V2_1)         0.00      1.09 r
+  data arrival time                                          1.09
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.22      1.22
+  mdata_reg[1][0]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.22 r
+  clock uncertainty                               -0.03      1.19
+  library setup time                              -0.01      1.18
+  data required time                                         1.18
+  ------------------------------------------------------------------------
+  data required time                                         1.18
+  data arrival time                                         -1.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][1] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[0][0] (rising edge-triggered flip-flop clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][1]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][1]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.26 r
+  asic_model_gen.memory_core/U1084/X (HDBSLT20_BUF_1P5)
+                                                   0.06      0.33 r
+  asic_model_gen.memory_core/word[2].word_bits[1].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.35 r
+  ------------------------------------------------------------------------
+  transparency window #1
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock latency (propagated)                       0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.05      0.53
+  transparency close edge                                    0.53
+
+  available borrow at through pin                  0.18      0.35
+  ------------------------------------------------------------------------
+  asic_model_gen.memory_core/word[2].word_bits[1].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.00      0.35 r
+  asic_model_gen.memory_core/word[2].word_bits[1].memory_cell/cam_memory_reg/Q (HDBSLT20_LDPQ_1)
+                                                   0.06      0.41 r
+  asic_model_gen.memory_core/U1677/X (HDBSLT20_OAI22_0P5)
+                                                   0.03      0.44 f
+  asic_model_gen.memory_core/U1678/X (HDBSLT20_AOI221_0P5)
+                                                   0.02      0.46 r
+  asic_model_gen.memory_core/U1679/X (HDBSLT20_OAI221_0P5)
+                                                   0.04      0.50 f
+  asic_model_gen.memory_core/U1680/X (HDBSLT20_AOI221_0P5)
+                                                   0.03      0.53 r
+  asic_model_gen.memory_core/U260/X (HDBSLT20_ND4_0P5)
+                                                   0.05      0.58 f
+  asic_model_gen.memory_core/U1717/X (HDBSLT20_NR4_0P5)
+                                                   0.06      0.64 r
+  U1711/X (HDBSLT20_ND2_0P75)                      0.08      0.71 f
+  U2725/X (HDBSLT20_OAI22_0P5)                     0.03      0.74 r
+  U1654/X (HDBSLT20_NR4_1)                         0.03      0.77 f
+  U2726/X (HDBSLT20_INV_1P5)                       0.01      0.78 r
+  U2732/X (HDBSLT20_AO2BB2_1)                      0.01      0.79 f
+  U2733/X (HDBSLT20_ND3_0P75)                      0.01      0.81 r
+  U1613/X (HDBSLT20_AOI31_0P5)                     0.01      0.82 f
+  U2838/X (HDBSLT20_OAOI211_V2_1)                  0.02      0.85 r
+  U2839/X (HDBSLT20_NR2_1)                         0.01      0.86 f
+  U2840/X (HDBSLT20_OAI21_0P5)                     0.01      0.87 r
+  U2841/X (HDBSLT20_AOAI211_1)                     0.02      0.89 f
+  U2843/X (HDBSLT20_AOAI211_1)                     0.02      0.91 r
+  U2845/X (HDBSLT20_AOAI211_0P75)                  0.03      0.93 f
+  U2846/X (HDBSLT20_AOAI211_0P75)                  0.02      0.95 r
+  U2847/X (HDBSLT20_AOAI211_0P75)                  0.02      0.97 f
+  U2848/X (HDBSLT20_AOAI211_0P5)                   0.02      0.99 r
+  U2849/X (HDBSLT20_AOAI211_1)                     0.02      1.02 f
+  U1774/X (HDBSLT20_AOI21_MM_2)                    0.01      1.03 r
+  U1525/X (HDBSLT20_NR2_1P5)                       0.01      1.05 f
+  U1767/X (HDBSLT20_AOI211_0P5)                    0.03      1.07 r
+  mdata_reg[0][0]/D (HDBSLT20_FDPRBQ_V2_1)         0.01      1.08 r
+  data arrival time                                          1.08
+
+  clock clk_core (rise edge)                       1.00      1.00
+  clock network delay (propagated)                 0.23      1.23
+  mdata_reg[0][0]/CK (HDBSLT20_FDPRBQ_V2_1)        0.00      1.23 r
+  clock uncertainty                               -0.03      1.20
+  library setup time                              -0.01      1.19
+  data required time                                         1.19
+  ------------------------------------------------------------------------
+  data required time                                         1.19
+  data arrival time                                         -1.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.11
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][36] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[8].word_bits[36].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.10      0.31 r
+  asic_model_gen.memory_core/word[8].word_bits[36].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.09      0.09
+  clock uncertainty                               -0.03      0.06
+  transparency open edge                                     0.06
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.06      0.48
+  transparency close edge                                    0.48
+
+  data required time                                         0.48
+  ------------------------------------------------------------------------
+  data required time                                         0.48
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.13
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][18] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[3].word_bits[18].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[3].word_bits[18].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.34 r
+  data arrival time                                          0.34
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.09      0.09
+  clock uncertainty                               -0.03      0.06
+  transparency open edge                                     0.06
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.06      0.49
+  transparency close edge                                    0.49
+
+  data required time                                         0.49
+  ------------------------------------------------------------------------
+  data required time                                         0.49
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.14
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][39] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[6].word_bits[39].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][39]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][39]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1047/X (HDBSLT20_BUF_2)
+                                                   0.06      0.33 r
+  asic_model_gen.memory_core/word[6].word_bits[39].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.10      0.10
+  clock uncertainty                               -0.03      0.07
+  transparency open edge                                     0.07
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.05      0.50
+  transparency close edge                                    0.50
+
+  data required time                                         0.50
+  ------------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][42] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[8].word_bits[42].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][42]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][42]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1093/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.34 r
+  asic_model_gen.memory_core/word[8].word_bits[42].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.09      0.09
+  clock uncertainty                               -0.03      0.06
+  transparency open edge                                     0.06
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.05      0.50
+  transparency close edge                                    0.50
+
+  data required time                                         0.50
+  ------------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[20].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[20].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.37 r
+  data arrival time                                          0.37
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.07      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][36] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[36].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.10      0.31 r
+  asic_model_gen.memory_core/word[10].word_bits[36].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.05      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.11      0.11
+  clock uncertainty                               -0.03      0.08
+  transparency open edge                                     0.08
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.10      0.60
+  clock uncertainty                               -0.03      0.57
+  library setup time                              -0.06      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[14].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[14].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.38 r
+  data arrival time                                          0.38
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.13      0.63
+  clock uncertainty                               -0.03      0.60
+  library setup time                              -0.07      0.53
+  transparency close edge                                    0.53
+
+  data required time                                         0.53
+  ------------------------------------------------------------------------
+  data required time                                         0.53
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[16].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[16].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.38 r
+  data arrival time                                          0.38
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.06      0.53
+  transparency close edge                                    0.53
+
+  data required time                                         0.53
+  ------------------------------------------------------------------------
+  data required time                                         0.53
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[15].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[15].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.38 r
+  data arrival time                                          0.38
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.14      0.14
+  clock uncertainty                               -0.03      0.11
+  transparency open edge                                     0.11
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.14      0.64
+  clock uncertainty                               -0.03      0.61
+  library setup time                              -0.07      0.53
+  transparency close edge                                    0.53
+
+  data required time                                         0.53
+  ------------------------------------------------------------------------
+  data required time                                         0.53
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][16] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[6].word_bits[16].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][16]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][16]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1070/X (HDBSLT20_BUF_2)
+                                                   0.06      0.33 r
+  asic_model_gen.memory_core/word[6].word_bits[16].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.10      0.10
+  clock uncertainty                               -0.03      0.07
+  transparency open edge                                     0.07
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.05      0.50
+  transparency close edge                                    0.50
+
+  data required time                                         0.50
+  ------------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][41] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[41].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.28 r
+  asic_model_gen.memory_core/U1045/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.36 r
+  asic_model_gen.memory_core/word[10].word_bits[41].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.06      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[19].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[19].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.38 r
+  data arrival time                                          0.38
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.06      0.54
+  transparency close edge                                    0.54
+
+  data required time                                         0.54
+  ------------------------------------------------------------------------
+  data required time                                         0.54
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][20] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[20].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][20]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][20]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.10      0.31 r
+  asic_model_gen.memory_core/word[10].word_bits[20].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.08      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][36] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[36].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][36]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.10      0.31 r
+  asic_model_gen.memory_core/word[7].word_bits[36].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.11      0.11
+  clock uncertainty                               -0.03      0.08
+  transparency open edge                                     0.08
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.10      0.60
+  clock uncertainty                               -0.03      0.57
+  library setup time                              -0.06      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[9].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[10].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.07      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][8] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[3].word_bits[8].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][8]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][8]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1077/X (HDBSLT20_BUF_1P5)
+                                                   0.05      0.32 r
+  asic_model_gen.memory_core/word[3].word_bits[8].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.34 r
+  data arrival time                                          0.34
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.09      0.09
+  clock uncertainty                               -0.03      0.06
+  transparency open edge                                     0.06
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.05      0.50
+  transparency close edge                                    0.50
+
+  data required time                                         0.50
+  ------------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][11] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[11].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][11]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][11]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1074/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.34 r
+  asic_model_gen.memory_core/word[10].word_bits[11].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.11      0.11
+  clock uncertainty                               -0.03      0.08
+  transparency open edge                                     0.08
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.10      0.60
+  clock uncertainty                               -0.03      0.57
+  library setup time                              -0.05      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][30] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[30].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][30]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][30]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1056/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.34 r
+  asic_model_gen.memory_core/word[10].word_bits[30].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.06      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][41] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[41].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.28 r
+  asic_model_gen.memory_core/U1045/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.36 r
+  asic_model_gen.memory_core/word[7].word_bits[41].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.37 r
+  data arrival time                                          0.37
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.06      0.53
+  transparency close edge                                    0.53
+
+  data required time                                         0.53
+  ------------------------------------------------------------------------
+  data required time                                         0.53
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][9] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[9].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][9]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1076/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[7].word_bits[9].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.06      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][20] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[20].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][20]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][20]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.10      0.31 r
+  asic_model_gen.memory_core/word[7].word_bits[20].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.07      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][18] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[18].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[10].word_bits[18].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.08      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][48] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[8].word_bits[48].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][48]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][48]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1087/X (HDBSLT20_BUF_M_3)
+                                                   0.04      0.31 r
+  asic_model_gen.memory_core/word[8].word_bits[48].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.34 r
+  data arrival time                                          0.34
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.09      0.09
+  clock uncertainty                               -0.03      0.06
+  transparency open edge                                     0.06
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.08      0.58
+  clock uncertainty                               -0.03      0.55
+  library setup time                              -0.05      0.50
+  transparency close edge                                    0.50
+
+  data required time                                         0.50
+  ------------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][11] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[11].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][11]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][11]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1074/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.34 r
+  asic_model_gen.memory_core/word[7].word_bits[11].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.11      0.11
+  clock uncertainty                               -0.03      0.08
+  transparency open edge                                     0.08
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.10      0.60
+  clock uncertainty                               -0.03      0.57
+  library setup time                              -0.05      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][18] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[18].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][18]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[7].word_bits[18].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.08      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][28] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[28].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][28]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][28]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[10].word_bits[28].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.08      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][28] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[28].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][28]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][28]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[7].word_bits[28].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.35 r
+  data arrival time                                          0.35
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.11      0.11
+  clock uncertainty                               -0.03      0.08
+  transparency open edge                                     0.08
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.10      0.60
+  clock uncertainty                               -0.03      0.57
+  library setup time                              -0.06      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][30] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[30].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][30]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][30]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1056/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.34 r
+  asic_model_gen.memory_core/word[7].word_bits[30].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.06      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[17].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[17].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.38 r
+  data arrival time                                          0.38
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.15      0.15
+  clock uncertainty                               -0.03      0.12
+  transparency open edge                                     0.12
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.14      0.64
+  clock uncertainty                               -0.03      0.61
+  library setup time                              -0.07      0.54
+  transparency close edge                                    0.54
+
+  data required time                                         0.54
+  ------------------------------------------------------------------------
+  data required time                                         0.54
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][40] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[18].word_bits[40].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][40]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.06      0.27 r
+  asic_model_gen.memory_core/U1107/X (HDBSLT20_BUF_1)
+                                                   0.08      0.35 r
+  asic_model_gen.memory_core/word[18].word_bits[40].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.37 r
+  data arrival time                                          0.37
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.06      0.54
+  transparency close edge                                    0.54
+
+  data required time                                         0.54
+  ------------------------------------------------------------------------
+  data required time                                         0.54
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][2] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[2].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][2]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][2]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[10].word_bits[2].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.34 r
+  data arrival time                                          0.34
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.12      0.62
+  clock uncertainty                               -0.03      0.59
+  library setup time                              -0.08      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][41] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[2].word_bits[41].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][41]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.28 r
+  asic_model_gen.memory_core/U1045/X (HDBSLT20_BUF_S_1P25)
+                                                   0.08      0.36 r
+  asic_model_gen.memory_core/word[2].word_bits[41].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.01      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.05      0.53
+  transparency close edge                                    0.53
+
+  data required time                                         0.53
+  ------------------------------------------------------------------------
+  data required time                                         0.53
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][14] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[15].word_bits[14].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][14]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.21 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][14]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.07      0.28 r
+  asic_model_gen.memory_core/U1133/X (HDBSLT20_BUF_1P5)
+                                                   0.07      0.35 r
+  asic_model_gen.memory_core/word[15].word_bits[14].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.03      0.37 r
+  data arrival time                                          0.37
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.13      0.13
+  clock uncertainty                               -0.03      0.10
+  transparency open edge                                     0.10
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.13      0.63
+  clock uncertainty                               -0.03      0.60
+  library setup time                              -0.06      0.54
+  transparency close edge                                    0.54
+
+  data required time                                         0.54
+  ------------------------------------------------------------------------
+  data required time                                         0.54
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][39] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[10].word_bits[39].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][39]/CK (HDBSLT20_FDPQ_V2_1)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][39]/Q (HDBSLT20_FDPQ_V2_1)
+                                                   0.07      0.27 r
+  asic_model_gen.memory_core/U1047/X (HDBSLT20_BUF_2)
+                                                   0.06      0.33 r
+  asic_model_gen.memory_core/word[10].word_bits[39].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.02      0.36 r
+  data arrival time                                          0.36
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.06      0.52
+  transparency close edge                                    0.52
+
+  data required time                                         0.52
+  ------------------------------------------------------------------------
+  data required time                                         0.52
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+
+  Startpoint: asic_model_gen.write_data_ffs/data_delayed_reg[0][2] (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: asic_model_gen.memory_core/word[7].word_bits[2].memory_cell/cam_memory_reg (positive level-sensitive latch clocked by clk_core)
+  Mode: func_mode
+  Corner: slow_corner
+  Scenario: SS_maxRC
+  Path Group: R2R
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_core (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][2]/CK (HDBSLT20_FDPQ_V2_2)
+                                                   0.00      0.20 r
+  asic_model_gen.write_data_ffs/data_delayed_reg[0][2]/Q (HDBSLT20_FDPQ_V2_2)
+                                                   0.11      0.31 r
+  asic_model_gen.memory_core/word[7].word_bits[2].memory_cell/cam_memory_reg/D (HDBSLT20_LDPQ_1)
+                                                   0.04      0.34 r
+  data arrival time                                          0.34
+
+  clock clk_core(rise edge)                        0.00      0.00
+  clock latency (propagated)                       0.12      0.12
+  clock uncertainty                               -0.03      0.09
+  transparency open edge                                     0.09
+
+  clock clk_core(fall edge)                        0.50      0.50
+  clock network delay (propagated)                 0.11      0.61
+  clock uncertainty                               -0.03      0.58
+  library setup time                              -0.07      0.51
+  transparency close edge                                    0.51
+
+  data required time                                         0.51
+  ------------------------------------------------------------------------
+  data required time                                         0.51
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.17
+
+
+1

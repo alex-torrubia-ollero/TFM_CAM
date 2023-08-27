@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : clock tree
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Thu Jul  6 12:57:36 2023
+****************************************
+
+
+============ Global Skew Report ================
+
+Clock Tree Name                : "clk_core"
+Clock Period                   : 1.00000        
+Clock Tree root pin            : "clk"
+Number of Levels               : 1
+Number of Sinks                : 1618
+Number of CT Buffers           : 0
+Number of CTS added gates      : 0
+Number of Preexisting Gates    : 0
+Number of Preexisting Buf/Inv  : 0
+Total Number of Clock Cells    : 0
+Total Area of CT Buffers       : 0.00000        
+Total Area of CT cells         : 0.00000        
+Max Global Skew                : 0.00000   
+Number of MaxTran Violators    : 0
+Number of MaxCap Violators     : 1
+Number of MaxFanout Violators  : 0
+
+
+Operating Condition               worst
+Clock global Skew                 0.000
+Longest path delay                0.000
+Shortest path delay               0.000
+
+The longest path delay end pin: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][49]/CK
+The shortest path delay end pin: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][49]/CK
+
+The longest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+clk                                         0.000            1  0.000     0.000     0.000     r
+clk                                         1001.000      1618  0.000     0.000     0.000     r
+bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][49]/CK
+                                            1001.000         0  0.000     0.000     0.000     r
+[clock delay]                                                                       0.000
+----------------------------------------------------------------------------------------------------
+
+The Shortest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+clk                                         0.000            1  0.000     0.000     0.000     r
+clk                                         1001.000      1618  0.000     0.000     0.000     r
+bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][49]/CK
+                                            1001.000         0  0.000     0.000     0.000     r
+[clock delay]                                                                       0.000
+----------------------------------------------------------------------------------------------------
+
+1

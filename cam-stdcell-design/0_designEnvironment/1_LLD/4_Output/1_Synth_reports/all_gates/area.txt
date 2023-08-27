@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Mon Jul  3 19:44:40 2023
+****************************************
+
+Library(s) Used:
+
+    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C (File: /technos/GF22FDX/standardCells/GF22FDX_SC9T_116CPP/globalfoundaries22nhsda/20hd/hdl/ulvt/6.01a/liberty/ccs_lvf/gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C.db)
+
+Number of ports:                          663
+Number of nets:                          9929
+Number of cells:                         9283
+Number of combinational cells:           7526
+Number of sequential cells:              1756
+Number of macros/black boxes:               0
+Number of buf/inv:                        987
+Number of references:                      83
+
+Combinational area:               3196.310354
+Buf/Inv area:                      218.571839
+Noncombinational area:            1385.095705
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4581.406059
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+vlsu_cam_top                      4581.4061    100.0   484.8336   158.3539  0.0000  vlsu_cam_top
+asic_model_gen.memory_core        3938.2185     86.0  2711.4768  1226.7418  0.0000  memory_core_instance
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+Total                                                 3196.3104  1385.0957  0.0000
+
+1

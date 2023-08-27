@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Mon Jul  3 19:48:53 2023
+****************************************
+
+
+Library(s) Used:
+
+    gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C (File: /technos/GF22FDX/standardCells/GF22FDX_SC9T_116CPP/globalfoundaries22nhsda/20hd/hdl/ulvt/6.01a/liberty/ccs_lvf/gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C.db)
+
+
+Operating Conditions: SSG_0P81V_0P00V_0P00V_0P00V_125C   Library: gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+vlsu_cam_top           ZeroWLM           gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+memory_core_instance   ZeroWLM           gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+vlsu_cam_top                              0.188    0.669 2.03e+06    2.882 100.0
+  asic_model_gen.memory_core (memory_core_instance)
+                                          0.155    0.302 1.71e+06    2.170  75.3
+1

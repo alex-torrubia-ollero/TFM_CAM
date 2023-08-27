@@ -1,0 +1,68 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Sun Jul 16 21:33:48 2023
+****************************************
+Information: Activity propagation will be performed for scenario slow.
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Turn on parallel simulation of generator nets.
+Information: Running switching activity propagation with 16 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: func_mode
+Corner: slow_corner
+Scenario: slow
+Voltage: 0.81
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][49] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.027905 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][48] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.033894 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][47] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.028725 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][46] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.022850 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][45] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.033875 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][44] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.028725 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][43] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.028782 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][42] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.031261 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][41] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.027618 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][40] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.027618 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 5.21e+06 nW ( 71.7%)
+  Net Switching Power    = 2.06e+06 nW ( 28.3%)
+Total Dynamic Power      = 7.27e+06 nW (100.0%)
+
+Cell Leakage Power       = 2.18e+06 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             4.98e+06               1.37e+06               5.87e+04               6.41e+06    ( 67.8%)        i
+register                  1.18e+04               1.24e+04               9.61e+05               9.85e+05    ( 10.4%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             2.19e+05               6.78e+05               1.16e+06               2.06e+06    ( 21.8%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     5.21e+06 nW            2.06e+06 nW            2.18e+06 nW            9.45e+06 nW
+1

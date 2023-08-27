@@ -1,0 +1,4 @@
+Total DRC Err: 0
+Total Cells w/ DRC Err: 0
+Total PinDensity DRC Err: 0
+Total Cells w/ PinD DRC Err: 0

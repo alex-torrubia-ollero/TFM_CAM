@@ -1,0 +1,1956 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : vlsu_cam_top
+Version: U-2022.12
+Date   : Thu Jul  6 12:57:36 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSG_0P81V_0P00V_0P00V_0P00V_125C   Library: gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+Wire Load Model Mode: enclosed
+
+  Startpoint: read_data_i[2][48]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[2][48] (in)                                 0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[2][48] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2503/X (HDBSLT20_INV_0P75)
+                                                          0.07       0.37 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2808/X (HDBSLT20_BUF_2)
+                                                          0.03       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7838/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.01       0.42 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7839/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1163/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.47 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7848/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7849/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][4] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.51 r
+  U2378/X (HDBSLT20_ND2_MM_1)                             0.02       0.53 f
+  U2395/X (HDBSLT20_INV_0P75)                             0.02       0.55 r
+  U2435/X (HDBSLT20_AOI22_0P5)                            0.02       0.57 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.59 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.63 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.64 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.65 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.66 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.67 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.68 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.69 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.70 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.71 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.72 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.73 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.74 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.75 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.76 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.77 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.77 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.78 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.79 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.80 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.81 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.82 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.85 f
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.03       0.88 f
+  U1603/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.89 r
+  U1602/X (HDBSLT20_AO21B_1)                              0.02       0.91 f
+  U1481/S (HDBSLT20_ADDF_V1_1)                            0.03       0.94 r
+  U2735/X (HDBSLT20_AN2_1)                                0.01       0.96 r
+  mdata_reg[2][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: read_data_i[2][48]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 r
+  read_data_i[2][48] (in)                                 0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[2][48] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2503/X (HDBSLT20_INV_0P75)
+                                                          0.08       0.38 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2808/X (HDBSLT20_BUF_2)
+                                                          0.03       0.41 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7037/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.01       0.43 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7038/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7040/X (HDBSLT20_ND4_0P75)
+                                                          0.01       0.46 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7048/X (HDBSLT20_OR4B_1)
+                                                          0.01       0.47 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7049/X (HDBSLT20_NR4_0P75)
+                                                          0.01       0.48 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][29] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.48 f
+  U2376/X (HDBSLT20_ND2_MM_1)                             0.02       0.50 r
+  U2411/X (HDBSLT20_INV_0P75)                             0.02       0.51 f
+  U1825/X (HDBSLT20_AOI22_0P75)                           0.01       0.52 r
+  U2446/X (HDBSLT20_ND4_0P75)                             0.04       0.57 f
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.60 r
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.02       0.62 f
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.63 r
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.64 f
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.65 r
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.67 f
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.68 r
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.69 f
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.70 r
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.71 f
+  U1630/X (HDBSLT20_OR2_2P5)                              0.02       0.73 f
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.74 f
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.75 f
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.77 f
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.77 r
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.78 f
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.79 r
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.80 f
+  U1484/X (HDBSLT20_OAOI211_V2_1)                         0.01       0.82 r
+  U2594/X (HDBSLT20_ND4B_1)                               0.02       0.83 r
+  U1482/CO (HDBSLT20_ADDH_1)                              0.02       0.86 r
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.02       0.88 r
+  U1603/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.89 f
+  U1602/X (HDBSLT20_AO21B_1)                              0.01       0.90 r
+  U1481/CO (HDBSLT20_ADDF_V1_1)                           0.02       0.93 r
+  U2738/X (HDBSLT20_EN2_V2_1)                             0.02       0.94 r
+  U2032/X (HDBSLT20_AN2_1)                                0.02       0.96 r
+  mdata_reg[2][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: read_data_i[1][36]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[1][36] (in)                                 0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[1][36] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2596/X (HDBSLT20_INV_0P75)
+                                                          0.07       0.37 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U98/X (HDBSLT20_BUF_1)
+                                                          0.04       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6002/X (HDBSLT20_AOI221_0P5)
+                                                          0.03       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1414/X (HDBSLT20_ND4_MM_1)
+                                                          0.01       0.45 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6017/X (HDBSLT20_OR4B_1)
+                                                          0.01       0.47 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6018/X (HDBSLT20_NR4_0P75)
+                                                          0.01       0.48 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][24] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.48 f
+  U1955/X (HDBSLT20_ND2_MM_1)                             0.01       0.49 r
+  U2093/X (HDBSLT20_INV_0P75)                             0.02       0.51 f
+  U2264/X (HDBSLT20_AOI22_0P5)                            0.01       0.52 r
+  U2267/X (HDBSLT20_ND4_0P75)                             0.04       0.56 f
+  U1727/X (HDBSLT20_AOI2222_V2_1)                         0.04       0.60 r
+  U1470/X (HDBSLT20_ND2_MM_1)                             0.02       0.62 f
+  U2304/X (HDBSLT20_INV_1P5)                              0.01       0.63 r
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.64 f
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.65 r
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.66 f
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.67 r
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.68 f
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.69 r
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.70 f
+  U1499/X (HDBSLT20_OR3_1)                                0.02       0.73 f
+  U1498/X (HDBSLT20_OR2_2)                                0.02       0.74 f
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.76 f
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.77 f
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.78 r
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.79 f
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.80 r
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.81 f
+  U1609/X (HDBSLT20_OAOI211_V2_2)                         0.01       0.82 r
+  U2337/X (HDBSLT20_OR4_1)                                0.02       0.83 r
+  U2596/CO (HDBSLT20_ADDH_1)                              0.02       0.86 r
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.88 r
+  U1604/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.89 f
+  U2030/X (HDBSLT20_AO21B_1)                              0.01       0.90 r
+  U2736/CO (HDBSLT20_ADDF_V1_1)                           0.02       0.93 r
+  U1601/X (HDBSLT20_EN2_1)                                0.02       0.94 r
+  U1600/X (HDBSLT20_AN2_1)                                0.01       0.96 r
+  mdata_reg[1][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.96 r
+  data arrival time                                                  0.96
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: read_data_i[1][4]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[1][4] (in)                                  0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[1][4] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U107/X (HDBSLT20_INV_1)
+                                                          0.06       0.36 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2597/X (HDBSLT20_BUF_1)
+                                                          0.05       0.40 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2734/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.02       0.42 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2735/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1969/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.47 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2755/X (HDBSLT20_OR4_1)
+                                                          0.02       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U259/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][10] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.51 r
+  U2049/X (HDBSLT20_ND2_MM_1)                             0.02       0.53 f
+  U2101/X (HDBSLT20_INV_1)                                0.02       0.55 r
+  U2234/X (HDBSLT20_AOI22_0P5)                            0.02       0.57 f
+  U2236/X (HDBSLT20_ND4_MM_1)                             0.02       0.59 r
+  U2237/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.63 f
+  U2238/X (HDBSLT20_ND2_MM_1)                             0.02       0.65 r
+  U1670/X (HDBSLT20_NR2B_1)                               0.01       0.66 f
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.66 r
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.67 f
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.68 r
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.69 f
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.70 r
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.71 f
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.72 r
+  U1499/X (HDBSLT20_OR3_1)                                0.01       0.73 r
+  U1498/X (HDBSLT20_OR2_2)                                0.01       0.74 r
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.75 r
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.76 r
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.77 f
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.78 r
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.79 f
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.80 r
+  U1486/X (HDBSLT20_OR2_2P5)                              0.01       0.81 r
+  U1606/X (HDBSLT20_OA31_1)                               0.02       0.82 r
+  U2331/X (HDBSLT20_ND4_2)                                0.02       0.84 f
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.87 f
+  U1604/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.88 r
+  U2030/X (HDBSLT20_AO21B_1)                              0.02       0.90 f
+  U2736/S (HDBSLT20_ADDF_V1_1)                            0.03       0.93 r
+  U2737/X (HDBSLT20_AN2_1)                                0.01       0.95 r
+  mdata_reg[1][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.95 r
+  data arrival time                                                  0.95
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: read_data_i[0][26]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 r
+  read_data_i[0][26] (in)                                 0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[0][26] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U4068/X (HDBSLT20_INV_1)
+                                                          0.06       0.36 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U4288/X (HDBSLT20_BUF_1)
+                                                          0.04       0.39 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5615/X (HDBSLT20_AOI22_0P5)
+                                                          0.01       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5616/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5617/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.45 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5618/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5627/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U265/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.02       0.53 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5628/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.55 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[0][1] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.55 r
+  U2341/X (HDBSLT20_ND2_MM_1)                             0.03       0.57 f
+  U2613/X (HDBSLT20_OAI22_MM_0P5)                         0.02       0.59 r
+  U2615/X (HDBSLT20_NR4_0P75)                             0.02       0.61 f
+  U2616/X (HDBSLT20_INV_0P75)                             0.01       0.62 r
+  U2622/X (HDBSLT20_AO2BB2_0P75)                          0.01       0.63 f
+  U2623/X (HDBSLT20_ND3_MM_0P5)                           0.01       0.64 r
+  U2025/X (HDBSLT20_INV_0P75)                             0.01       0.65 f
+  U2026/X (HDBSLT20_OAOI211_1)                            0.01       0.66 r
+  U2710/X (HDBSLT20_OAOI211_1)                            0.01       0.67 f
+  U2711/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.69 r
+  U2712/X (HDBSLT20_AOAI211_1)                            0.02       0.70 f
+  U2714/X (HDBSLT20_AOAI211_1)                            0.02       0.72 r
+  U2716/X (HDBSLT20_AOAI211_1)                            0.02       0.73 f
+  U2717/X (HDBSLT20_AOAI211_1)                            0.02       0.75 r
+  U2718/X (HDBSLT20_AOAI211_1)                            0.02       0.76 f
+  U2719/X (HDBSLT20_AOAI211_1)                            0.01       0.78 r
+  U2720/X (HDBSLT20_AOAI211_1)                            0.02       0.80 f
+  U1622/X (HDBSLT20_AOI21_1)                              0.02       0.81 r
+  U1480/X (HDBSLT20_NR2_1)                                0.01       0.83 f
+  U1491/X (HDBSLT20_MAJI3_1)                              0.02       0.85 r
+  U1615/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.88 r
+  U1610/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.90 r
+  U2741/X (HDBSLT20_EO2_V2_1)                             0.02       0.92 r
+  U1608/X (HDBSLT20_AOAI211_0P75)                         0.01       0.93 f
+  U2742/X (HDBSLT20_AOI31_0P5)                            0.01       0.95 r
+  mdata_reg[0][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.95 r
+  data arrival time                                                  0.95
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: read_data_i[0][26]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[0][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 r
+  read_data_i[0][26] (in)                                 0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[0][26] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U4068/X (HDBSLT20_INV_1)
+                                                          0.06       0.36 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U4288/X (HDBSLT20_BUF_1)
+                                                          0.04       0.39 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5615/X (HDBSLT20_AOI22_0P5)
+                                                          0.01       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5616/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5617/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.45 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5618/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5627/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U265/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.02       0.53 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5628/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.55 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[0][1] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.55 r
+  U2341/X (HDBSLT20_ND2_MM_1)                             0.03       0.57 f
+  U2613/X (HDBSLT20_OAI22_MM_0P5)                         0.02       0.59 r
+  U2615/X (HDBSLT20_NR4_0P75)                             0.02       0.61 f
+  U2616/X (HDBSLT20_INV_0P75)                             0.01       0.62 r
+  U2622/X (HDBSLT20_AO2BB2_0P75)                          0.01       0.63 f
+  U2623/X (HDBSLT20_ND3_MM_0P5)                           0.01       0.64 r
+  U2025/X (HDBSLT20_INV_0P75)                             0.01       0.65 f
+  U2026/X (HDBSLT20_OAOI211_1)                            0.01       0.66 r
+  U2710/X (HDBSLT20_OAOI211_1)                            0.01       0.67 f
+  U2711/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.69 r
+  U2712/X (HDBSLT20_AOAI211_1)                            0.02       0.70 f
+  U2714/X (HDBSLT20_AOAI211_1)                            0.02       0.72 r
+  U2716/X (HDBSLT20_AOAI211_1)                            0.02       0.73 f
+  U2717/X (HDBSLT20_AOAI211_1)                            0.02       0.75 r
+  U2718/X (HDBSLT20_AOAI211_1)                            0.02       0.76 f
+  U2719/X (HDBSLT20_AOAI211_1)                            0.01       0.78 r
+  U2720/X (HDBSLT20_AOAI211_1)                            0.02       0.80 f
+  U1622/X (HDBSLT20_AOI21_1)                              0.02       0.81 r
+  U1480/X (HDBSLT20_NR2_1)                                0.01       0.83 f
+  U1491/X (HDBSLT20_MAJI3_1)                              0.02       0.85 r
+  U1615/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.88 r
+  U1610/S (HDBSLT20_ADDF_V1_1)                            0.04       0.92 f
+  U2740/X (HDBSLT20_NR2_MM_1)                             0.01       0.92 r
+  mdata_reg[0][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.92 r
+  data arrival time                                                  0.92
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: read_data_i[2][48]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[2][48] (in)                                 0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[2][48] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2503/X (HDBSLT20_INV_0P75)
+                                                          0.07       0.37 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2808/X (HDBSLT20_BUF_2)
+                                                          0.03       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7838/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.01       0.42 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7839/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1163/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.47 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7848/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7849/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][4] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.51 r
+  U2378/X (HDBSLT20_ND2_MM_1)                             0.02       0.53 f
+  U2395/X (HDBSLT20_INV_0P75)                             0.02       0.55 r
+  U2435/X (HDBSLT20_AOI22_0P5)                            0.02       0.57 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.59 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.63 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.64 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.65 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.66 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.67 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.68 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.69 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.70 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.71 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.72 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.73 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.74 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.75 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.76 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.77 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.77 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.78 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.79 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.80 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.81 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.82 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.85 f
+  U2724/S (HDBSLT20_ADDF_V1_2)                            0.05       0.90 r
+  U2602/X (HDBSLT20_AN2_1)                                0.01       0.91 r
+  mdata_reg[2][1]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.91 r
+  data arrival time                                                  0.91
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: read_data_i[1][36]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][2]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[1][36] (in)                                 0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[1][36] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2596/X (HDBSLT20_INV_0P75)
+                                                          0.07       0.37 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U98/X (HDBSLT20_BUF_1)
+                                                          0.04       0.41 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6002/X (HDBSLT20_AOI221_0P5)
+                                                          0.03       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1414/X (HDBSLT20_ND4_MM_1)
+                                                          0.01       0.45 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6017/X (HDBSLT20_OR4B_1)
+                                                          0.01       0.47 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U6018/X (HDBSLT20_NR4_0P75)
+                                                          0.01       0.48 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][24] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.48 f
+  U1955/X (HDBSLT20_ND2_MM_1)                             0.01       0.49 r
+  U2093/X (HDBSLT20_INV_0P75)                             0.02       0.51 f
+  U2264/X (HDBSLT20_AOI22_0P5)                            0.01       0.52 r
+  U2267/X (HDBSLT20_ND4_0P75)                             0.04       0.56 f
+  U1727/X (HDBSLT20_AOI2222_V2_1)                         0.04       0.60 r
+  U1470/X (HDBSLT20_ND2_MM_1)                             0.02       0.62 f
+  U2304/X (HDBSLT20_INV_1P5)                              0.01       0.63 r
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.64 f
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.65 r
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.66 f
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.67 r
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.68 f
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.69 r
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.70 f
+  U1499/X (HDBSLT20_OR3_1)                                0.02       0.73 f
+  U1498/X (HDBSLT20_OR2_2)                                0.02       0.74 f
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.76 f
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.77 f
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.78 r
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.79 f
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.80 r
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.81 f
+  U1609/X (HDBSLT20_OAOI211_V2_2)                         0.01       0.82 r
+  U2337/X (HDBSLT20_OR4_1)                                0.02       0.83 r
+  U2596/CO (HDBSLT20_ADDH_1)                              0.02       0.86 r
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.88 r
+  U2731/X (HDBSLT20_EN2_V2_1)                             0.02       0.90 r
+  U2732/X (HDBSLT20_AN2_1)                                0.01       0.91 r
+  mdata_reg[1][2]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.91 r
+  data arrival time                                                  0.91
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: read_data_i[2][48]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[2][2]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 r
+  read_data_i[2][48] (in)                                 0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[2][48] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2503/X (HDBSLT20_INV_0P75)
+                                                          0.08       0.38 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2808/X (HDBSLT20_BUF_2)
+                                                          0.03       0.41 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7037/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.01       0.43 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7038/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7040/X (HDBSLT20_ND4_0P75)
+                                                          0.01       0.46 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7048/X (HDBSLT20_OR4B_1)
+                                                          0.01       0.47 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7049/X (HDBSLT20_NR4_0P75)
+                                                          0.01       0.48 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][29] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.48 f
+  U2376/X (HDBSLT20_ND2_MM_1)                             0.02       0.50 r
+  U2411/X (HDBSLT20_INV_0P75)                             0.02       0.51 f
+  U1825/X (HDBSLT20_AOI22_0P75)                           0.01       0.52 r
+  U2446/X (HDBSLT20_ND4_0P75)                             0.04       0.57 f
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.60 r
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.02       0.62 f
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.63 r
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.64 f
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.65 r
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.67 f
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.68 r
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.69 f
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.70 r
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.71 f
+  U1630/X (HDBSLT20_OR2_2P5)                              0.02       0.73 f
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.74 f
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.75 f
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.77 f
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.77 r
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.78 f
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.79 r
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.80 f
+  U1484/X (HDBSLT20_OAOI211_V2_1)                         0.01       0.82 r
+  U2594/X (HDBSLT20_ND4B_1)                               0.02       0.83 r
+  U1482/CO (HDBSLT20_ADDH_1)                              0.02       0.86 r
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.02       0.88 r
+  U2728/X (HDBSLT20_EN2_V2_1)                             0.02       0.90 r
+  U2729/X (HDBSLT20_AN2_1)                                0.01       0.91 r
+  mdata_reg[2][2]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.91 r
+  data arrival time                                                  0.91
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: read_data_i[1][4]
+              (input port clocked by clk_core)
+  Endpoint: mdata_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: I2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.30       0.30 f
+  read_data_i[1][4] (in)                                  0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/read_data_i[1][4] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.30 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U107/X (HDBSLT20_INV_1)
+                                                          0.06       0.36 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2597/X (HDBSLT20_BUF_1)
+                                                          0.05       0.40 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2734/X (HDBSLT20_OAI22_MM_0P5)
+                                                          0.02       0.42 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2735/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.44 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U1969/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.47 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2755/X (HDBSLT20_OR4_1)
+                                                          0.02       0.49 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U259/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.51 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][10] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.51 r
+  U2049/X (HDBSLT20_ND2_MM_1)                             0.02       0.53 f
+  U2101/X (HDBSLT20_INV_1)                                0.02       0.55 r
+  U2234/X (HDBSLT20_AOI22_0P5)                            0.02       0.57 f
+  U2236/X (HDBSLT20_ND4_MM_1)                             0.02       0.59 r
+  U2237/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.63 f
+  U2238/X (HDBSLT20_ND2_MM_1)                             0.02       0.65 r
+  U1670/X (HDBSLT20_NR2B_1)                               0.01       0.66 f
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.66 r
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.67 f
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.68 r
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.69 f
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.70 r
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.71 f
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.72 r
+  U1499/X (HDBSLT20_OR3_1)                                0.01       0.73 r
+  U1498/X (HDBSLT20_OR2_2)                                0.01       0.74 r
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.75 r
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.76 r
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.77 f
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.78 r
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.79 f
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.80 r
+  U1486/X (HDBSLT20_OR2_2P5)                              0.01       0.81 r
+  U1606/X (HDBSLT20_OA31_1)                               0.02       0.82 r
+  U2331/X (HDBSLT20_ND4_2)                                0.02       0.84 f
+  U1483/S (HDBSLT20_ADDF_V1_1)                            0.04       0.88 r
+  U2723/X (HDBSLT20_AN2_1)                                0.01       0.90 r
+  mdata_reg[1][1]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.90 r
+  data arrival time                                                  0.90
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.90
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: mdata_reg[1][4]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[1][4]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[1][4]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[1][4] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[1][3]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[1][3]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[1][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[1][3]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[1][3] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[1][2]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[1][2]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[1][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[1][2]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[1][2] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[1][1]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[1][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[1][1]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[1][1] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[1][0]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[1][0]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[1][0]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[1][0]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[1][0] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[0][4]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[0][4]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[0][4]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[0][4] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[0][3]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[0][3]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[0][3]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[0][3] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[0][2]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[0][2]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[0][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[0][2]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[0][2] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[0][1]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[0][1]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[0][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[0][1]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[0][1] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: mdata_reg[0][0]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: match_data_o[0][0]
+            (output port clocked by clk_core)
+  Path Group: R2O
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mdata_reg[0][0]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00 #     0.00 r
+  mdata_reg[0][0]/Q (HDBSLT20_FDPRBQ_V2_1)                0.04       0.04 f
+  match_data_o[0][0] (out)                                0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.30       0.70
+  data required time                                                 0.70
+  --------------------------------------------------------------------------
+  data required time                                                 0.70
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U3390/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7935/X (HDBSLT20_AOI2222_V2_1)
+                                                          0.03       0.07 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7936/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7937/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U426/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7948/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7949/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.19 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][0] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.19 r
+  U1949/X (HDBSLT20_ND2_MM_1)                             0.02       0.21 f
+  U2400/X (HDBSLT20_INV_1)                                0.02       0.23 r
+  U2433/X (HDBSLT20_AOI22_0P5)                            0.02       0.25 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.27 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.31 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.32 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.33 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.35 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.38 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.40 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.41 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.42 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.46 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.47 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.48 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.49 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.51 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.53 f
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.03       0.57 f
+  U1603/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.57 r
+  U1602/X (HDBSLT20_AO21B_1)                              0.02       0.59 f
+  U1481/S (HDBSLT20_ADDF_V1_1)                            0.03       0.62 r
+  U2735/X (HDBSLT20_AN2_1)                                0.01       0.64 r
+  mdata_reg[2][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.64 r
+  data arrival time                                                  0.64
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U3390/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7935/X (HDBSLT20_AOI2222_V2_1)
+                                                          0.03       0.07 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7936/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7937/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U426/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7948/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7949/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.19 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][0] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.19 r
+  U1949/X (HDBSLT20_ND2_MM_1)                             0.02       0.21 f
+  U2400/X (HDBSLT20_INV_1)                                0.02       0.23 r
+  U2433/X (HDBSLT20_AOI22_0P5)                            0.02       0.25 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.27 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.31 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.32 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.33 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.35 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.38 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.40 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.41 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.42 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.46 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.47 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.48 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.49 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.51 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.53 f
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.03       0.57 f
+  U1603/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.57 r
+  U1602/X (HDBSLT20_AO21B_1)                              0.02       0.59 f
+  U1481/CO (HDBSLT20_ADDF_V1_1)                           0.02       0.61 f
+  U2738/X (HDBSLT20_EN2_V2_1)                             0.01       0.62 r
+  U2032/X (HDBSLT20_AN2_1)                                0.02       0.64 r
+  mdata_reg[2][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.64 r
+  data arrival time                                                  0.64
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[1][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.03       0.03 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2215/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5696/X (HDBSLT20_AOI2222_V2_0P5)
+                                                          0.03       0.08 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5697/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5698/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U404/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5708/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5709/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.20 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][31] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.20 r
+  U2061/X (HDBSLT20_ND2_MM_1)                             0.02       0.22 f
+  U2084/X (HDBSLT20_INV_0P75)                             0.02       0.23 r
+  U2172/X (HDBSLT20_AOI22_0P5)                            0.02       0.26 f
+  U1759/X (HDBSLT20_ND4_MM_1)                             0.02       0.28 r
+  U2187/X (HDBSLT20_AOI2222_V2_0P5)                       0.03       0.31 f
+  U1670/X (HDBSLT20_NR2B_1)                               0.02       0.33 f
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.35 f
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.38 r
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.39 r
+  U1499/X (HDBSLT20_OR3_1)                                0.01       0.41 r
+  U1498/X (HDBSLT20_OR2_2)                                0.01       0.42 r
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.47 f
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.47 r
+  U1486/X (HDBSLT20_OR2_2P5)                              0.01       0.49 r
+  U1606/X (HDBSLT20_OA31_1)                               0.02       0.50 r
+  U2331/X (HDBSLT20_ND4_2)                                0.02       0.52 f
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.55 f
+  U1604/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.56 r
+  U2030/X (HDBSLT20_AO21B_1)                              0.02       0.58 f
+  U2736/CO (HDBSLT20_ADDF_V1_1)                           0.02       0.60 f
+  U1601/X (HDBSLT20_EN2_1)                                0.02       0.62 r
+  U1600/X (HDBSLT20_AN2_1)                                0.01       0.63 r
+  mdata_reg[1][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.63 r
+  data arrival time                                                  0.63
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[1][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.03       0.03 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2215/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5696/X (HDBSLT20_AOI2222_V2_0P5)
+                                                          0.03       0.08 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5697/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5698/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U404/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5708/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5709/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.20 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][31] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.20 r
+  U2061/X (HDBSLT20_ND2_MM_1)                             0.02       0.22 f
+  U2084/X (HDBSLT20_INV_0P75)                             0.02       0.23 r
+  U2172/X (HDBSLT20_AOI22_0P5)                            0.02       0.26 f
+  U1759/X (HDBSLT20_ND4_MM_1)                             0.02       0.28 r
+  U2187/X (HDBSLT20_AOI2222_V2_0P5)                       0.03       0.31 f
+  U1670/X (HDBSLT20_NR2B_1)                               0.02       0.33 f
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.35 f
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.38 r
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.39 r
+  U1499/X (HDBSLT20_OR3_1)                                0.01       0.41 r
+  U1498/X (HDBSLT20_OR2_2)                                0.01       0.42 r
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.47 f
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.47 r
+  U1486/X (HDBSLT20_OR2_2P5)                              0.01       0.49 r
+  U1606/X (HDBSLT20_OA31_1)                               0.02       0.50 r
+  U2331/X (HDBSLT20_ND4_2)                                0.02       0.52 f
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.55 f
+  U1604/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.56 r
+  U2030/X (HDBSLT20_AO21B_1)                              0.02       0.58 f
+  U2736/S (HDBSLT20_ADDF_V1_1)                            0.03       0.61 r
+  U2737/X (HDBSLT20_AN2_1)                                0.01       0.63 r
+  mdata_reg[1][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.63 r
+  data arrival time                                                  0.63
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[0][4]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5141/X (HDBSLT20_AOI22_0P5)
+                                                          0.01       0.05 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5142/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.08 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5143/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.10 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5144/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.13 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5154/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.15 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U280/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5155/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.20 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[0][12] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.20 r
+  U1571/X (HDBSLT20_ND2_1)                                0.03       0.23 f
+  U2660/X (HDBSLT20_INV_0P75)                             0.01       0.23 r
+  U2661/X (HDBSLT20_AOI2222_V2_1)                         0.02       0.25 f
+  U2662/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.26 r
+  U2663/X (HDBSLT20_OA21B_1)                              0.01       0.28 f
+  U2705/X (HDBSLT20_OAI211_0P5)                           0.01       0.28 r
+  U2706/X (HDBSLT20_INV_0P75)                             0.01       0.29 f
+  U2707/X (HDBSLT20_AOI32_1)                              0.01       0.31 r
+  U2026/X (HDBSLT20_OAOI211_1)                            0.01       0.32 f
+  U2710/X (HDBSLT20_OAOI211_1)                            0.02       0.34 r
+  U2711/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.35 f
+  U2712/X (HDBSLT20_AOAI211_1)                            0.01       0.36 r
+  U2714/X (HDBSLT20_AOAI211_1)                            0.02       0.38 f
+  U2716/X (HDBSLT20_AOAI211_1)                            0.01       0.39 r
+  U2717/X (HDBSLT20_AOAI211_1)                            0.02       0.41 f
+  U2718/X (HDBSLT20_AOAI211_1)                            0.01       0.42 r
+  U2719/X (HDBSLT20_AOAI211_1)                            0.02       0.44 f
+  U2720/X (HDBSLT20_AOAI211_1)                            0.01       0.45 r
+  U1622/X (HDBSLT20_AOI21_1)                              0.01       0.47 f
+  U1480/X (HDBSLT20_NR2_1)                                0.02       0.49 r
+  U1491/X (HDBSLT20_MAJI3_1)                              0.02       0.51 f
+  U1615/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.54 f
+  U1610/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.57 f
+  U2741/X (HDBSLT20_EO2_V2_1)                             0.01       0.58 r
+  U1608/X (HDBSLT20_AOAI211_0P75)                         0.01       0.59 f
+  U2742/X (HDBSLT20_AOI31_0P5)                            0.01       0.60 r
+  mdata_reg[0][4]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.60 r
+  data arrival time                                                  0.60
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[0][4]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U3390/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7935/X (HDBSLT20_AOI2222_V2_1)
+                                                          0.03       0.07 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7936/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7937/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U426/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7948/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7949/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.19 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][0] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.19 r
+  U1949/X (HDBSLT20_ND2_MM_1)                             0.02       0.21 f
+  U2400/X (HDBSLT20_INV_1)                                0.02       0.23 r
+  U2433/X (HDBSLT20_AOI22_0P5)                            0.02       0.25 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.27 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.31 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.32 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.33 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.35 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.38 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.40 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.41 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.42 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.46 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.47 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.48 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.49 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.51 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.53 f
+  U2724/S (HDBSLT20_ADDF_V1_2)                            0.05       0.58 r
+  U2602/X (HDBSLT20_AN2_1)                                0.01       0.59 r
+  mdata_reg[2][1]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.59 r
+  data arrival time                                                  0.59
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[2][2]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[0][5]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U3390/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7935/X (HDBSLT20_AOI2222_V2_1)
+                                                          0.03       0.07 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7936/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7937/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U426/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7948/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U7949/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.19 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[2][0] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.19 r
+  U1949/X (HDBSLT20_ND2_MM_1)                             0.02       0.21 f
+  U2400/X (HDBSLT20_INV_1)                                0.02       0.23 r
+  U2433/X (HDBSLT20_AOI22_0P5)                            0.02       0.25 f
+  U2437/X (HDBSLT20_ND4_MM_1)                             0.02       0.27 r
+  U1472/X (HDBSLT20_AOI2222_V2_0P5)                       0.04       0.31 f
+  U1673/X (HDBSLT20_ND2_MM_1)                             0.01       0.32 r
+  U2532/X (HDBSLT20_INV_0P75)                             0.01       0.33 f
+  U1658/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U2029/X (HDBSLT20_NR2B_1)                               0.01       0.35 f
+  U1649/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1644/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1478/X (HDBSLT20_ND2B_V1_1)                            0.01       0.38 r
+  U1500/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1635/X (HDBSLT20_ND2_2)                                0.01       0.40 r
+  U1630/X (HDBSLT20_OR2_2P5)                              0.01       0.41 r
+  U1626/X (HDBSLT20_OR2_2P5)                              0.01       0.42 r
+  U1623/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1619/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1492/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1616/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1613/X (HDBSLT20_NR2_1P5)                              0.01       0.46 f
+  U1477/X (HDBSLT20_ND2_1)                                0.01       0.47 r
+  U1607/X (HDBSLT20_NR2B_0P5)                             0.01       0.48 f
+  U2598/X (HDBSLT20_INV_0P75)                             0.01       0.49 r
+  U2600/X (HDBSLT20_OA31_1)                               0.02       0.51 r
+  U1479/X (HDBSLT20_ND4_1)                                0.03       0.53 f
+  U2724/CO (HDBSLT20_ADDF_V1_2)                           0.03       0.57 f
+  U2728/X (HDBSLT20_EN2_V2_1)                             0.01       0.58 r
+  U2729/X (HDBSLT20_AN2_1)                                0.01       0.59 r
+  mdata_reg[2][2]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.59 r
+  data arrival time                                                  0.59
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[2][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[1][2]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2215/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5696/X (HDBSLT20_AOI2222_V2_0P5)
+                                                          0.03       0.08 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5697/X (HDBSLT20_OAI221_0P5)
+                                                          0.01       0.09 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5698/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U404/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.01       0.12 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5708/X (HDBSLT20_OR4B_1)
+                                                          0.01       0.14 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5709/X (HDBSLT20_NR4_0P75)
+                                                          0.01       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][31] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.15 f
+  U2061/X (HDBSLT20_ND2_MM_1)                             0.02       0.16 r
+  U2084/X (HDBSLT20_INV_0P75)                             0.02       0.18 f
+  U2266/X (HDBSLT20_AOI22_0P5)                            0.01       0.19 r
+  U2267/X (HDBSLT20_ND4_0P75)                             0.04       0.23 f
+  U1727/X (HDBSLT20_AOI2222_V2_1)                         0.04       0.27 r
+  U1470/X (HDBSLT20_ND2_MM_1)                             0.02       0.29 f
+  U2304/X (HDBSLT20_INV_1P5)                              0.01       0.30 r
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.31 f
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.32 r
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.34 f
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.35 r
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.36 f
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.37 r
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.38 f
+  U1499/X (HDBSLT20_OR3_1)                                0.02       0.40 f
+  U1498/X (HDBSLT20_OR2_2)                                0.02       0.42 f
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.43 f
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.44 f
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.45 r
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.46 f
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.47 r
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.48 f
+  U1609/X (HDBSLT20_OAOI211_V2_2)                         0.01       0.49 r
+  U2337/X (HDBSLT20_OR4_1)                                0.02       0.51 r
+  U2596/CO (HDBSLT20_ADDH_1)                              0.02       0.53 r
+  U1483/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.56 r
+  U2731/X (HDBSLT20_EN2_V2_1)                             0.02       0.57 r
+  U2732/X (HDBSLT20_AN2_1)                                0.01       0.59 r
+  mdata_reg[1][2]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.59 r
+  data arrival time                                                  0.59
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][2]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[0][3]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[12][33]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.04       0.04 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5141/X (HDBSLT20_AOI22_0P5)
+                                                          0.01       0.05 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5142/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.08 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5143/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.10 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5144/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.13 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5154/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.15 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U280/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5155/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.20 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[0][12] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.20 r
+  U1571/X (HDBSLT20_ND2_1)                                0.03       0.23 f
+  U2660/X (HDBSLT20_INV_0P75)                             0.01       0.23 r
+  U2661/X (HDBSLT20_AOI2222_V2_1)                         0.02       0.25 f
+  U2662/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.26 r
+  U2663/X (HDBSLT20_OA21B_1)                              0.01       0.28 f
+  U2705/X (HDBSLT20_OAI211_0P5)                           0.01       0.28 r
+  U2706/X (HDBSLT20_INV_0P75)                             0.01       0.29 f
+  U2707/X (HDBSLT20_AOI32_1)                              0.01       0.31 r
+  U2026/X (HDBSLT20_OAOI211_1)                            0.01       0.32 f
+  U2710/X (HDBSLT20_OAOI211_1)                            0.02       0.34 r
+  U2711/X (HDBSLT20_OAI21_MM_0P5)                         0.01       0.35 f
+  U2712/X (HDBSLT20_AOAI211_1)                            0.01       0.36 r
+  U2714/X (HDBSLT20_AOAI211_1)                            0.02       0.38 f
+  U2716/X (HDBSLT20_AOAI211_1)                            0.01       0.39 r
+  U2717/X (HDBSLT20_AOAI211_1)                            0.02       0.41 f
+  U2718/X (HDBSLT20_AOAI211_1)                            0.01       0.42 r
+  U2719/X (HDBSLT20_AOAI211_1)                            0.02       0.44 f
+  U2720/X (HDBSLT20_AOAI211_1)                            0.01       0.45 r
+  U1622/X (HDBSLT20_AOI21_1)                              0.01       0.47 f
+  U1480/X (HDBSLT20_NR2_1)                                0.02       0.49 r
+  U1491/X (HDBSLT20_MAJI3_1)                              0.02       0.51 f
+  U1615/CO (HDBSLT20_ADDF_V1_1)                           0.03       0.54 f
+  U1610/S (HDBSLT20_ADDF_V1_1)                            0.04       0.58 r
+  U2740/X (HDBSLT20_NR2_MM_1)                             0.01       0.59 f
+  mdata_reg[0][3]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[0][3]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                      0.00       0.97
+  data required time                                                 0.97
+  --------------------------------------------------------------------------
+  data required time                                                 0.97
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.38
+
+
+  Startpoint: bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]
+              (rising edge-triggered flip-flop clocked by clk_core)
+  Endpoint: mdata_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk_core)
+  Path Group: R2R
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vlsu_cam_top       ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+  vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3
+                     ZeroWLM               gf22nsdvlogl20hdl116a_SSG_0P81V_0P00V_0P00V_0P00V_125C
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_core (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/CK (HDBSLT20_FDPQ_V2_1)
+                                                          0.00 #     0.00 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/cam_reg[31][18]/Q (HDBSLT20_FDPQ_V2_1)
+                                                          0.03       0.03 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U2215/X (HDBSLT20_INV_0P75)
+                                                          0.01       0.05 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5696/X (HDBSLT20_AOI2222_V2_0P5)
+                                                          0.03       0.08 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5697/X (HDBSLT20_OAI221_0P5)
+                                                          0.03       0.11 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5698/X (HDBSLT20_AOI221_0P5)
+                                                          0.02       0.13 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U404/X (HDBSLT20_ND4_MM_0P5)
+                                                          0.03       0.15 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5708/X (HDBSLT20_OR4B_1)
+                                                          0.02       0.18 f
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/U5709/X (HDBSLT20_NR4_0P75)
+                                                          0.02       0.20 r
+  bhvl_model_gen.bhvl_model_gen_single.u_cam_mem/match_cmp_o[1][31] (vlsu_cam_bhvl_mem_DEPTH32_DATA50_WRITE1_READ3)
+                                                          0.00       0.20 r
+  U2061/X (HDBSLT20_ND2_MM_1)                             0.02       0.22 f
+  U2084/X (HDBSLT20_INV_0P75)                             0.02       0.23 r
+  U2172/X (HDBSLT20_AOI22_0P5)                            0.02       0.26 f
+  U1759/X (HDBSLT20_ND4_MM_1)                             0.02       0.28 r
+  U2187/X (HDBSLT20_AOI2222_V2_0P5)                       0.03       0.31 f
+  U1670/X (HDBSLT20_NR2B_1)                               0.02       0.33 f
+  U1663/X (HDBSLT20_ND3_2)                                0.01       0.34 r
+  U1656/X (HDBSLT20_NR2B_1P5)                             0.01       0.35 f
+  U1651/X (HDBSLT20_ND2_MM_1)                             0.01       0.36 r
+  U1648/X (HDBSLT20_NR2_1P5)                              0.01       0.37 f
+  U1643/X (HDBSLT20_ND2B_2)                               0.01       0.38 r
+  U1501/X (HDBSLT20_NR2_1P5)                              0.01       0.39 f
+  U1636/X (HDBSLT20_ND2_2)                                0.01       0.39 r
+  U1499/X (HDBSLT20_OR3_1)                                0.01       0.41 r
+  U1498/X (HDBSLT20_OR2_2)                                0.01       0.42 r
+  U1624/X (HDBSLT20_OR2_2P5)                              0.01       0.43 r
+  U1620/X (HDBSLT20_OR2_2P5)                              0.01       0.44 r
+  U1494/X (HDBSLT20_NR2_1P5)                              0.01       0.45 f
+  U1617/X (HDBSLT20_ND2_2)                                0.01       0.46 r
+  U1614/X (HDBSLT20_NR2_1P5)                              0.01       0.47 f
+  U2325/X (HDBSLT20_ND2_2)                                0.01       0.47 r
+  U1486/X (HDBSLT20_OR2_2P5)                              0.01       0.49 r
+  U1606/X (HDBSLT20_OA31_1)                               0.02       0.50 r
+  U2331/X (HDBSLT20_ND4_2)                                0.02       0.52 f
+  U1483/S (HDBSLT20_ADDF_V1_1)                            0.04       0.56 r
+  U2723/X (HDBSLT20_AN2_1)                                0.01       0.58 r
+  mdata_reg[1][1]/D (HDBSLT20_FDPRBQ_V2_1)                0.00       0.58 r
+  data arrival time                                                  0.58
+
+  clock clk_core (rise edge)                              1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.03       0.97
+  mdata_reg[1][1]/CK (HDBSLT20_FDPRBQ_V2_1)               0.00       0.97 r
+  library setup time                                     -0.01       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.38
+
+
+1
