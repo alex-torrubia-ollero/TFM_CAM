@@ -306,6 +306,14 @@ module memory_block_cell #(
                 .A1(bit_search_line[read_port]), 
                 .A2(cam_memory)
             );
+            
+            /* NAND enabling output */
+                //HDBSLT20_ND2_0P75 match_enable(
+                //.X(bit_match[read_port]), 
+                //.A1(read_enable[read_port]), 
+                //.A2(comparison_result[read_port])
+            //);
+            
         end
         
     `else

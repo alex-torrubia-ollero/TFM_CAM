@@ -1,33 +1,33 @@
-     //..select implementation: [0,bhvl] / [1,asic]
+    /* Select the description to use: [0,HLD] / [1,LLD or LGD] */
     parameter ASIC          = 1,
-    //..depth
+    /* Number of words */
     parameter DEPTH         = 32,
-    //..data width
+    /* Number of bits */
     parameter DATA          = 50,
-    //..payload width
+    /* Payload data RAM [UNUSED]*/
     parameter PAYLOAD       = 0,
-    //..update ports
+    /* Number of write ports */
     parameter WRITE         = 1,
-    //..read ports
+    /* Number of read ports*/
     parameter READ          = 3,
-    //..index
+    /* Size of address parameters */
     parameter INDEX         = $clog2(DEPTH),
-    //..type: depth
+    
+    /* Type definition of the number of words*/
     parameter type depth_t  = logic [DEPTH-1:0],
-    //..type: index
+    /* Type definition of the address size */
     parameter type index_t  = logic [INDEX-1:0],
-    //..type: data (update)
+    /* Type definition of the write data*/
     parameter type udata_t  = logic [DATA+PAYLOAD-1:0],
-    //..type: data (search)
+    /* Type definition of the read data*/
     parameter type sdata_t  = logic [DATA-1:0],
-    //..type: data (match)
+    /* Type definition of the match data*/
     parameter type mdata_t  = logic [INDEX+PAYLOAD-1:0],
-    //..enable priority logic: [1,on] / [0,off] (1 bit per read port)
+    /* Priority encoder enable: [1,on] / [0,off] (1 bit per read port)*/
     parameter PRIORITY_EN   = 'b111,
-    //..priviledge mode: [1,first] (oldest) / [0,last] (youngest) (1 bit per read port)
+    /* Priority encoder mode: [1,first] (oldest) / [0,last] (youngest) (1 bit per read port) */
     parameter PRIORITY_MODE = 'b110,
-    //..single or multiple memories [0,single] / [1,multiple]
-    //..(note: current support for "single" is "1 memory per read port")
+    /* Single memory or multiple memory [UNUSED]: [0,single] / [1,multiple] */
     parameter MULTIPLE_MEM  = 0,
     
     /****************************************************************************/
